@@ -1,0 +1,168 @@
+.container{
+    display: flex;
+    padding: 1.5rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 1rem;
+}
+
+.logo>img{
+    height: 2.8rem;
+    width: 2.8rem;
+    border-radius: 50%;
+}
+
+.logo>span{
+    font-weight: 600;
+}
+
+.right{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-weight: 500;
+}
+
+
+.menu>li:hover{
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.Login{
+    width: 5rem;
+    background-color: var(--white);
+    color: var(--blue);
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.5rem;
+    transition: 0.3s ease;
+}
+.Login:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+
+.bars{
+    display: none;
+}
+
+.loginCover{
+    text-align: center;
+    background-color: var(--white);
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 10%;
+    right: 37%;
+    z-index: 999;
+    border-radius: 10px;
+}
+.loginCover>h1{
+    color: var(--blue);
+}
+
+.loginContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginContainer>input{
+    border: none; 
+    width: 80%;
+    height: 10%;
+    border-radius: 0.25em;
+    text-align: center;
+    padding: 2em;
+    font-size: 0.75em; 
+}
+.loginContainer>input:focus {   outline-color: var(--blue); }  
+
+.loginContainer .loginBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 10px;
+    width: 40%;
+    height: 2rem;
+    cursor: pointer;
+    background-color: var(--blue);
+}
+.loginContainer .loginBtn:hover{
+    background-color: var(--white);
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.close{
+    width: 1rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width:856px) {
+    .right{
+        gap: 1rem;
+    }
+    .loginCover{
+        width: 350px;
+        height: 450px;
+        top: 10%;
+        right: 30%;
+    }
+}
+
+@media screen and (max-width:640px){
+    .right{
+        right: 2rem;
+        background-color: var(--white);
+        color: var(--blue);
+        border-radius: 10px;
+        flex-direction: column;
+        position: absolute;
+        z-index: 9999;
+        padding: 1rem;
+        /* text-align: left; */
+    }
+    .menu{
+        flex-direction: column;
+        margin-left: -2rem;
+        display: none;
+    }
+    .menu>li:last-child(){
+        display: block;
+    }
+    .bars{
+        display: block;
+    }
+    .loginCover{
+        width: 350px;
+        height: 450px;
+        top: 20%;
+        right: -7%;
+    }
+    .loginCover .loginBtn{
+        padding: 0.4rem;
+        color: var(--white);
+    }
+}

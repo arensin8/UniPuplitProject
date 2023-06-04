@@ -1,0 +1,89 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    gap: 2rem;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.services{
+    display: grid;
+    grid-template-columns: 25% auto;
+    width: 90%;
+}
+
+.menu{
+    list-style: none;
+    font-weight: 500;
+    font-size: 1.3rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.menu>li:hover{
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+    height: 25rem;
+    overflow-y: scroll;
+    grid-gap: 1.2rem;
+    justify-content: space-between;
+}
+
+.service{
+    width: 12rem;
+    height: 6rem;
+    position: relative;
+    background-color: var(--white);
+    display: flex;
+    padding: 1rem;
+    overflow: hidden;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.service>span{
+    color: var(--blue);
+}
+
+.service>:first-child{
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-right: 20%;
+}
+.service>:last-child{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width:856px) {
+    .container{
+        gap: 1rem;
+    }
+    .services{
+        grid-template-columns: none;
+        gap: 1rem;
+    }
+    .menu{
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:856px) {
+    .menu{
+        margin-left: -2rem;
+        font-size: 1.2rem;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        width: 100%;
+    }
+}
