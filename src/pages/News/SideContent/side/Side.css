@@ -65,6 +65,6 @@
 
   @media screen and (max-width:768px) {
     .subscribe{
-        margin-bottom: 16rem;
+        display: none !important;
     }
   }
