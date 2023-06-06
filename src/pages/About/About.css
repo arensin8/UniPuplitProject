@@ -59,3 +59,42 @@
 }
 
 
+@media screen and (max-width:768px){
+    #about-section{
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+    }
+    .about-left{
+        width:100%
+    }
+    .about-left img{
+        width:80%;
+    }
+    .about-right{
+        max-width:100%;
+        width:80%;
+    }
+}
+
+
+@media screen and (max-width:550px){
+    .about-left img{
+        width:80%;
+        margin-top:20px;
+    }
+    .about-right{
+        max-width:100%;
+        width:90%;
+        margin:20px;
+    }
+    .about-right p{
+        font-size:12px;
+    }
+    .address .address-logo{
+        margin-right:10px;
+    }
+    .address .saprater {
+    margin: 0 10px;
+}
+}

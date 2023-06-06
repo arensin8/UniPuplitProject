@@ -62,13 +62,14 @@
 .loginCover{
     text-align: center;
     background-color: var(--white);
-    width: 400px;
-    height: 500px;
+    width: 25vw;
+    height: 50vh;
     position: absolute;
     top: 10%;
     right: 37%;
     z-index: 999;
     border-radius: 10px;
+    margin: 0 auto;
 }
 .loginCover>h1{
     color: var(--blue);
@@ -90,9 +91,12 @@
     border-radius: 0.25em;
     text-align: center;
     padding: 2em;
-    font-size: 0.75em; 
+    font-size: 1em; 
 }
-.loginContainer>input:focus {   outline-color: var(--blue); }  
+.loginContainer>input:focus {   
+    outline-color: var(--blue);
+    
+     }  
 
 .loginContainer .loginBtn{
     display: flex;
@@ -118,6 +122,12 @@
     top: 1.5rem;
     right: 1.5rem;
     cursor: pointer;
+}
+
+@media screen and (max-width:1200px) {
+    .loginCover{
+        width:30vw;
+    }
 }
 
 @media screen and (max-width:856px) {
@@ -156,13 +166,17 @@
         display: block;
     }
     .loginCover{
-        width: 350px;
-        height: 450px;
-        top: 20%;
-        right: -7%;
+        width: 80vw;
+        height: 48vh;
+        top: 0;
+        right:6%;
     }
     .loginCover .loginBtn{
         padding: 0.4rem;
         color: var(--white);
+    }
+    .Login{
+        background-color:var(--bg);
+        color:var(--white)
     }
 }

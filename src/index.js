@@ -6,6 +6,7 @@ import { BrowserRouter,createBrowserRouter,RouterProvider } from "react-router-d
 import NewsPages from "./pages/News/NewsPages";
 import Roadmap from "./pages/roadmap/Roadmap";
 import About from "./pages/About/About";
+import Contact from './pages/Contact/Contact.js'
 
 const router = createBrowserRouter([
     {
@@ -25,8 +26,8 @@ const router = createBrowserRouter([
         element: <About />
     },
     {
-        path:"/getInTouch",
-        element: ''
+        path:"/contact",
+        element: <Contact />
     },
   ]);
 

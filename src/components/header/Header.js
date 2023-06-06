@@ -12,7 +12,7 @@ const Header = () => {
     setShowMenu((showMenu) => !showMenu);
   };
   return (
-    <div className={css.container}>
+    <div className={css.container} >
       <div className={css.logo}>
         
         <Link to="/"><img src={Logo} alt="home" style={{borderRadius:'50px',height:'2.8rem',width:'2.8rem'}}/></Link>
@@ -30,17 +30,17 @@ const Header = () => {
           </li>
           <li><Link to="/roadmap">Roadmap </Link></li>
           <li><Link to="/about-us">About us </Link></li>
-          <li><Link to="/getInTouch"> Get in touch</Link></li>
+          <li><Link to="/contact">Contact Us</Link></li>
           <li
-            onClick={() => {
-              setshowLoginMenu((showLoginMenu) => !showLoginMenu);
-            }}
+            
           >
-            <a href="#" className={css.Login}>
-              Login
-            </a>
           </li>
         </ul>
+            <a href="#" className={css.Login} onClick={() => {
+              setshowLoginMenu((showLoginMenu) => !showLoginMenu);
+            }}>
+              Login
+            </a>
 
         <div
           className={css.loginCover}
@@ -57,7 +57,7 @@ const Header = () => {
           <div className={css.loginContainer}>
             <input type="email" placeholder="enter your email" />
             <input type="username" placeholder="enter your username" />
-            <a href="/login" className={css.loginBtn}>
+            <a href="/login" className={css.loginBtn} onClick={toggleBars}>
               Login
             </a>
           </div>
