@@ -16,6 +16,8 @@ const Popular = () => {
         speed: 500,
         rows: 4,
         slidesPerRow: 1,
+        arrows:false,
+        dots:true,
         responsive: [
           {
             breakpoint: 800,

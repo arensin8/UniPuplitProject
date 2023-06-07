@@ -66,7 +66,7 @@ const Roadmap = () => {
       </div>
     </section>
 
-    <div className='container'>
+    <div className='container1'>
             <h1>what you will learn</h1>
 
             <div className='services' data-aos="fade-right">

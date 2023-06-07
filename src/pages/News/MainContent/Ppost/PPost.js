@@ -10,6 +10,8 @@ const PPost = () => {
     dots: false,
     infinite: true,
     speed: 500,
+    arrows:false,
+    dots:true,
     slidesToShow: 2,
     slidesToScroll: 1,
   }

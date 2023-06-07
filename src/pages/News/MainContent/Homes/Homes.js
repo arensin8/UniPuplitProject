@@ -13,7 +13,7 @@ const Homes = () => {
   return (
     <>
       <main>
-        <div className='container'>
+        <div className='container1'>
           <section className='mainContent'>
             <Popular />
             <PPost />

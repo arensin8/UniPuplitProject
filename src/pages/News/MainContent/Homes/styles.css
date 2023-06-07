@@ -1,4 +1,4 @@
-main .container {
+main .container1 {
     display: flex;
     justify-content: space-between;
     height: 100vh;
@@ -16,7 +16,7 @@ main .container {
     background-color: #000;
   }
   @media screen and (max-width: 768px) {
-    main .container {
+    main .container1 {
       flex-direction: column;
     }
     .mainContent {
