@@ -12,7 +12,10 @@
   .hero .box {
     position: relative;
     padding: 30px;
+    overflow: hidden;
   }
+  
+
   .hero img {
     width: 100%;
     height: 100%;
@@ -22,12 +25,15 @@
     left: 0;
     z-index: -1;
   }
-  .hero .container1 {
+  .hero .heroContainer {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 6.6vh);
     grid-gap: 10px;
   }
+  
+
+
   .hero .box:nth-child(1) {
     grid-column-start: 1;
     grid-column-end: 5;
@@ -78,7 +84,7 @@
     background-color: #c78823;
   }
   @media screen and (max-width: 768px) {
-    .hero .container1 {
+    .hero .heroContainer {
       display: grid;
       grid-template-columns: repeat(8, 1fr);
       grid-template-rows: repeat(18, 6vh);

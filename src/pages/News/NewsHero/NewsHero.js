@@ -4,12 +4,12 @@ import "./NewsHero.css";
 import Card from "./Card";
 
 const NewsHero = () => {
-  const [items, setIems] = useState(hero);
+  const [items, setItems] = useState(hero);
 
   return (
     <>
       <section className="hero">
-        <div className="container1">
+        <div className="heroContainer">
           {items.map((item) => {
             return (
               <>

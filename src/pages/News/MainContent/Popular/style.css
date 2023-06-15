@@ -3,6 +3,8 @@
     display: flex;
     position: relative;
     margin: 15px 15px 15px 0;
+    overflow: hidden;
+    
   }
   .popular .images {
     position: relative;
@@ -12,6 +14,11 @@
     width: 100%;
     height: 150px;
     object-fit: cover;
+    transition: 0.3s ease-in;
+  }
+  
+  .popular .images .img img:hover{
+    transform: scale(1.1);
   }
   .popular .text h1 {
     padding: 20px 0 0 20px;

@@ -2,9 +2,10 @@ import React from 'react';
 import Heading from '../../../../components/heading/Heading';
 import './style.css';
 import { popular } from '../../../../dummyData';
-import Slider from "react-slick"
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
+
 
 const Popular = () => {
     const settings = {
