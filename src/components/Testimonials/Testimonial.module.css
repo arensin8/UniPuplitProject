@@ -74,11 +74,10 @@
 
 .testimonial>img{
     position: absolute !important;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3.5rem !important;
+    height: 3.5rem !important;
     background-size: cover;
     top: -1.5rem;
-    left: 45%;
     z-index: 1111;
     border-radius: 50%;
 }

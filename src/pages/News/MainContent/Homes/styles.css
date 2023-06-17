@@ -16,7 +16,7 @@ main .homesContainer {
   .sideContent .heading h6 {
     background-color: #000;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 856px) {
     main .homesContainer {
       flex-direction: column;
     }
@@ -25,7 +25,7 @@ main .homesContainer {
       
     }
     .sideContent {
-      width: 100%;
+      display: none;
     }
     .sideContent .heading:nth-child(3){
       display: none;

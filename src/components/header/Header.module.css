@@ -54,7 +54,6 @@
     color: var(--white);
 }
 
-
 .bars{
     display: none;
 }
@@ -139,6 +138,22 @@
         height: 450px;
         top: 10%;
         right: 30%;
+    }
+    /* .menu{
+        gap: 1.3rem;
+    } */
+    .menu>li{
+        font-size: 13px;
+    }
+    .logo>span{
+        display: none;
+    }
+    .container{
+        padding: 1rem;
+        width: 100%;
+    }
+    .logo{
+        flex: 0.7;
     }
 }
 

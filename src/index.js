@@ -7,6 +7,7 @@ import NewsPages from "./pages/News/NewsPages";
 import Roadmap from "./pages/roadmap/Roadmap";
 import About from "./pages/About/About";
 import Contact from './pages/Contact/Contact.js'
+import Students from "./pages/Students/Students";
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
         path:"/contact",
         element: <Contact />
     },
+    {
+        path:"/students",
+        element: <Students />
+    }
   ]);
 
   
