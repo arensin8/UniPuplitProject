@@ -167,11 +167,9 @@
         position: absolute;
         z-index: 9999;
         padding: 1rem;
-        /* text-align: left; */
     }
     .menu{
         flex-direction: column;
-        margin-left: -2rem;
         display: none;
     }
     .menu>li:last-child(){

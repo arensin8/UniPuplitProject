@@ -8,6 +8,9 @@ const NewsHero = () => {
 
   return (
     <>
+     <div className="title">
+          <h1>Our latest News</h1>
+    </div>
       <section className="hero">
         <div className="heroContainer">
           {items.map((item) => {

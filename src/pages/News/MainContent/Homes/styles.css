@@ -1,3 +1,9 @@
+
+
+main{
+  position: relative;
+}
+
 main .homesContainer {
     display: flex;
     justify-content: space-between;
@@ -5,7 +11,7 @@ main .homesContainer {
     flex-direction:row !important;
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 29rem;
+    margin-bottom: 19rem;
   }
   .mainContent {
     width: 75%;
@@ -19,6 +25,7 @@ main .homesContainer {
   @media screen and (max-width: 856px) {
     main .homesContainer {
       flex-direction: column;
+      
     }
     .mainContent {
       width: 100%;
@@ -36,4 +43,8 @@ main .homesContainer {
     .sideContent{
       display: none;
     }
+    main .homesContainer{
+      margin-bottom: 30rem;
+    }
+    
   }
