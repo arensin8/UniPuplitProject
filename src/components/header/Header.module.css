@@ -54,7 +54,6 @@
     color: var(--white);
 }
 
-
 .bars{
     display: none;
 }
@@ -140,6 +139,22 @@
         top: 10%;
         right: 30%;
     }
+    /* .menu{
+        gap: 1.3rem;
+    } */
+    .menu>li{
+        font-size: 13px;
+    }
+    .logo>span{
+        display: none;
+    }
+    .container{
+        padding: 1rem;
+        width: 100%;
+    }
+    .logo{
+        flex: 0.7;
+    }
 }
 
 @media screen and (max-width:640px){
@@ -152,11 +167,9 @@
         position: absolute;
         z-index: 9999;
         padding: 1rem;
-        /* text-align: left; */
     }
     .menu{
         flex-direction: column;
-        margin-left: -2rem;
         display: none;
     }
     .menu>li:last-child(){

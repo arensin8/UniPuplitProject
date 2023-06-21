@@ -81,13 +81,17 @@
     font-size: 0.9rem;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width:856px) {
     .cFooter{
         align-items: flex-start;
         justify-content: flex-start;
         flex-wrap: wrap;
         font-size: 1.7rem;
         gap: 2rem;
+        padding: 1rem;
+    }
+    .logo>img{
+        display: none !important;
     }
 }
 @media screen and (max-width:640px) {

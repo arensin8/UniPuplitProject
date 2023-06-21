@@ -1,10 +1,17 @@
-main .container1 {
+
+
+main{
+  position: relative;
+}
+
+main .homesContainer {
     display: flex;
     justify-content: space-between;
     height: 100vh;
+    flex-direction:row !important;
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 29rem;
+    margin-bottom: 19rem;
   }
   .mainContent {
     width: 75%;
@@ -15,16 +22,17 @@ main .container1 {
   .sideContent .heading h6 {
     background-color: #000;
   }
-  @media screen and (max-width: 768px) {
-    main .container1 {
+  @media screen and (max-width: 856px) {
+    main .homesContainer {
       flex-direction: column;
+      
     }
     .mainContent {
       width: 100%;
       
     }
     .sideContent {
-      width: 100%;
+      display: none;
     }
     .sideContent .heading:nth-child(3){
       display: none;
@@ -35,4 +43,8 @@ main .container1 {
     .sideContent{
       display: none;
     }
+    main .homesContainer{
+      margin-bottom: 30rem;
+    }
+    
   }

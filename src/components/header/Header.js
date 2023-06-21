@@ -25,11 +25,10 @@ const Header = () => {
         </div>
 
         <ul className={css.menu} style={{ display: showMenu ? "inherit" : "" }}>
-          <li>
-            <Link to="/news"> News</Link>
-          </li>
+          <li><Link to="/news"> News</Link></li>
           <li><Link to="/roadmap">Roadmap </Link></li>
           <li><Link to="/about-us">About us </Link></li>
+          <li><Link to="/students">Our Students</Link></li>
           <li><Link to="/contact">Contact Us</Link></li>
           <li
             

@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from '../../components/header/Header';
 import Footer from '../../components/Footer/Footer';
-import image from '../../assets/after.png';
+import image from '../../assets/about.webp';
 import './About.css'
 import Map from './Map';
 
@@ -11,13 +11,13 @@ const About = () => {
         <Header />
         <section id="about-section">
             
-            <div class="about-left">
+            <div class="about-left" data-aos="fade-up">
                 <img src={image} alt="About Img"/>
             </div>
 
         
             <div class="about-right">
-                <h1>About Me</h1>
+                <h1>About Us</h1>
                 <p className='details'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Debitis fugiat a dolorem at similique maxime dolorum dolore
                     enim dicta voluptatibus, illum recusandae, vel optio tempore
