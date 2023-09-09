@@ -3,6 +3,7 @@ import Logo from "../../assets/icon.jpg";
 import css from "./Header.module.css";
 import close from "../../assets/close.png";
 import { Link } from "react-router-dom";
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -21,7 +22,7 @@ const Header = () => {
 
       <div className={css.right}>
         <div className={css.bars} onClick={toggleBars}>
-          <i class="fa-solid fa-bars"></i>
+          < MenuIcon/>
         </div>
 
         <ul className={css.menu} style={{ display: showMenu ? "inherit" : "" }}>
