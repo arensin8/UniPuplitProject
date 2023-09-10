@@ -58,6 +58,12 @@
     display: none;
 }
 
+.right .ham{
+    width:30px;
+    height:30px;
+    font-weight: bold;
+}
+
 .loginCover{
     text-align: center;
     background-color: var(--white);
