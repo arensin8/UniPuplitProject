@@ -1,7 +1,7 @@
 import React from "react";
 import "./Slider.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper";
+import { Swiper, SwiperSlide ,} from "swiper/react";
+import { Pagination, Navigation ,  Autoplay} from "swiper";
 import { SliderProducts } from "../../data/products";
 import img1 from "../../assets/Hero.jpg";
 
@@ -14,14 +14,19 @@ const Slider = () => {
   return (
     <div className="s-container">
       <Swiper data-aos="fade-up"
-        modules={[Pagination, Navigation]}
+     loop={true}
+     autoplay={{
+         delay: 2500,
+         disableOnInteraction: false
+     }}
+      
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
         loopFillGroupWithBlank={true}
         navigation={true}
         pagination={true}
         slidesPerView={3}
         slidesPerGroup={1}
-        loop={true}
         spaceBetween={40}
         breakpoints={{
           640: {
