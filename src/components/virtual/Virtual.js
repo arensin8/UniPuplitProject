@@ -9,14 +9,14 @@ const Virtual = () => {
     return (
         <div className={css.virtual}>
 
-            <div className={css.left}>
+            <div className={css.left} data-aos="fade-down">
                 <span>Virtual try-on</span>
                 <span>Mez het amen inchy lav e!!</span>
                 <span>Try now!</span>
                 <img src={shade} alt="shade"/>
             </div>
 
-            <div className={css.right} data-aos="fade-left">
+            <div className={css.right} data-aos="fade-up">
                 <div className={css.wrapper}>
                     <ReactCompareImage leftImage={Virtual1} rightImage={Virtual2} className={css.rightImage}/>
                 </div>

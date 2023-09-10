@@ -3,7 +3,7 @@ import css from "./Footer.module.css";
 import Logo from "../../assets/icon.jpg";
 const Footer = () => {
   return (
-    <div className={css.cFooterWrapper}>
+    <div className={css.cFooterWrapper} >
       <hr />
 
       <div className={css.cFooter}>

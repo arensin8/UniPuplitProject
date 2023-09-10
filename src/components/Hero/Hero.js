@@ -8,10 +8,10 @@ const Hero = () => {
         <div className={css.container}>
 
             {/* left side */}
-            <div className={css.h_sides}>
+            <div className={css.h_sides} data-aos="fade-down">
                 <span className={css.text1}>ՏՏ Ամբիոն</span>
 
-                <div className={css.text2} data-aos="fade-right">
+                <div className={css.text2} data-aos="fade-down">
                     <span>Տարբեր մասնաճյուղեր</span>
                     {" "}
                     <span>յբո ֆդօիփհո ֆւոդց օո դցգիւ ոիհս ցիոեգս ցօիոգյ սցրւգոկյկկ ցիգ ւիկգ</span>
@@ -21,7 +21,7 @@ const Hero = () => {
             {/* middle side of hero */}
             <div className={css.wrapper}>
                 <div className={css.blueCircle}></div>
-                <img src={HeroImg} alt=""  data-aos="fade-up"/>
+                <img src={HeroImg} alt=""  data-aos="fade-down"/>
                 <div className={css.signupbtn} data-aos="fade-right">
                     <div className={css.Signup}>
                         <span>Sign up to give latest news</span>
@@ -35,10 +35,10 @@ const Hero = () => {
             {/* right side */}
             <div className={css.h_sides}>
                 <div className={css.traffic}>
-                    <span data-aos="fade-left">100k+</span>
+                    <span data-aos="fade-down">100k+</span>
                     <span>Yearly students</span>
                 </div>
-                <div className={css.traffic}>
+                <div className={css.traffic} data-aos="fade-down">
                     <span>700k+</span>
                     <span>Graduated students</span>
                 </div>

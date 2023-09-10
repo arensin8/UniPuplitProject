@@ -13,7 +13,7 @@ import "swiper/css/navigation";
 const Slider = () => {
   return (
     <div className="s-container">
-      <Swiper
+      <Swiper data-aos="fade-up"
         modules={[Pagination, Navigation]}
         className="mySwiper"
         loopFillGroupWithBlank={true}

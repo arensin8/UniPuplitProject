@@ -10,7 +10,7 @@ const Testimonial = () => {
   return (
     <div className={css.testimonials}>
       <div className={css.wrapper}>
-        <div className={css.container}>
+        <div className={css.container} data-aos="fade-down">
           <span>Mer usanoxneri karciknery</span>
           <span>
             Karox eq desnel bolory aysdex mer shat sireli usanoxneri koxmic
@@ -19,7 +19,7 @@ const Testimonial = () => {
 
         <img src={Review} alt="review" width={400} data-aos="fade-down" />
 
-        <div className={css.container}>
+        <div className={css.container} data-aos="fade-down">
           <span>100k +</span>
           <span>happy students</span>
         </div>
@@ -27,8 +27,8 @@ const Testimonial = () => {
 
       <div className={css.reviews}>Reviews</div>
 
-      <div className={css.carousel}>
-        <Swiper
+      <div className={css.carousel} data-aos="fade-up"> 
+        <Swiper data-aos="fade-up"
           slidesPerView={3}
           slidesPerGroup={1}
           className={css.tCarousel}

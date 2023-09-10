@@ -17,7 +17,7 @@ const Services = () => {
         <div className={css.container}>
             <h1>what you will learn</h1>
 
-            <div className={css.services} data-aos="fade-right">
+            <div className={css.services} data-aos="fade-down">
                 <ul className={css.menu}>
                     <li onClick={() => setMenuData(servicesData)}>All</li>
                     <li onClick={() => filter('front end')}>Front-End</li>

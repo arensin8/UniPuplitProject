@@ -4,7 +4,8 @@ import css from "./Header.module.css";
 import close from "../../assets/close.png";
 import { Link } from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
-import hamburger from '../../assets/hamburger.svg'
+import hamburger from '../../assets/hamburger.svg';
+import {RxHamburgerMenu} from 'react-icons/rx';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -19,12 +20,14 @@ const Header = () => {
         
         <Link to="/"><img src={Logo} alt="home" style={{borderRadius:'50px',height:'2.8rem',width:'2.8rem'}}/></Link>
         <span>Polytechnic</span>
+        < RxHamburgerMenu />
       </div>
 
       <div className={css.right}>
         <div className={css.bars} onClick={toggleBars}>
           {/* < MenuIcon/> */}
-          <img src={hamburger} alt='hamburger-menu' className={css.ham}/>
+          {/* <img src={hamburger} alt='hamburger-menu' className={css.ham}/> */}
+          < RxHamburgerMenu />
         </div>
 
         <ul className={css.menu} style={{ display: showMenu ? "inherit" : "" }}>

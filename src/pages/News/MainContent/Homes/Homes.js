@@ -9,7 +9,7 @@ const Homes = () => {
     <>
    
       <main>
-        <div className='homesContainer'>
+        <div className='homesContainer' data-aos="fade-up">
           <section className='mainContent'>
             <Popular />
             <PPost />
