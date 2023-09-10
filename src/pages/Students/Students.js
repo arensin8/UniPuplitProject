@@ -32,7 +32,7 @@ const Students = () => {
         }}
         pagination={true}
         modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
+        className="mySwiper1"
         data-aos="fade-down"
       >
         <SwiperSlide>

@@ -34,6 +34,19 @@
     font-weight: 500;
 }
 
+.close2{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.ham{
+    display: none;
+    cursor: pointer;
+}
 
 .menu>li:hover{
     color: var(--blue);
@@ -79,6 +92,7 @@
 }
 .loginCover>h1{
     color: var(--blue);
+    margin-top: 3rem;
 }
 
 .loginContainer{
@@ -88,20 +102,20 @@
     padding: 2rem;
     justify-content: center;
     align-items: center;
+    margin-top: 2rem;
 }
 
 .loginContainer>input{
     border: none; 
     width: 80%;
-    height: 10%;
+    height: 5%;
     border-radius: 0.25em;
     text-align: center;
-    padding: 2em;
+    padding: 1.5em;
     font-size: 1em; 
 }
 .loginContainer>input:focus {   
     outline-color: var(--blue);
-    
      }  
 
 .loginContainer .loginBtn{
@@ -109,10 +123,11 @@
     justify-content: center;
     align-items: center;
     padding: 0.5rem;
-    border-radius: 10px;
-    width: 40%;
+    border-radius: 5px;
+    width: 8rem;
     height: 2rem;
     cursor: pointer;
+    margin-top: 2.5rem;
     background-color: var(--blue);
 }
 .loginContainer .loginBtn:hover{
@@ -165,38 +180,51 @@
 }
 
 @media screen and (max-width:640px){
-    .right{
-        right: 2rem;
+    .ham{
+        display: block;
+    }
+    .right .bars{
+        position: absolute;
+        right: 1.5rem;
+    }
+    .menu{
+        top: 15px;
+        right: 10px;
+        flex-direction: column;
+        display: none;
         background-color: var(--white);
         color: var(--blue);
         border-radius: 10px;
-        flex-direction: column;
+        text-align: center;
+        padding: 2rem;
+        padding-top: 4rem;
+        width: 40vw;
         position: absolute;
-        z-index: 9999;
-        padding: 1rem;
+        height: 50vh;
+        z-index: 1000;
     }
-    .menu{
-        flex-direction: column;
-        display: none;
+    .menu>li{
+        font-size: 18px;
     }
-    .menu>li:last-child(){
+    .menu>li:last-child{
         display: block;
     }
     .bars{
         display: block;
     }
     .loginCover{
-        width: 80vw;
-        height: 55vh;
+        width: 100vw;
+        height: 100vh;
         top: 0;
-        right:6%;
+        right:0;
     }
     .loginCover .loginBtn{
         padding: 0.4rem;
         color: var(--white);
     }
     .Login{
-        background-color:var(--bg);
-        color:var(--white)
+        background-color: transparent;
+        color:var(--white);
+        border: 1px dashed var(--white);
     }
 }

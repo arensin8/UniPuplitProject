@@ -20,34 +20,40 @@ const Header = () => {
         
         <Link to="/"><img src={Logo} alt="home" style={{borderRadius:'50px',height:'2.8rem',width:'2.8rem'}}/></Link>
         <span>Polytechnic</span>
-        < RxHamburgerMenu />
       </div>
 
       <div className={css.right}>
-        <div className={css.bars} onClick={toggleBars}>
-          {/* < MenuIcon/> */}
-          {/* <img src={hamburger} alt='hamburger-menu' className={css.ham}/> */}
-          < RxHamburgerMenu />
-        </div>
+        
 
         <ul className={css.menu} style={{ display: showMenu ? "inherit" : "" }}>
+          <img
+            src={close}
+            className={css.close2}
+            onClick={() => {
+              setShowMenu((showMenu) => !showMenu);
+          
+            }}
+            style={{ display : showMenu ? 'block' : 'none' }}
+            alt='close'
+          />
           <li><Link to="/news"> News</Link></li>
           <li><Link to="/roadmap">Roadmap </Link></li>
           <li><Link to="/about-us">About us </Link></li>
           <li><Link to="/students">Our Students</Link></li>
           <li><Link to="/contact">Contact Us</Link></li>
           <li
-            
           >
+            
+           
           </li>
+         
         </ul>
-            <a href="#" className={css.Login} onClick={() => {
+        <a href="#" className={css.Login} onClick={() => {
               setshowLoginMenu((showLoginMenu) => !showLoginMenu);
             }}>
               Login
             </a>
-
-        <div
+            <div
           className={css.loginCover}
           style={{ display: showLoginMenu ? "block" : "none" }}
         >
@@ -57,6 +63,8 @@ const Header = () => {
             onClick={() => {
               setshowLoginMenu((showLoginMenu) => !showLoginMenu);
             }}
+           
+            alt='close'
           />
           <h1>Login</h1>
           <div className={css.loginContainer}>
@@ -67,7 +75,18 @@ const Header = () => {
             </a>
           </div>
         </div>
+          <div className={css.bars} onClick={toggleBars} style={{ display : showMenu ? 'none' : 'block' }}>
+          
+          < RxHamburgerMenu className={css.ham}/>
+          
+        </div>
+         
+        
+        
+     
+
       </div>
+
     </div>
   );
 };
