@@ -7,6 +7,10 @@
     --blue: #27374D;
 }
 
+.body-no-scroll {
+  overflow: hidden;
+}
+
 .App{
   display: flex;
   flex-direction: column;

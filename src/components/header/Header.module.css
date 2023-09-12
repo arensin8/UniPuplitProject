@@ -1,3 +1,6 @@
+
+
+
 .container{
     display: flex;
     padding: 1.5rem;
@@ -79,16 +82,17 @@
 }
 
 .loginCover{
-    text-align: center;
-    background-color: var(--white);
-    width: 25vw;
-    height: 50vh;
-    position: absolute;
-    top: 10%;
-    right: 37%;
-    z-index: 999;
-    border-radius: 10px;
-    margin: 0 auto;
+     text-align: center;
+    background-color: var(--white); 
+    width: 30vw;
+    border-radius: 5px;
+    padding: 20px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1000;
+      
 }
 .loginCover>h1{
     color: var(--blue);
@@ -99,19 +103,19 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem;
+    padding: 1.5rem;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 .loginContainer>input{
     border: none; 
     width: 80%;
-    height: 5%;
+    height: 3%;
     border-radius: 0.25em;
     text-align: center;
-    padding: 1.5em;
+    padding: 1.3em;
     font-size: 1em; 
 }
 .loginContainer>input:focus {   
@@ -125,9 +129,10 @@
     padding: 0.5rem;
     border-radius: 5px;
     width: 8rem;
-    height: 2rem;
+    height: 3rem;
+    transition: 0.2s ease-in;
     cursor: pointer;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     background-color: var(--blue);
 }
 .loginContainer .loginBtn:hover{
@@ -158,8 +163,7 @@
     .loginCover{
         width: 350px;
         height: 450px;
-        top: 10%;
-        right: 30%;
+        top: 50%;
     }
     /* .menu{
         gap: 1.3rem;
@@ -215,8 +219,8 @@
     .loginCover{
         width: 100vw;
         height: 100vh;
-        top: 0;
-        right:0;
+        top: 50%;
+        border-radius: 0;
     }
     .loginCover .loginBtn{
         padding: 0.4rem;

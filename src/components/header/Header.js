@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import Logo from "../../assets/icon.jpg";
 import css from "./Header.module.css";
 import close from "../../assets/close.png";
@@ -6,10 +6,40 @@ import { Link } from "react-router-dom";
 import MenuIcon from '@mui/icons-material/Menu';
 import hamburger from '../../assets/hamburger.svg';
 import {RxHamburgerMenu} from 'react-icons/rx';
+import '../../App.css'
+
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const [showLoginMenu, setshowLoginMenu] = useState(false);
+  const [showLoginMenu, setShowLoginMenu] = useState(false);
+
+  const bodyStyle = document.body.style;
+
+      // const [isLocked, setIsLocked] = useState(
+      //       bodyStyle.overflowY === 'hidden',
+      //     bodyStyle.backgroundColo === '#333'
+      // )
+      // const toggle = () => {
+      //   setIsLocked(!isLocked);
+      // }
+      // useEffect(() => {
+      //       bodyStyle.overflowY = isLocked ? 'hidden' : 'auto'
+      //     }, [isLocked , bodyStyle])
+          
+
+      const [isLoginOpen, setIsLoginOpen] = useState(false);
+
+  const openLogin = () => {
+    setIsLoginOpen(true);
+    // Add the body class to disable scrolling
+    document.body.classList.add('body-no-scroll');
+  };
+
+  const closeLogin = () => {
+    setIsLoginOpen(false);
+    // Remove the body class to re-enable scrolling
+    document.body.classList.remove('body-no-scroll');
+  };
 
   const toggleBars = () => {
     setShowMenu((showMenu) => !showMenu);
@@ -19,7 +49,7 @@ const Header = () => {
       <div className={css.logo}>
         
         <Link to="/"><img src={Logo} alt="home" style={{borderRadius:'50px',height:'2.8rem',width:'2.8rem'}}/></Link>
-        <span>Polytechnic</span>
+        <span >Polytechnic</span>
       </div>
 
       <div className={css.right}>
@@ -49,10 +79,14 @@ const Header = () => {
          
         </ul>
         <a href="#" className={css.Login} onClick={() => {
-              setshowLoginMenu((showLoginMenu) => !showLoginMenu);
+              setShowLoginMenu((showLoginMenu) => !showLoginMenu);
+              // toggle()
+              openLogin()
             }}>
               Login
             </a>
+            {isLoginOpen && (
+
             <div
           className={css.loginCover}
           style={{ display: showLoginMenu ? "block" : "none" }}
@@ -61,7 +95,8 @@ const Header = () => {
             src={close}
             className={css.close}
             onClick={() => {
-              setshowLoginMenu((showLoginMenu) => !showLoginMenu);
+              setShowLoginMenu((showLoginMenu) => !showLoginMenu);
+              closeLogin()
             }}
            
             alt='close'
@@ -75,6 +110,7 @@ const Header = () => {
             </a>
           </div>
         </div>
+            )}
           <div className={css.bars} onClick={toggleBars} style={{ display : showMenu ? 'none' : 'block' }}>
           
           < RxHamburgerMenu className={css.ham}/>
