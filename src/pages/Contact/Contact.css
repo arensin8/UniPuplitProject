@@ -1,22 +1,21 @@
-
-.container{
-text-align:center;
+.container {
+  text-align: center;
   width: 85%;
   background: #fff;
   border-radius: 6px;
-  margin:0 auto;
+  margin: 0 auto;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
 }
-.container p{
-    color: var(--blue)
+.container p {
+  color: var(--blue);
 }
-.container .content{
+.container .content {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.container .content .left-side{
+.container .content .left-side {
   width: 25%;
   height: 100%;
   display: flex;
@@ -26,8 +25,8 @@ text-align:center;
   margin-top: 15px;
   position: relative;
 }
-.content .left-side::before{
-  content: '';
+.content .left-side::before {
+  content: "";
   position: absolute;
   height: 70%;
   width: 2px;
@@ -36,62 +35,64 @@ text-align:center;
   transform: translateY(-50%);
   background: var(--blue);
 }
-.content .left-side .details{
+.content .left-side .details {
   margin: 14px;
   text-align: center;
 }
-.content .left-side .details i{
+.content .left-side .details i {
   font-size: 30px;
   color: var(--blue);
   margin-bottom: 10px;
 }
-.content .left-side .details .topic{
+.content .left-side .details .topic {
   font-size: 18px;
   font-weight: 500;
-  color:var(--blue);
+  color: var(--blue);
 }
 .content .left-side .details .text-one,
-.content .left-side .details .text-two{
+.content .left-side .details .text-two {
   font-size: 14px;
   color: var(--blue);
 }
-.container .content .right-side{
+.container .content .right-side {
   width: 75%;
   margin-left: 75px;
 }
-.content .right-side .topic-text{
+.content .right-side .topic-text {
   font-size: 23px;
   font-weight: 600;
   color: var(--blue);
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
-.right-side .input-box{
+.right-side .input-box {
   height: 50px;
   width: 90%;
   margin: 12px 0;
 }
 .right-side .input-box input,
-.right-side .input-box textarea{
+.right-side .input-box textarea {
   height: 100%;
   width: 100%;
   border: none;
   outline: none;
   font-size: 16px;
-  background: #F0F1F8;
+  background: #f0f1f8;
   border-radius: 6px;
   padding: 0 15px;
   resize: none;
 }
-.right-side .message-box{
+.right-side .message-box {
   min-height: 110px;
 }
-.right-side .input-box textarea{
+.right-side .input-box textarea {
   padding-top: 6px;
 }
-.right-side .button{
+.right-side .button {
   display: inline-block;
   margin-top: 12px;
 }
-.right-side .button input[type="button"]{
+.right-side .button input[type="button"] {
   color: #fff;
   font-size: 18px;
   outline: none;
@@ -102,47 +103,53 @@ text-align:center;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.button input[type="button"]:hover{
+.button input[type="button"]:hover {
   background: var(--bg);
 }
 @media (max-width: 950px) {
-  .container{
+  .container {
     width: 70%;
-    padding: 30px 40px 40px 35px ;
+    padding: 30px 40px 40px 35px;
   }
-  .container .content .right-side{
-   width: 75%;
-   margin-left: 55px;
-}
+  .container .content .right-side {
+    width: 75%;
+    margin-left: 55px;
+  }
 }
 @media (max-width: 820px) {
-  .container{
+  .container {
     height: 100%;
-    width:80%;
+    width: 80%;
     margin-top: 20px;
   }
-  .container .content{
+  .container .content {
     flex-direction: column-reverse;
   }
- .container .content .left-side{
-   width: 100%;
-   flex-direction: row;
-   margin-top: 40px;
-   justify-content: center;
-   flex-wrap: wrap;
- }
- .container .content .left-side::before{
-   display: none;
- }
- .container .content .right-side{
-   width: 100%;
-   margin-left: 0;
- }
+  .container .content .left-side {
+    width: 100%;
+    flex-direction: row;
+    margin-top: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .container .content .left-side::before {
+    display: none;
+  }
+  .container .content .left-side i {
+    font-size: 25px;
+  }
+  .container .content .right-side {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .right-side .input-box {
+    width: 100%;
+  }
 }
-
 @media (max-width: 550px) {
-    .container{
-    width:70%;
+  .container {
+    width: 70%;
     margin-top: 100px;
   }
 }

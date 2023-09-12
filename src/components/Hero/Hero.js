@@ -21,7 +21,7 @@ const Hero = () => {
             {/* middle side of hero */}
             <div className={css.wrapper}>
                 <div className={css.blueCircle}></div>
-                <img src={HeroImg} alt=""  data-aos="fade-down"/>
+                <img src={HeroImg} alt=""  data-aos="fade-down" />
                 <div className={css.signupbtn} data-aos="fade-right">
                     <div className={css.Signup}>
                         <span>Sign up to give latest news</span>

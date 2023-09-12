@@ -1,191 +1,185 @@
-
-.timeline{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0;
+.timeline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0;
 }
 
-.top-section h1{
-    margin-top: 60px;
-    margin-bottom: 0;
-  text-align:center;
+.top-section h1 {
+  margin-top: 60px;
+  margin-bottom: 0;
+  text-align: center;
 }
 
-
-
-
-
-
-.container1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 2rem;
-    gap: 2rem;
-    position: relative;
-    margin-bottom: 4rem;
+.container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 2rem;
+  position: relative;
+  margin-bottom: 4rem;
 }
 
-.services{
-    display: grid;
-    grid-template-columns: 25% auto;
-    width: 90%;
+.services {
+  display: grid;
+  grid-template-columns: 25% auto;
+  width: 90%;
 }
 
-.menu{
-    list-style: none;
-    font-weight: 500;
-    font-size: 1.3rem;
-    gap: 1.5rem;
-    display: flex;
-    flex-direction: column;
+.menu {
+  list-style: none;
+  font-weight: 500;
+  font-size: 1.3rem;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
 }
-.menu>li:hover{
-    color: var(--blue);
-    cursor: pointer;
-}
-
-.list{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
-    height: 25rem;
-    overflow-y: scroll;
-    grid-gap: 1.2rem;
-    justify-content: space-between;
+.menu > li:hover {
+  color: var(--blue);
+  cursor: pointer;
 }
 
-.service{
-    width: 12rem;
-    height: 6rem;
-    position: relative;
-    background-color: var(--white);
-    display: flex;
-    padding: 1rem;
-    overflow: hidden;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  height: 25rem;
+  overflow-y: scroll;
+  grid-gap: 1.2rem;
+  justify-content: space-between;
 }
 
-.service>span{
-    color: var(--blue);
+.service {
+  width: 12rem;
+  height: 6rem;
+  position: relative;
+  background-color: var(--white);
+  display: flex;
+  padding: 1rem;
+  overflow: hidden;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
 }
 
-.service>:first-child{
-    font-size: 2.2rem;
-    font-weight: bold;
-    margin-right: 20%;
+.service > span {
+  color: var(--blue);
 }
-.service>:last-child{
+
+.service > :first-child {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-right: 20%;
+}
+.service > :last-child {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 856px) {
+  .container {
+    gap: 1rem;
+  }
+  .services {
+    grid-template-columns: none;
+    gap: 1rem;
+  }
+  .menu {
+    flex-direction: row;
     font-size: 1rem;
-    font-weight: 500;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    width: 100%;
+  }
 }
 
-
-@media screen and (max-width:856px) {
-    .container{
-        gap: 1rem;
-    }
-    .services{
-        grid-template-columns: none;
-        gap: 1rem;
-    }
-    .menu{
-        flex-direction: row;
-    }
+.timeline {
+  min-height: 100vh;
+  padding: 100px 15px;
+}
+.timeline h1 {
+  margin-bottom: 5rem;
+  font-size: 32px;
+}
+.timeline-items {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.timeline-items::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background-color: var(--blue);
+  left: calc(50% - 1px);
 }
 
-@media screen and (max-width:856px) {
-    .menu{
-        margin-left: -2rem;
-        font-size: 1.2rem;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        width: 100%;
-    }
+.timeline-item {
+  margin-bottom: 40px;
+  width: 100%;
+  position: relative;
 }
-
-.timeline{
-	min-height: 100vh;
-	padding: 100px 15px;
+.timeline-item:last-child {
+  margin-bottom: 0;
 }
-.timeline-items{
-	max-width: 1200px;
-	margin:auto;
-	display: flex;
-	flex-wrap: wrap;
-	position: relative;
+.timeline-item:nth-child(odd) {
+  padding-right: calc(50% + 30px);
+  text-align: left;
 }
-.timeline-items::before{
-	content: '';
-	position: absolute;
-	width: 2px;
-	height: 100%;
-	background-color: var(--blue);
-	left: calc(50% - 1px);
+.timeline-item:nth-child(even) {
+  padding-left: calc(50% + 30px);
+  text-align: left;
 }
-
-.timeline-item{
-	margin-bottom: 40px;
-	width: 100%;
-	position: relative;
+.timeline-dot {
+  height: 16px;
+  width: 16px;
+  background-color: var(--blue);
+  position: absolute;
+  left: calc(50% - 8px);
+  border-radius: 50%;
+  top: 10px;
 }
-.timeline-item:last-child{
-	margin-bottom: 0;
+.timeline-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
 }
-.timeline-item:nth-child(odd){
-    padding-right: calc(50% + 30px);
-	text-align: left;
+.timeline-content h3 {
+  font-size: 25px;
+  color: var(--blue);
+  margin: 0 0 10px;
+  text-transform: capitalize;
+  font-weight: 600;
 }
-.timeline-item:nth-child(even){
-    padding-left: calc(50% + 30px);
-    text-align: left;
-}
-.timeline-dot{
-	height: 16px;
-	width: 16px;
-	background-color: var(--blue);
-	position: absolute;
-	left: calc(50% - 8px);
-	border-radius: 50%;
-	top:10px;
-}
-.timeline-content{
-    background-color:  #fff;
-	padding: 30px;
-	border-radius: 5px;
-}
-.timeline-content h3{
-    font-size: 25px;
-	color: var(--blue);
-	margin:0 0 10px;
-	text-transform: capitalize;
-	font-weight: 600;
-}
-.timeline-content p{
-    color: var(--blue);
-	font-size: 18px;
-	font-weight: 300;
-	line-height: 22px;
+.timeline-content p {
+  color: var(--blue);
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
 }
 
 /* responsive */
-@media(max-width: 767px){
-	.timeline-items::before{
-		left: 7px;
-	}
-	.timeline-item:nth-child(odd){
-		padding-right: 0;
-		text-align: left;
-	}
-	.timeline-item:nth-child(odd),
-	.timeline-item:nth-child(even){
-		padding-left: 37px;
-	}
-	.timeline-dot{
-		left:0;
-	}
+@media (max-width: 767px) {
+  .timeline-items::before {
+    left: 7px;
+  }
+  .timeline-item:nth-child(odd) {
+    padding-right: 0;
+    text-align: left;
+  }
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even) {
+    padding-left: 37px;
+  }
+  .timeline-dot {
+    left: 0;
+  }
+  .services .menu {
+    margin-left: 0.3rem;
+  }
 }

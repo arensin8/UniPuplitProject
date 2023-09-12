@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import css from "./Footer.module.css";
 import Logo from "../../assets/icon.jpg";
 const Footer = () => {
   return (
-    <div className={css.cFooterWrapper} >
+    <div className={css.cFooterWrapper}>
       <hr />
 
       <div className={css.cFooter}>
@@ -49,25 +50,30 @@ const Footer = () => {
             <span>Our company</span>
             <span className={css.iconLine}>
               <i class="fa-solid fa-newspaper"></i>
-              <span>News</span>
+              <Link to="/news">
+                <span>News</span>
+              </Link>
             </span>
             <span className={css.iconLine}>
               <i class="fa-solid fa-road"></i>
-              <span>Roadmap</span>
+              <Link to="/roadmap">
+                <span>Roadmap</span>
+              </Link>
             </span>
             <span className={css.iconLine}>
               <i class="fa-solid fa-address-card"></i>
-              <span>About Us</span>
+              <Link to="/about-us">
+                <span>About Us</span>
+              </Link>
             </span>
             <span className={css.iconLine}>
               <i class="fa-solid fa-phone"></i>
-              <span>Get in touch</span>
+              <Link to="/contact">
+                <span>Get in touch</span>
+              </Link>
             </span>
           </div>
         </div>
-
-        
-        
       </div>
 
       <div className={css.copyright}>

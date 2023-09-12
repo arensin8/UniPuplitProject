@@ -1,234 +1,231 @@
-
-
-
-.container{
-    display: flex;
-    padding: 1.5rem;
+.container {
+  display: flex;
+  padding: 1.5rem;
 }
 
-.logo{
-    display: flex;
-    align-items: center;
-    flex: 1;
-    gap: 1rem;
+.logo {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  gap: 1rem;
 }
 
-.logo>img{
-    height: 2.8rem;
-    width: 2.8rem;
-    border-radius: 50%;
+.logo > img {
+  height: 2.8rem;
+  width: 2.8rem;
+  border-radius: 50%;
 }
 
-.logo>span{
-    font-weight: 600;
+.logo > span {
+  font-weight: 600;
 }
 
-.right{
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    justify-content: center;
+.right {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 
-.menu{
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    font-weight: 500;
+.menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  font-weight: 500;
 }
 
-.close2{
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
+.close2 {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }
 
-.ham{
-    display: none;
-    cursor: pointer;
+.ham {
+  display: none;
+  cursor: pointer;
 }
 
-.menu>li:hover{
-    color: var(--blue);
-    cursor: pointer;
+.menu > li:hover {
+  color: var(--blue);
+  cursor: pointer;
 }
 
-.Login{
-    width: 5rem;
-    background-color: var(--white);
-    color: var(--blue);
-    border-radius: 5px;
-    text-align: center;
-    padding: 0.5rem;
-    transition: 0.3s ease;
+.Login {
+  width: 5rem;
+  background-color: var(--white);
+  color: var(--blue);
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.5rem;
+  transition: 0.3s ease;
 }
-.Login:hover{
-    background-color: var(--blue);
-    color: var(--white);
-}
-
-.bars{
-    display: none;
+.Login:hover {
+  background-color: var(--blue);
+  color: var(--white);
 }
 
-.right .ham{
-    width:30px;
-    height:30px;
-    font-weight: bold;
-    z-index: 100000;
+.bars {
+  display: none;
 }
 
-.loginCover{
-     text-align: center;
-    background-color: var(--white); 
+.right .ham {
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  z-index: 100000;
+}
+
+.loginCover {
+  text-align: center;
+  background-color: var(--white);
+  width: 30vw;
+  border-radius: 5px;
+  padding: 20px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+.loginCover > h1 {
+  color: var(--blue);
+  margin-top: 3rem;
+}
+
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.loginContainer > input {
+  border: none;
+  width: 80%;
+  height: 3%;
+  border-radius: 0.25em;
+  text-align: center;
+  padding: 1.3em;
+  font-size: 1em;
+}
+.loginContainer > input:focus {
+  outline-color: var(--blue);
+}
+
+.loginContainer .loginBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: 8rem;
+  height: 3rem;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  margin-top: 1rem;
+  background-color: var(--blue);
+}
+.loginContainer .loginBtn:hover {
+  background-color: var(--white);
+  border: 1px solid var(--blue);
+  color: var(--blue);
+  font-weight: bold;
+}
+
+.close {
+  width: 1rem;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .loginCover {
     width: 30vw;
-    border-radius: 5px;
-    padding: 20px;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      z-index: 1000;
-      
-}
-.loginCover>h1{
-    color: var(--blue);
-    margin-top: 3rem;
+  }
 }
 
-.loginContainer{
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 1.5rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-}
-
-.loginContainer>input{
-    border: none; 
-    width: 80%;
-    height: 3%;
-    border-radius: 0.25em;
-    text-align: center;
-    padding: 1.3em;
-    font-size: 1em; 
-}
-.loginContainer>input:focus {   
-    outline-color: var(--blue);
-     }  
-
-.loginContainer .loginBtn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem;
-    border-radius: 5px;
-    width: 8rem;
-    height: 3rem;
-    transition: 0.2s ease-in;
-    cursor: pointer;
-    margin-top: 1rem;
-    background-color: var(--blue);
-}
-.loginContainer .loginBtn:hover{
-    background-color: var(--white);
-    border: 1px solid var(--blue);
-    color: var(--blue);
-    font-weight: bold;
-}
-
-.close{
-    width: 1rem;
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    cursor: pointer;
-}
-
-@media screen and (max-width:1200px) {
-    .loginCover{
-        width:30vw;
-    }
-}
-
-@media screen and (max-width:856px) {
-    .right{
-        gap: 1rem;
-    }
-    .loginCover{
-        width: 350px;
-        height: 450px;
-        top: 50%;
-    }
-    /* .menu{
+@media screen and (max-width: 856px) {
+  .right {
+    gap: 1rem;
+  }
+  .loginCover {
+    width: 350px;
+    height: 450px;
+    top: 50%;
+  }
+  /* .menu{
         gap: 1.3rem;
     } */
-    .menu>li{
-        font-size: 13px;
-    }
-    .logo>span{
-        display: none;
-    }
-    .container{
-        padding: 1rem;
-        width: 100%;
-    }
-    .logo{
-        flex: 0.7;
-    }
+  .menu > li {
+    font-size: 13px;
+  }
+  .logo > span {
+    display: none;
+  }
+  .container {
+    padding: 1rem;
+    width: 100%;
+  }
+  .logo {
+    flex: 0.7;
+  }
 }
 
-@media screen and (max-width:640px){
-    .ham{
-        display: block;
-    }
-    .right .bars{
-        position: absolute;
-        right: 1.5rem;
-    }
-    .menu{
-        top: 15px;
-        right: 10px;
-        flex-direction: column;
-        display: none;
-        background-color: var(--white);
-        color: var(--blue);
-        border-radius: 10px;
-        text-align: center;
-        padding: 2rem;
-        padding-top: 4rem;
-        width: 40vw;
-        position: absolute;
-        height: 50vh;
-        z-index: 1000;
-    }
-    .menu>li{
-        font-size: 18px;
-    }
-    .menu>li:last-child{
-        display: block;
-    }
-    .bars{
-        display: block;
-    }
-    .loginCover{
-        width: 100vw;
-        height: 100vh;
-        top: 50%;
-        border-radius: 0;
-    }
-    .loginCover .loginBtn{
-        padding: 0.4rem;
-        color: var(--white);
-    }
-    .Login{
-        background-color: transparent;
-        color:var(--white);
-        border: 1px dashed var(--white);
-    }
+@media screen and (max-width: 640px) {
+  .ham {
+    display: block;
+  }
+  .right .bars {
+    position: absolute;
+    right: 1.5rem;
+  }
+  .menu {
+    top: 15px;
+    right: 10px;
+    flex-direction: column;
+    display: none;
+    background-color: var(--white);
+    color: var(--blue);
+    border-radius: 10px;
+    text-align: center;
+    padding: 2rem;
+    padding-top: 4rem;
+    width: 45vw;
+    height: 55vh;
+    position: absolute;
+    z-index: 1000;
+    transition: 0.3s ease-in;
+  }
+  .menu > li {
+    font-size: 16px;
+  }
+  .menu > li:last-child {
+    display: block;
+  }
+  .bars {
+    display: block;
+  }
+  .loginCover {
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    border-radius: 0;
+  }
+  .loginCover .loginBtn {
+    padding: 0.4rem;
+    color: var(--white);
+  }
+  .Login {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px dashed var(--white);
+  }
 }

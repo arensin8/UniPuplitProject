@@ -27,13 +27,15 @@ const Testimonial = () => {
 
       <div className={css.reviews}>Reviews</div>
 
-      <div className={css.carousel} data-aos="fade-up"> 
-        <Swiper data-aos="fade-up"
+      <div className={css.carousel} data-aos="fade-up">
+        <Swiper
+          data-aos="fade-up"
           slidesPerView={3}
           slidesPerGroup={1}
           className={css.tCarousel}
           spaceBetween={20}
           loop={true}
+          dots={true}
           breakpoints={{
             856: {
               slidesPerView: 3,

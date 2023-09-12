@@ -12,22 +12,7 @@ import '../../App.css'
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [showLoginMenu, setShowLoginMenu] = useState(false);
-
-  const bodyStyle = document.body.style;
-
-      // const [isLocked, setIsLocked] = useState(
-      //       bodyStyle.overflowY === 'hidden',
-      //     bodyStyle.backgroundColo === '#333'
-      // )
-      // const toggle = () => {
-      //   setIsLocked(!isLocked);
-      // }
-      // useEffect(() => {
-      //       bodyStyle.overflowY = isLocked ? 'hidden' : 'auto'
-      //     }, [isLocked , bodyStyle])
-          
-
-      const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isLoginOpen, setIsLoginOpen] = useState(false);
 
   const openLogin = () => {
     setIsLoginOpen(true);
