@@ -1,0 +1,34 @@
+.title{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+}
+.testimonial .left{
+    width: 35%;
+    padding:35px;
+    margin: 20px;
+}
+.testimonial .right{
+    width: 65%;
+    padding:0 0 0 50px;
+    margin: 0 20px 0 0 ;
+}
+
+.testimonial .quote i{
+    font-size: 150px;
+    opacity: 0.1;
+}
+
+.testimonial .content{
+    padding : 50px;
+}
+
+.testimonial .content h1{
+    font-weight: 500;
+}
+.testimonial .content h3{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}

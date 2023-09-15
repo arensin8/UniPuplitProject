@@ -65,7 +65,6 @@ const Header = () => {
         </ul>
         <a href="#" className={css.Login} onClick={() => {
               setShowLoginMenu((showLoginMenu) => !showLoginMenu);
-              // toggle()
               openLogin()
             }}>
               Login

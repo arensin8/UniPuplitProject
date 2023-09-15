@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import './Students.module.css'
+import "./Students.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/Footer/Footer";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination } from "swiper";
+import Slide from "./Slide";
+import data from "./StudentsApi";
 
 // Import Swiper styles
 import "swiper/css";
@@ -11,129 +11,32 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 
 const Students = () => {
- 
-  
   return (
     <>
       <Header />
+      <section className="students">
+        <div className="container">
+          <div className="heading text-center">
+            <h1 className="title">Our Graduated students comments</h1>
+          </div>
+          <div className="slide">
+            {data.map((value, valueIndex) => {
+              return (
+                <Slide key={value.id} {...value} valueIndex={valueIndex} />
+              );
+            })}
 
-      <h1 className='title'>Our Graduated students comments</h1>
-      <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper1"
-        data-aos="fade-down"
-      >
-        <SwiperSlide>
-          <div className='swiperContent'>
-            <h2>Anna Marie</h2>
-            <h4>Designer</h4>
-            <p>
-              lorem eif kns fo3ehk ekbf ol ekhf khej fmejh fehk fkhk ekhfk lhekf
-              khk ekhfkh khehfk je fk3eoif oh3kjgf o03kigj uicgjew 9ecj lsc lkj
-              cghg s;co isgjc klsjlc jsgkc ksgkcg k s kchkcw hckhks kchks ;coy
-              e;\ c; kskghjcgi ecjleck hjegcj ;e olhck [eki p uc e]
-            </p>
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-            <i class="fa-solid fa-comments"></i>
+            <div className="slide_button">
+              <button className="btn_shadow prev_btn">
+                <i class="fas fa-arrow-left"></i>
+              </button>
+              <button className="btn_shadow next_btn">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="swiper-content">
-            <h2>Anna Marie</h2>
-            <h4>Designer</h4>
-            <p>
-              lorem eif kns fo3ehk ekbf ol ekhf khej fmejh fehk fkhk ekhfk lhekf
-              khk ekhfkh khehfk je fk3eoif oh3kjgf o03kigj uicgjew 9ecj lsc lkj
-              cghg s;co isgjc klsjlc jsgkc ksgkcg k s kchkcw hckhks kchks ;coy
-              e;\ c; kskghjcgi ecjleck hjegcj ;e olhck [eki p uc e]
-            </p>
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-            <i class="fa-solid fa-comments"></i>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="swiper-content">
-            <h2>Anna Marie</h2>
-            <h4>Designer</h4>
-            <p>
-              lorem eif kns fo3ehk ekbf ol ekhf khej fmejh fehk fkhk ekhfk lhekf
-              khk ekhfkh khehfk je fk3eoif oh3kjgf o03kigj uicgjew 9ecj lsc lkj
-              cghg s;co isgjc klsjlc jsgkc ksgkcg k s kchkcw hckhks kchks ;coy
-              e;\ c; kskghjcgi ecjleck hjegcj ;e olhck [eki p uc e]
-            </p>
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-            <i class="fa-solid fa-comments"></i>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="swiper-content">
-            <h2>Anna Marie</h2>
-            <h4>Designer</h4>
-            <p>
-              lorem eif kns fo3ehk ekbf ol ekhf khej fmejh fehk fkhk ekhfk lhekf
-              khk ekhfkh khehfk je fk3eoif oh3kjgf o03kigj uicgjew 9ecj lsc lkj
-              cghg s;co isgjc klsjlc jsgkc ksgkcg k s kchkcw hckhks kchks ;coy
-              e;\ c; kskghjcgi ecjleck hjegcj ;e olhck [eki p uc e]
-            </p>
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-            <i class="fa-solid fa-comments"></i>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="swiper-content">
-            <h2>Anna Marie</h2>
-            <h4>Designer</h4>
-            <p>
-              lorem eif kns fo3ehk ekbf ol ekhf khej fmejh fehk fkhk ekhfk lhekf
-              khk ekhfkh khehfk je fk3eoif oh3kjgf o03kigj uicgjew 9ecj lsc lkj
-              cghg s;co isgjc klsjlc jsgkc ksgkcg k s kchkcw hckhks kchks ;coy
-              e;\ c; kskghjcgi ecjleck hjegcj ;e olhck [eki p uc e]
-            </p>
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-            <i class="fa-solid fa-comments"></i>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="swiper-content">
-            <h2>Anna Marie</h2>
-            <h4>Designer</h4>
-            <p>
-              lorem eif kns fo3ehk ekbf ol ekhf khej fmejh fehk fkhk ekhfk lhekf
-              khk ekhfkh khehfk je fk3eoif oh3kjgf o03kigj uicgjew 9ecj lsc lkj
-              cghg s;co isgjc klsjlc jsgkc ksgkcg k s kchkcw hckhks kchks ;coy
-              e;\ c; kskghjcgi ecjleck hjegcj ;e olhck [eki p uc e]
-            </p>
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-            <i class="fa-solid fa-comments"></i>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="swiper-content">
-            <h2>Anna Marie</h2>
-            <h4>Designer</h4>
-            <p>
-              lorem eif kns fo3ehk ekbf ol ekhf khej fmejh fehk fkhk ekhfk lhekf
-              khk ekhfkh khehfk je fk3eoif oh3kjgf o03kigj uicgjew 9ecj lsc lkj
-              cghg s;co isgjc klsjlc jsgkc ksgkcg k s kchkcw hckhks kchks ;coy
-              e;\ c; kskghjcgi ecjleck hjegcj ;e olhck [eki p uc e]
-            </p>
-            <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-            <i class="fa-solid fa-comments"></i>
-          </div>
-        </SwiperSlide>
-      </Swiper>
+        </div>
+      </section>
 
       <Footer />
     </>
