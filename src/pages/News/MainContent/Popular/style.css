@@ -1,3 +1,7 @@
+.popular {
+  margin-bottom: 300px;
+}
+
 .popular .box {
   background-color: #fff;
   display: flex;
@@ -37,5 +41,3 @@
 .popular .title {
   color: var(--black);
 }
-
-

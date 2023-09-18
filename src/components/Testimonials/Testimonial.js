@@ -6,6 +6,7 @@ import { TestimonialsData } from "../../data/testimonials";
 
 import profile1 from "../../assets/profile1.png";
 import profile2 from "../../assets/profile2.png";
+import Students from "../Students/Students";
 const Testimonial = () => {
   return (
     <div className={css.testimonials}>
@@ -28,7 +29,7 @@ const Testimonial = () => {
       <div className={css.reviews}>Reviews</div>
 
       <div className={css.carousel} data-aos="fade-up">
-        <Swiper
+        {/* <Swiper
           data-aos="fade-up"
           slidesPerView={3}
           slidesPerGroup={1}
@@ -106,7 +107,9 @@ const Testimonial = () => {
               <span className={css.name}>Aren</span>
             </div>
           </SwiperSlide>
-        </Swiper>
+        </Swiper> */}
+
+        <Students />
       </div>
     </div>
   );

@@ -7,9 +7,6 @@ import Testimonial from "./components/Testimonials/Testimonial";
 import Header from "./components/header/Header";
 import Services from "./components/services/Services";
 import Virtual from "./components/virtual/Virtual";
-import NewsHero from "./pages/News/NewsHero/NewsHero";
-import { Switch } from "react-router-dom";
-import NewsPages from "./pages/News/NewsPages";
 
 function App() {
   return (
@@ -21,8 +18,6 @@ function App() {
       <Services />
       <Testimonial />
       <Footer />
-
-      {/* <NewsPages /> */}
     </div>
   );
 }

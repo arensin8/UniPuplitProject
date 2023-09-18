@@ -1,6 +1,7 @@
 .container {
   display: flex;
   padding: 1.5rem;
+  justify-content: space-between;
 }
 
 .logo {
@@ -224,6 +225,6 @@
     background-color: transparent;
     color: var(--white);
     border: 1px dashed var(--white);
-    margin-right: 0;
+    margin-right: 60px;
   }
 }

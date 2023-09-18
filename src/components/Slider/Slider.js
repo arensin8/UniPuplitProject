@@ -35,49 +35,42 @@ const Slider = () => {
         }}
       >
         <SwiperSlide>
-          <div className="left-s">
-            <div className="name">
-              <span>News1</span>
-              <span>ywh uwggd ywfdhw augau </span>
+          <div className="containerSlide">
+            <img src={img1} alt="" />
+            <div className="slideText">
+              <h2>Title</h2>
+              <span>desc nhswhc hswgnxs hnjsvghc skjhcks kshc </span>
             </div>
-            {/* <span>{slide.price}</span> */}
           </div>
-          <img src={img1} alt="" className="img-p" />
         </SwiperSlide>
-        ;
+
         <SwiperSlide>
-          <div className="left-s">
-            <div className="name">
-              <span>News1</span>
-              <span>ywh uwggd ywfdhw augau </span>
+          <div className="containerSlide">
+            <img src={img1} alt="" />
+            <div className="slideText">
+              <h2>Title</h2>
+              <span>desc nhswhc hswgnxs hnjsvghc skjhcks kshc </span>
             </div>
-            {/* <span>{slide.price}</span> */}
           </div>
-          <img src={img1} alt="" className="img-p" />
         </SwiperSlide>
-        ;
         <SwiperSlide>
-          <div className="left-s">
-            <div className="name">
-              <span>News1</span>
-              <span>ywh uwggd ywfdhw augau </span>
+          <div className="containerSlide">
+            <img src={img1} alt="" />
+            <div className="slideText">
+              <h2>Title</h2>
+              <span>desc nhswhc hswgnxs hnjsvghc skjhcks kshc </span>
             </div>
-            {/* <span>{slide.price}</span> */}
           </div>
-          <img src={img1} alt="" className="img-p" />
         </SwiperSlide>
-        ;
         <SwiperSlide>
-          <div className="left-s">
-            <div className="name">
-              <span>News1</span>
-              <span>ywh uwggd ywfdhw augau </span>
+          <div className="containerSlide">
+            <img src={img1} alt="" />
+            <div className="slideText">
+              <h2>Title</h2>
+              <span>desc nhswhc hswgnxs hnjsvghc skjhcks kshc </span>
             </div>
-            {/* <span>{slide.price}</span> */}
           </div>
-          <img src={img1} alt="" className="img-p" />
         </SwiperSlide>
-        ;
       </Swiper>
     </div>
   );

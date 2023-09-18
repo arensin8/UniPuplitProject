@@ -11,7 +11,6 @@ const Homes = () => {
         <div className="homesContainer" data-aos="fade-up">
           <section className="mainContent">
             <Popular />
-            {/* <PPost /> */}
           </section>
           <section className="sideContent">
             <Side />
