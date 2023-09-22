@@ -7,6 +7,7 @@ import Testimonial from "./components/Testimonials/Testimonial";
 import Header from "./components/header/Header";
 import Services from "./components/services/Services";
 import Virtual from "./components/virtual/Virtual";
+import BackToTop from "./components/backtotop/BackToTop";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Services />
       <Testimonial />
       <Footer />
+      <BackToTop />
     </div>
   );
 }
