@@ -4,7 +4,6 @@ import Footer from "../../components/Footer/Footer";
 import image from "../../assets/about.webp";
 import "./About.css";
 import Map from "./Map";
-import Students from "../../pages/Students/Students";
 
 const About = () => {
   return (
@@ -55,7 +54,6 @@ const About = () => {
       </section>
       <Map />
 
-      <Students />
       <Footer />
     </>
   );

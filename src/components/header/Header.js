@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Logo from "../../assets/icon.jpg";
-import css from "./Header.module.css";
+import "./Header.css";
 import close from "../../assets/close.png";
 import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -12,6 +12,7 @@ const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [showLoginMenu, setShowLoginMenu] = useState(false);
   const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
 
   const openLogin = () => {
     setIsLoginOpen(true);
@@ -28,10 +29,21 @@ const Header = () => {
   const toggleBars = () => {
     setShowMenu((showMenu) => !showMenu);
   };
+
+  const stickyNavbar = () => {
+    if (window.scrollY > 20) {
+      setIsSticky(true);
+    } else {
+      setIsSticky(false);
+    }
+  };
+
+  window.addEventListener("scroll", stickyNavbar);
+
   return (
-    <div className={css.container}>
+    <div className={isSticky ? "navbarContainer active" : "navbarContainer"}>
       <Link to="/">
-        <div className={css.logo}>
+        <div className="logo">
           <img
             src={Logo}
             alt="home"
@@ -41,11 +53,11 @@ const Header = () => {
         </div>
       </Link>
 
-      <div className={css.right}>
-        <ul className={css.menu} style={{ display: showMenu ? "inherit" : "" }}>
+      <div className="right">
+        <ul className="menu" style={{ display: showMenu ? "inherit" : "" }}>
           <img
             src={close}
-            className={css.close2}
+            className="close2"
             onClick={() => {
               setShowMenu((showMenu) => !showMenu);
             }}
@@ -71,7 +83,7 @@ const Header = () => {
         </ul>
         <a
           href="#"
-          className={css.Login}
+          className="Login"
           onClick={() => {
             setShowLoginMenu((showLoginMenu) => !showLoginMenu);
             openLogin();
@@ -81,12 +93,12 @@ const Header = () => {
         </a>
         {isLoginOpen && (
           <div
-            className={css.loginCover}
+            className="loginCover"
             style={{ display: showLoginMenu ? "block" : "none" }}
           >
             <img
               src={close}
-              className={css.close}
+              className="close"
               onClick={() => {
                 setShowLoginMenu((showLoginMenu) => !showLoginMenu);
                 closeLogin();
@@ -94,21 +106,21 @@ const Header = () => {
               alt="close"
             />
             <h1>Login</h1>
-            <div className={css.loginContainer}>
+            <div className="loginContainer">
               <input type="email" placeholder="enter your email" />
               <input type="username" placeholder="enter your username" />
-              <a href="/login" className={css.loginBtn} onClick={toggleBars}>
+              <a href="/login" className="loginBtn" onClick={toggleBars}>
                 Login
               </a>
             </div>
           </div>
         )}
         <div
-          className={css.bars}
+          className="bars"
           onClick={toggleBars}
           style={{ display: showMenu ? "none" : "block" }}
         >
-          <RxHamburgerMenu className={css.ham} />
+          <RxHamburgerMenu className="ham" />
         </div>
       </div>
     </div>

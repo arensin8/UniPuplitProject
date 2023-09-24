@@ -3,6 +3,7 @@ import "./styles.css";
 import Popular from "../Popular/Popular";
 import PPost from "../Ppost/PPost";
 import Side from "../../SideContent/side/Side";
+import BackToTop from "../../../../components/backtotop/BackToTop";
 
 const Homes = () => {
   return (
@@ -16,6 +17,7 @@ const Homes = () => {
             <Side />
           </section>
         </div>
+        <BackToTop />
       </main>
     </>
   );

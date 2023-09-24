@@ -6,6 +6,7 @@
   margin: 0 auto;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
+  margin-top: 100px !important;
 }
 .container p {
   color: var(--blue);
@@ -149,7 +150,6 @@
 }
 @media (max-width: 550px) {
   .container {
-    width: 70%;
-    margin-top: 100px;
+    width: 90%;
   }
 }

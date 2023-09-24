@@ -1,17 +1,27 @@
-.container {
+.navbarContainer {
   display: flex;
-  padding: 1.5rem;
+  width: 100%;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
   justify-content: space-between;
+  height: 70px;
+  z-index: 10000;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in;
 }
-
-.logo {
+.navbarContainer.active {
+  background-color: #394557;
+  backdrop-filter: blur(5px);
+}
+.navbarContainer.active .navbarContainer .logo {
   display: flex;
   align-items: center;
   flex: 1;
   gap: 1rem;
 }
 
-.logo > img {
+.navbarContainer .logo > img {
   height: 2.8rem;
   width: 2.8rem;
   border-radius: 50%;
@@ -21,18 +31,20 @@
   font-weight: 600;
 }
 
-.right {
+.navbarContainer .right {
   display: flex;
   gap: 2rem;
   align-items: center;
   justify-content: center;
 }
 
-.menu {
+.navbarContainer .menu {
   display: flex;
+  flex-direction: row;
   gap: 2rem;
   list-style: none;
   font-weight: 500;
+  font-size: 20px;
 }
 
 .close2 {
@@ -49,9 +61,14 @@
   cursor: pointer;
 }
 
-.menu > li:hover {
+.navbarContainer .menu > li:hover {
   color: var(--blue);
   cursor: pointer;
+  transition: 0.2s all ease-in;
+}
+.navbarContainer.active .menu > li:hover {
+  color: rgb(204, 201, 201);
+  transition: all 0.3s ease-in;
 }
 
 .Login {
@@ -148,29 +165,28 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .loginCover {
+  .navbarContainer .loginCover {
     width: 30vw;
   }
 }
 
 @media screen and (max-width: 856px) {
-  .right {
+  .navbarContainer .right {
     gap: 1rem;
   }
-  .loginCover {
+  .navbarContainer .loginCover {
     width: 350px;
     height: 450px;
     top: 50%;
   }
-  .menu > li {
+  .navbarContainer .menu > li {
     font-size: 13px;
   }
-  .logo > span {
+  .navbarContainer .logo > span {
     display: none;
   }
-  .container {
+  .navbarContainer {
     padding: 1rem;
-    width: 100%;
   }
   .logo {
     flex: 0.7;
@@ -181,11 +197,15 @@
   .ham {
     display: block;
   }
-  .right .bars {
+  .navbarContainer.active {
+    background-color: transparent;
+    position: relative;
+  }
+  .navbarContainer .right .bars {
     position: absolute;
     right: 1.5rem;
   }
-  .menu {
+  .navbarContainer .menu {
     top: 15px;
     right: 10px;
     flex-direction: column;
@@ -196,32 +216,31 @@
     text-align: center;
     padding: 2rem;
     padding-top: 4rem;
-    width: 45vw;
-    height: 55vh;
+    width: 50vw;
+    height: 45vh;
     position: absolute;
     z-index: 1000;
-    transition: 0.3s ease-in;
   }
-  .menu > li {
+  .navbarContainer .menu > li {
     font-size: 16px;
   }
-  .menu > li:last-child {
+  .navbarContainer .menu > li:last-child {
     display: block;
   }
   .bars {
     display: block;
   }
-  .loginCover {
+  .navbarContainer .loginCover {
     width: 100vw;
     height: 100vh;
     top: 50%;
     border-radius: 0;
   }
-  .loginCover .loginBtn {
+  .navbarContainer .loginCover .loginBtn {
     padding: 0.4rem;
     color: var(--white);
   }
-  .Login {
+  .navbarContainer .Login {
     background-color: transparent;
     color: var(--white);
     border: 1px dashed var(--white);
