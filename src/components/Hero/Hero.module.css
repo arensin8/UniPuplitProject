@@ -110,8 +110,7 @@
     font-size: 1.5rem;
   }
   .wrapper > img {
-    width: 70%;
-    height: 100%;
+    width: 22rem;
   }
   .container {
     grid-template-areas:
@@ -137,10 +136,10 @@
 @media screen and (max-width: 640px) {
   .wrapper > img {
     top: 1rem;
-    width: 12rem;
-    height: 15rem;
+    width: 16rem;
     right: 0;
     margin-bottom: 1rem;
+    z-index: -1;
   }
   .signupbtn {
     display: none;

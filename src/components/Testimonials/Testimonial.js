@@ -1,6 +1,6 @@
 import React from "react";
 import css from "./Testimonial.module.css";
-import Review from "../../assets/review.svg";
+import Review from "../../assets/review.gif";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { TestimonialsData } from "../../data/testimonials";
 
@@ -18,7 +18,12 @@ const Testimonial = () => {
           </span>
         </div>
 
-        <img src={Review} alt="review" width={400} data-aos="fade-down" />
+        <img
+          src={Review}
+          className={css.img}
+          alt="review"
+          data-aos="fade-down"
+        />
 
         <div className={css.container} data-aos="fade-down">
           <span>100k +</span>

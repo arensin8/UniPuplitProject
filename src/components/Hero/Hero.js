@@ -1,6 +1,6 @@
 import React from 'react';
 import css from './Hero.module.css';
-import HeroImg from '../../assets/hero.svg';
+import HeroImg from '../../assets/hero.gif';
 import {BsArrowRight} from 'react-icons/bs'
 
 const Hero = () => {
