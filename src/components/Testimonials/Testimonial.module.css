@@ -33,20 +33,13 @@
   font-weight: bold;
 }
 .container > :nth-child(2) {
-  font-size: 0.8rem;
+  font-size: 15px;
   text-transform: uppercase;
   display: block;
 }
 
 .wrapper > :nth-child(3) {
   text-align: right;
-}
-
-.reviews {
-  margin-top: 4rem;
-  font-size: 2rem;
-  text-transform: uppercase;
-  font-weight: bold;
 }
 
 .carousel {

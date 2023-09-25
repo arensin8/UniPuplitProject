@@ -26,8 +26,6 @@ const Testimonial = () => {
         </div>
       </div>
 
-      <div className={css.reviews}>Reviews</div>
-
       <div className={css.carousel} data-aos="fade-up">
         {/* <Swiper
           data-aos="fade-up"

@@ -14,7 +14,7 @@
   background-color: #394557;
   backdrop-filter: blur(5px);
 }
-.navbarContainer.active .navbarContainer .logo {
+.navbarContainer .logo {
   display: flex;
   align-items: center;
   flex: 1;
@@ -27,7 +27,7 @@
   border-radius: 50%;
 }
 
-.logo > span {
+.navbarContainer .logo > span {
   font-weight: 600;
 }
 
@@ -71,7 +71,7 @@
   transition: all 0.3s ease-in;
 }
 
-.Login {
+.navbarContainer .Login {
   width: 5rem;
   background-color: var(--white);
   color: var(--blue);
@@ -80,7 +80,7 @@
   padding: 0.5rem;
   transition: 0.3s ease;
 }
-.Login:hover {
+.navbarContainer .Login:hover {
   background-color: var(--blue);
   color: var(--white);
 }
@@ -172,7 +172,7 @@
 
 @media screen and (max-width: 856px) {
   .navbarContainer .right {
-    gap: 1rem;
+    gap: 0.5rem;
   }
   .navbarContainer .loginCover {
     width: 350px;

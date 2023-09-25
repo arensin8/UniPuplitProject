@@ -1,21 +1,21 @@
 import React from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/Footer/Footer";
-import image from "../../assets/about.webp";
 import "./About.css";
 import Map from "./Map";
-
+import aboutgif from "../../assets/about.gif";
 const About = () => {
   return (
     <>
       <Header />
+
       <section id="about-section">
         <div class="about-left" data-aos="fade-up">
-          <img src={image} alt="About Img" />
+          <img src={aboutgif} />
         </div>
 
         <div class="about-right">
-          <h1>About Us</h1>
+          <h1>Մեր մասին</h1>
           <p className="details">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
             fugiat a dolorem at similique maxime dolorum dolore enim dicta
@@ -26,7 +26,7 @@ const About = () => {
             <ul>
               <li>
                 <span class="address-logo">
-                  <i class="fas fa-paper-plane"></i>
+                  <i class="fa-solid fa-location-dot"></i>
                 </span>
                 <p>Address</p>
                 <span class="saprater">:</span>
@@ -47,6 +47,14 @@ const About = () => {
                 <p>Email ID</p>
                 <span class="saprater">:</span>
                 <p>crowncoder@gmail.com</p>
+              </li>
+              <li>
+                <span class="address-logo">
+                  <i class="fa-brands fa-facebook"></i>
+                </span>
+                <p>Facebook</p>
+                <span class="saprater">:</span>
+                <p>@polytechnicArmenia</p>
               </li>
             </ul>
           </div>

@@ -71,7 +71,7 @@ const Roadmap = () => {
       <div className="container1">
         <h1>what you will learn</h1>
 
-        <div className="services" data-aos="fade-right">
+        <div className="services" data-aos="fade-up">
           <ul className="menu">
             <li onClick={() => setMenuData(servicesData)}>All</li>
             <li onClick={() => filter("front end")}>Front-End</li>
