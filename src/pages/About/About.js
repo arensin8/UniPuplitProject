@@ -3,6 +3,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/Footer/Footer";
 import "./About.css";
 import Map from "./Map";
+
 import aboutgif from "../../assets/about.gif";
 import { motion } from "framer-motion";
 
@@ -68,6 +69,7 @@ const About = () => {
             </div>
           </div>
         </section>
+
         <Map />
 
         <Footer />

@@ -1,6 +1,3 @@
-.stContainer {
-  margin-top: 150px !important;
-}
 .title {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -29,6 +26,7 @@
   background-color: aliceblue;
   border-radius: 15px;
   box-shadow: 0px 3px 14px -1px #000000;
+  overflow-x: hidden !important;
 }
 
 .swiper-slide .contentSlide {
@@ -132,8 +130,12 @@
 }
 
 .slider-controler .swiper-button-next {
-  left: 58% !important;
-  transform: translateX(-58%) !important;
+  left: 52.2% !important;
+  transform: translateX(-52%) !important;
+}
+.slider-controler .swiper-button-prev {
+  left: 47% !important;
+  transform: translateX(92%) !important;
 }
 
 @media (max-width: 990px) {

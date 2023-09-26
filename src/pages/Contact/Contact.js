@@ -64,6 +64,8 @@ const Contact = () => {
           </div>
         </div>
 
+    
+
         <Footer />
       </motion.div>
     </>

@@ -64,6 +64,12 @@
   margin: 0 35px;
 }
 
+.map-container {
+  width: 100%;
+  height: 65vh;
+  border-radius: 10px;
+}
+
 @media screen and (max-width: 856px) {
   #about-section {
     display: flex;
@@ -89,6 +95,10 @@
 }
 
 @media screen and (max-width: 550px) {
+  #about-section {
+    width: 90%;
+    margin: 0 auto;
+  }
   .about-left img {
     width: 80%;
     margin-top: ճ;
@@ -106,5 +116,9 @@
   }
   .address .saprater {
     margin: 0 10px;
+  }
+  .map-container {
+    height: 45vh;
+    width: 100%;
   }
 }
