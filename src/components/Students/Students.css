@@ -73,11 +73,11 @@
 
 @media (max-width: 500px) {
   .swiper_container {
-    height: 47rem;
+    height: 30rem;
   }
   .swiper-slide {
     width: 75vw !important;
-    height: 450px;
+    height: 420px;
   }
   .swiper-slide img {
     width: 80% !important;
@@ -149,6 +149,9 @@
   .slider-controler .swiper-button-next {
     left: 80% !important;
     transform: translateX(-80%) !important;
+  }
+  .title {
+    font-size: 28px !important;
   }
 }
 

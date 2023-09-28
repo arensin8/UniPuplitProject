@@ -108,7 +108,7 @@
     grid-template-columns: 1fr;
   }
   .wrapper .img {
-    width: 2rem !important;
+    width: 18rem !important;
   }
   .wrapper > :nth-child(1),
   .wrapper > :nth-child(3) {

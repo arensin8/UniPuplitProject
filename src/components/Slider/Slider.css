@@ -38,6 +38,7 @@
     width: 90%;
     height: 15rem;
   }
+
   .s-container .swiper-button-prev,
   .s-container .swiper-button-next {
     display: none;
@@ -72,4 +73,10 @@
 .s-container .swiper-slide .containerSlide .slideText span {
   color: #27374d;
   font-weight: 400;
+}
+
+@media screen and (max-width: 550px) {
+  .s-container .swiper .swiper-slide {
+    width: 100% !important;
+  }
 }
