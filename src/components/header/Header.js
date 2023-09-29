@@ -7,12 +7,17 @@ import MenuIcon from "@mui/icons-material/Menu";
 import hamburger from "../../assets/hamburger.svg";
 import { RxHamburgerMenu } from "react-icons/rx";
 import "../../App.css";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
   const [showLoginMenu, setShowLoginMenu] = useState(false);
   const [isLoginOpen, setIsLoginOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+
+  function onChange(value) {
+    console.log("Captcha value:", value);
+  }
 
   const openLogin = () => {
     setIsLoginOpen(true);
@@ -88,6 +93,7 @@ const Header = () => {
         >
           Login
         </a>
+
         {isLoginOpen && (
           <div
             className="loginCover"
@@ -106,6 +112,7 @@ const Header = () => {
             <div className="loginContainer">
               <input type="email" placeholder="enter your email" />
               <input type="username" placeholder="enter your username" />
+              <ReCAPTCHA sitekey="Your client site key" onChange={onChange} />
               <a href="/login" className="loginBtn" onClick={toggleBars}>
                 Login
               </a>

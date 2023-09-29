@@ -45,7 +45,7 @@
 .list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  height: 25rem;
+  height: 28rem;
   overflow-y: scroll;
   grid-gap: 1.2rem;
   justify-content: space-between;
