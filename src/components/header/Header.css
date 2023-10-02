@@ -191,6 +191,9 @@
   .logo {
     flex: 0.7;
   }
+  .navbarContainer .loginCover {
+    height: 55vh !important;
+  }
 }
 
 @media screen and (max-width: 640px) {

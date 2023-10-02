@@ -7,6 +7,7 @@ import Services from "../../components/services/Services";
 import Slider from "../../components/Slider/Slider";
 import Testimonial from "../../components/Testimonials/Testimonial";
 import Virtual from "../../components/virtual/Virtual";
+import Accordion from "../../components/accordion/Accordion";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
         <Virtual />
         <Services />
         <Testimonial />
+        <Accordion />
         <Footer />
         <BackToTop />
       </motion.div>

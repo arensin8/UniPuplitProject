@@ -73,27 +73,30 @@
 
 @media (max-width: 500px) {
   .swiper_container {
-    height: 30rem;
+    height: 35rem;
   }
   .swiper-slide {
     width: 80vw !important;
-    height: 40s0px;
+    height: 28rem;
   }
   .swiper-slide img {
-    width: 80% !important;
-    height: 10rem !important;
+    width: 95% !important;
+    height: 15rem !important;
   }
   .swiper-slide h1 {
     font-size: 20px;
+    text-align: left;
   }
   .swiper-slide h3 {
     font-size: 15px;
+    text-align: left;
   }
   .swiper-slide .contentSlide .slideText {
     width: 70%;
   }
   .swiper-slide .contentSlide .slideText p {
     font-size: 13px;
+    margin-top: 20px;
   }
   .swiper-slide .contentSlide .fa-graduation-cap {
     font-size: 25px;

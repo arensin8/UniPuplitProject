@@ -1,0 +1,61 @@
+.accContainer {
+  max-width: 1140px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+.accContainer h1 {
+  margin-bottom: 40px;
+}
+accFaq {
+  transition: 0.5s ease;
+}
+accFaq .active {
+  display: block !important;
+}
+
+.accFaq .inActive {
+  display: none;
+}
+
+.accFaq > div {
+  background-color: var(--white);
+  margin-bottom: 20px;
+  padding: 15px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.accFaq i {
+  color: var(--blue);
+  transition: all 0.3s ease-in;
+}
+.accTitle {
+  padding-bottom: 60px;
+  font-weight: 500;
+}
+
+.accFaqHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accFaqHeading h3 {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.accFaq p {
+  padding-bottom: 30px;
+  margin-top: 20px;
+  color: var(--blue);
+  text-align: left;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 856px) {
+  .accContainer {
+    width: 90%;
+  }
+}

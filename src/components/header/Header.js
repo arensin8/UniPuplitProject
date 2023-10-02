@@ -112,7 +112,11 @@ const Header = () => {
             <div className="loginContainer">
               <input type="email" placeholder="enter your email" />
               <input type="username" placeholder="enter your username" />
-              <ReCAPTCHA sitekey="Your client site key" onChange={onChange} />
+              <ReCAPTCHA
+                sitekey="Your client site key"
+                onChange={onChange}
+                className='captcha'
+              />
               <a href="/login" className="loginBtn" onClick={toggleBars}>
                 Login
               </a>
