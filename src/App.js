@@ -6,6 +6,7 @@ import Home from "./pages/Home/Home";
 import NewsPages from "./pages/News/NewsPages";
 import Roadmap from "./pages/roadmap/Roadmap";
 import { AnimatePresence } from "framer-motion";
+import Singlenews from "./pages/News/singleNews/Singlenews";
 
 function App() {
   const location = useLocation();
@@ -15,6 +16,7 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />}></Route>
           <Route path="/news" element={<NewsPages />}></Route>
+          <Route path="/news/:id" element={<Singlenews />} />
           <Route path="/roadmap" element={<Roadmap />}></Route>
           <Route path="/about-us" element={<About />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
