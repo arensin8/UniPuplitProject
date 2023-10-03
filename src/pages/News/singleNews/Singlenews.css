@@ -12,6 +12,7 @@
   color: var(--blue);
   font-weight: 600;
   margin-bottom: 50px;
+  margin-top: 30px;
 }
 .sNewsContainer span {
   background-color: var(--bg);
@@ -26,13 +27,21 @@
   font-weight: 300;
   text-align: justify;
   text-justify: inherit;
-  margin-bottom: 50px;
+  margin-bottom: 60px !important;
+  max-width: 70%;
+  margin: 0 auto;
 }
-
-.sNewsContainer img {
-  width: 70%;
+.image-conatiner {
+  max-width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
   border-radius: 10px;
-  transition: all 0.3s ease-in;
+  margin-bottom: 90px;
+}
+.sNewsContainer img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in;
 }
 
 .sNewsContainer img:hover {

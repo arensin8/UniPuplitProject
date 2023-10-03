@@ -20,7 +20,9 @@ const Singlenews = () => {
         <h2>{newsItem.title}</h2>
         <span>{newsItem.category}</span>
         <p>{newsItem.desc}</p>
-        <img src={newsItem.cover} />
+        <div className="image-conatiner">
+          <img src={newsItem.cover} />
+        </div>
       </div>
       <Footer />
     </>
