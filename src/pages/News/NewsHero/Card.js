@@ -2,24 +2,23 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./NewsHero.css";
 
-const Card = ({ item: { id, cover, catgeory, title, authorName, time } }) => {
+const Card = ({ item: { id, cover, catgeory, title, date } }) => {
   return (
     <>
       <div className="box">
-        <div className="img">
-          <img src={cover} alt="" />
-        </div>
-        <div className="text">
-          <span className="category">{catgeory}</span>
-
-          <Link to={`/SinglePage/${id}`}>
-            <h1 className="titleBg">{title}</h1>
-          </Link>
-          <div className="author flex">
-            <span>by {authorName}</span>
-            <span>{time}</span>
+        <Link to={`/news/${id}`}>
+          <div className="img">
+            <img src={cover} alt="" />
           </div>
-        </div>
+          <div className="text">
+            <span className="category">{catgeory}</span>
+            <h1 className="titleBg">{title}</h1>
+            <div className="date">
+              <i class="fas fa-calendar-days"></i>
+              <label>{date}</label>
+            </div>
+          </div>
+        </Link>
       </div>
     </>
   );

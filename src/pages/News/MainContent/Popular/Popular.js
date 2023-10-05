@@ -18,7 +18,7 @@ const Popular = () => {
     rows: 4,
     slidesPerRow: 1,
     arrows: false,
-    dots: false,
+    dots: true,
     responsive: [
       {
         breakpoint: 800,
@@ -39,23 +39,19 @@ const Popular = () => {
             <div className="items" key={val.id}>
               <Link to={`/news/${val.id}`}>
                 <div className="box shadow">
-                  <div className="images row">
+                  <div className="images">
                     <div className="img">
                       <img src={val.cover} alt="" />
                     </div>
                     <div class="category category1">
-                      <span>{val.catgeory}</span>
+                      <span>{val.category}</span>
                     </div>
                   </div>
                   <div className="text row">
-                    <h1 className="title">{val.title.slice(0, 40)}...</h1>
+                    <h1 className="title">{val.title.slice(0, 30)}...</h1>
                     <div className="date">
                       <i class="fas fa-calendar-days"></i>
                       <label>{val.date}</label>
-                    </div>
-                    <div className="comment">
-                      <i class="fas fa-comments"></i>
-                      <label>{val.comments}</label>
                     </div>
                   </div>
                 </div>

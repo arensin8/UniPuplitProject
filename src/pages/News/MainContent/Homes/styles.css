@@ -10,7 +10,6 @@ main .homesContainer {
   flex-direction: row !important;
   width: 90%;
   margin: 0 auto;
-  margin-bottom: 39rem;
 }
 .mainContent {
   width: 75%;
@@ -22,9 +21,11 @@ main .homesContainer {
   background-color: #000;
 }
 @media screen and (max-width: 856px) {
+  main {
+    margin-bottom: 1rem !important;
+  }
   main .homesContainer {
     flex-direction: column;
-    margin-bottom: 45rem;
   }
   .mainContent {
     width: 100%;
@@ -42,6 +43,6 @@ main .homesContainer {
     display: none;
   }
   main .homesContainer {
-    margin-bottom: 65rem;
+    margin-bottom: 15rem;
   }
 }

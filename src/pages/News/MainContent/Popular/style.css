@@ -4,36 +4,63 @@
   position: relative;
   margin: 15px 15px 15px 0;
   overflow: hidden;
+  border-radius: 5px;
 }
 .popular .images {
   position: relative;
-  height: 150px;
+  max-width: 70%;
+  overflow: hidden !important;
 }
 .popular img {
-  width: 100%;
-  height: 150px;
+  width: 230px;
+  height: 170px;
   object-fit: cover;
-  transition: 0.3s ease-in;
+  transition: transform 0.2s ease-in;
 }
 
-.popular .images .img img:hover {
+.popular img:hover {
   transform: scale(1.1);
 }
+
+.popular .category {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
 .popular .text h1 {
   padding: 20px 0 0 20px;
   margin: 0;
 }
 .popular .date {
   margin-top: 15px;
-  padding: 0 0 0 20px;
-}
-
-.popular .comment {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 5px 0 0 20px;
-  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: var(--bg);
 }
 
 .popular .title {
   color: var(--black);
+}
+
+.slick-dots li.slick-active button:before {
+  color: White !important;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 856px) {
+  .popular {
+    margin-bottom: 0;
+  }
+  .popular .text .title {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .popular .text .title {
+    font-size: 18px !important;
+  }
 }

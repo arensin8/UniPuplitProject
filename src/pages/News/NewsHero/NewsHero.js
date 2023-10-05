@@ -1,19 +1,21 @@
 import React, { useState } from "react";
-import { hero } from "../../../dummyData";
+import popular from "../../../data/news";
+
 import "./NewsHero.css";
 import Card from "./Card";
 
 const NewsHero = () => {
-  const [items, setItems] = useState(hero);
+  const [items, setItems] = useState(popular);
+  const filteredItems = items.filter((item, index) => index < 4);
 
   return (
     <>
-     <div className="title">
-          <h1>Our latest News</h1>
-    </div>
+      <div className="title">
+        <h1>Our latest News</h1>
+      </div>
       <section className="hero">
         <div className="heroContainer">
-          {items.map((item) => {
+          {filteredItems.map((item) => {
             return (
               <>
                 <Card key={item.id} item={item} />

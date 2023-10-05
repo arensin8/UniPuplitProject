@@ -25,6 +25,8 @@
   position: relative;
   padding: 30px;
   overflow: hidden;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 .hero img {
@@ -37,6 +39,7 @@
   z-index: -1;
   filter: blur(5px);
 }
+
 .hero .heroContainer {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
@@ -73,10 +76,12 @@
   letter-spacing: 1px;
   font-size: 15px;
 }
-.hero .author span {
-  font-size: 14px;
-  margin-right: 20px;
-  font-weight: 400;
+.hero .date {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 .hero .text {
   position: absolute;
