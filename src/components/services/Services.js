@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import css from './Services.module.css'
 import { servicesData } from '../../data/services';
-// import { ProductsData } from '../../data/products';
 import {useAutoAnimate} from '@formkit/auto-animate/react'
 
 const Services = () => {
