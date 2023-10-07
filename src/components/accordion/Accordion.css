@@ -59,3 +59,15 @@ accFaq .active {
     width: 90%;
   }
 }
+
+/* CSS */
+.accFaqAnswer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease; /* Adjust the duration (0.5s) as needed */
+}
+
+.open {
+  max-height: 1000px; /* Adjust the max height as needed */
+
+}

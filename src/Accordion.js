@@ -12,7 +12,7 @@ const Accordion = () => {
     const newMaxHeights = data.map((_, index) =>
       index === activeIndex
         ? `${contentRefs.current[index].current.scrollHeight}px`
-        : "0px",
+        : "0px"
     );
     setMaxHeights(newMaxHeights);
   }, [activeIndex]);
