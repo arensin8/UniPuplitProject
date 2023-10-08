@@ -13,11 +13,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
 
 import slide_image_1 from "../../assets/Student1.jpg";
-import slide_image_2 from "../../assets/Student1.jpg";
+import slide_image_2 from "../../assets/Student2.jpg";
 import slide_image_3 from "../../assets/Student1.jpg";
-import slide_image_4 from "../../assets/Student1.jpg";
+import slide_image_4 from "../../assets/Student2.jpg";
 import slide_image_5 from "../../assets/Student1.jpg";
-import slide_image_6 from "../../assets/Student1.jpg";
+import slide_image_6 from "../../assets/Student2.jpg";
 import slide_image_7 from "../../assets/Student1.jpg";
 
 const Students = () => {
@@ -59,7 +59,7 @@ const Students = () => {
         <SwiperSlide>
           <div className="contentSlide">
             <i class="fa-solid fa-graduation-cap"></i>
-            <img src={slide_image_1} className="stImg" alt="slide_image" />
+            <img src={slide_image_2} className="stImg" alt="slide_image" />
             <div className="slideText">
               <h1>Aren Sinaei</h1>
               <h3>Programmer</h3>
@@ -70,7 +70,7 @@ const Students = () => {
         <SwiperSlide>
           <div className="contentSlide">
             <i class="fa-solid fa-graduation-cap"></i>
-            <img src={slide_image_1} className="stImg" alt="slide_image" />
+            <img src={slide_image_3} className="stImg" alt="slide_image" />
             <div className="slideText">
               <h1>Aren Sinaei</h1>
               <h3>Programmer</h3>
@@ -81,7 +81,7 @@ const Students = () => {
         <SwiperSlide>
           <div className="contentSlide">
             <i class="fa-solid fa-graduation-cap"></i>
-            <img src={slide_image_1} className="stImg" alt="slide_image" />
+            <img src={slide_image_4} className="stImg" alt="slide_image" />
             <div className="slideText">
               <h1>Aren Sinaei</h1>
               <h3>Programmer</h3>
@@ -92,7 +92,7 @@ const Students = () => {
         <SwiperSlide>
           <div className="contentSlide">
             <i class="fa-solid fa-graduation-cap"></i>
-            <img src={slide_image_1} className="stImg" alt="slide_image" />
+            <img src={slide_image_5} className="stImg" alt="slide_image" />
             <div className="slideText">
               <h1>Aren Sinaei</h1>
               <h3>Programmer</h3>
@@ -103,7 +103,7 @@ const Students = () => {
         <SwiperSlide>
           <div className="contentSlide">
             <i class="fa-solid fa-graduation-cap"></i>
-            <img src={slide_image_1} className="stImg" alt="slide_image" />
+            <img src={slide_image_6} className="stImg" alt="slide_image" />
             <div className="slideText">
               <h1>Aren Sinaei</h1>
               <h3>Programmer</h3>

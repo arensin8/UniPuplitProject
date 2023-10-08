@@ -54,6 +54,7 @@ accFaq .active {
   line-height: 1.4;
 }
 
+
 @media screen and (max-width: 856px) {
   .accContainer {
     width: 90%;
@@ -69,5 +70,4 @@ accFaq .active {
 
 .open {
   max-height: 1000px; /* Adjust the max height as needed */
-
 }

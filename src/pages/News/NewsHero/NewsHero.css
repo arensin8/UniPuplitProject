@@ -74,7 +74,7 @@
 .hero .text h1 {
   font-weight: 800;
   letter-spacing: 1px;
-  font-size: 15px;
+  font-size: 17px !important;
 }
 .hero .date {
   display: flex;

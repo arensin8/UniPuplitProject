@@ -1,13 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useLocation } from "react";
 import Logo from "../../assets/icon.jpg";
 import "./Header.css";
 import close from "../../assets/close.png";
-import { Link } from "react-router-dom";
-import MenuIcon from "@mui/icons-material/Menu";
-import hamburger from "../../assets/hamburger.svg";
-import { RxHamburgerMenu } from "react-icons/rx";
+import { Link, NavLink } from "react-router-dom";
 import "../../App.css";
 import ReCAPTCHA from "react-google-recaptcha";
+import hamMenu from "../../assets/ham1.png";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -15,9 +13,21 @@ const Header = () => {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
 
-  function onChange(value) {
-    console.log("Captcha value:", value);
-  }
+  useEffect(() => {
+    closeMenu();
+  }, []);
+
+  const openMenu = () => {
+    setShowMenu(true);
+    // Add the body class to disable scrolling
+    document.body.classList.add("body-no-scroll");
+  };
+
+  const closeMenu = () => {
+    setShowMenu(false);
+    // Add the body class to disable scrolling
+    document.body.classList.remove("body-no-scroll");
+  };
 
   const openLogin = () => {
     setIsLoginOpen(true);
@@ -45,6 +55,10 @@ const Header = () => {
 
   window.addEventListener("scroll", stickyNavbar);
 
+  function onChange(value) {
+    console.log("Captcha value:", value);
+  }
+
   return (
     <div className={isSticky ? "navbarContainer active" : "navbarContainer"}>
       <Link to="/">
@@ -59,29 +73,44 @@ const Header = () => {
       </Link>
 
       <div className="right">
-        <ul className="menu" style={{ display: showMenu ? "inherit" : "" }}>
+        <ul
+          className={`menu ${showMenu ? "active" : ""}`}
+          style={{ display: showMenu ? "inherit" : "" }}
+        >
           <img
             src={close}
             className="close2"
-            onClick={() => {
-              setShowMenu((showMenu) => !showMenu);
-            }}
             style={{ display: showMenu ? "block" : "none" }}
+            onClick={(toggleBars, closeMenu)}
             alt="close"
           />
           <li>
-            <Link to="/news"> News</Link>
+            <Link to="/news">News</Link>
           </li>
           <li>
-            <Link to="/roadmap">Roadmap </Link>
+            <Link to="/roadmap">Roadmap</Link>
           </li>
           <li>
-            <Link to="/about-us">About us </Link>
+            <Link to="/about-us">About Us</Link>
           </li>
           <li>
             <Link to="/contact">Contact Us</Link>
           </li>
-          <li></li>
+
+          <Link to="/">
+            <div className="logo2">
+              <img
+                src={Logo}
+                alt="home"
+                style={{
+                  borderRadius: "50px",
+                  height: "2.8rem",
+                  width: "2.8rem",
+                }}
+              />
+              <span>Polytechnic</span>
+            </div>
+          </Link>
         </ul>
         <a
           href="#"
@@ -97,7 +126,7 @@ const Header = () => {
         {isLoginOpen && (
           <div
             className="loginCover"
-            style={{ display: showLoginMenu ? "block" : "none" }}
+            style={{ visibility: showLoginMenu ? "visible" : "hidden" }}
           >
             <img
               src={close}
@@ -110,12 +139,12 @@ const Header = () => {
             />
             <h1>Login</h1>
             <div className="loginContainer">
-              <input type="email" placeholder="enter your email" />
-              <input type="username" placeholder="enter your username" />
+              <input type="email" placeholder="Enter your email" />
+              <input type="username" placeholder="Enter your username" />
               <ReCAPTCHA
                 sitekey="Your client site key"
                 onChange={onChange}
-                className='captcha'
+                className="captcha"
               />
               <a href="/login" className="loginBtn" onClick={toggleBars}>
                 Login
@@ -125,10 +154,10 @@ const Header = () => {
         )}
         <div
           className="bars"
-          onClick={toggleBars}
+          onClick={(toggleBars, openMenu)}
           style={{ display: showMenu ? "none" : "block" }}
         >
-          <RxHamburgerMenu className="ham" />
+          <img src={hamMenu} className="ham" />
         </div>
       </div>
     </div>

@@ -8,7 +8,7 @@
   height: 70px;
   z-index: 10000;
   margin-bottom: 20px;
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
 }
 .navbarContainer.active {
   background-color: #394557;
@@ -47,24 +47,32 @@
   font-size: 20px;
 }
 
+.navbarContainer .menu .logo2 {
+  display: none;
+}
+
 .close2 {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 30px;
+  right: 30px;
   cursor: pointer;
 }
 
 .ham {
   display: none;
   cursor: pointer;
+  color: var(--white) !important;
 }
 
 .navbarContainer .menu > li:hover {
   color: var(--blue);
   cursor: pointer;
   transition: 0.2s all ease-in;
+}
+.navbarContainer .menu > li.active {
+  background-color: red;
 }
 .navbarContainer.active .menu > li:hover {
   color: rgb(204, 201, 201);
@@ -73,6 +81,7 @@
 
 .navbarContainer .Login {
   width: 5rem;
+  margin-right: 0;
   background-color: var(--white);
   color: var(--blue);
   border-radius: 5px;
@@ -87,6 +96,7 @@
 
 .bars {
   display: none;
+  color: var(--white);
 }
 
 .right .ham {
@@ -94,6 +104,7 @@
   height: 30px;
   font-weight: bold;
   z-index: 100000;
+  color: var(--white) !important;
 }
 
 .loginCover {
@@ -110,7 +121,7 @@
 }
 .loginCover > h1 {
   color: var(--blue);
-  margin-top: 3rem;
+  margin-top: 6rem;
 }
 
 .loginContainer {
@@ -125,7 +136,7 @@
 
 .loginContainer > input {
   border: none;
-  width: 80%;
+  width: 90%;
   height: 3%;
   border-radius: 0.25em;
   text-align: center;
@@ -175,9 +186,12 @@
     gap: 0.5rem;
   }
   .navbarContainer .loginCover {
-    width: 350px;
-    height: 450px;
+    width: 50vw;
+    height: 55vh !important;
     top: 50%;
+  }
+  .loginCover > h1 {
+    margin-top: 4rem;
   }
   .navbarContainer .menu > li {
     font-size: 13px;
@@ -185,14 +199,9 @@
   .navbarContainer .logo > span {
     display: none;
   }
-  .navbarContainer {
-    padding: 1rem;
-  }
+
   .logo {
     flex: 0.7;
-  }
-  .navbarContainer .loginCover {
-    height: 55vh !important;
   }
 }
 
@@ -201,31 +210,57 @@
     display: block;
   }
   .navbarContainer.active {
-    background-color: transparent;
-    position: relative;
+    backdrop-filter: blur(5px);
+    background-color: var(--white);
+    border-bottom: 2px solid var(--blue);
   }
   .navbarContainer .right .bars {
     position: absolute;
     right: 1.5rem;
   }
   .navbarContainer .menu {
-    top: 15px;
-    right: 10px;
+    top: 0;
+    right: -100%;
     flex-direction: column;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
     background-color: var(--white);
     color: var(--blue);
-    border-radius: 10px;
+    transition: all 0.3s ease-in;
     text-align: center;
     padding: 2rem;
     padding-top: 4rem;
-    width: 50vw;
-    height: 45vh;
+    width: 100%;
+    height: 100vh;
     position: absolute;
     z-index: 1000;
   }
+  .navbarContainer .menu.active {
+    right: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  .menu .logo2 {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .navbarContainer .menu.active .menu .logo2 span {
+    color: var(--bg);
+  }
   .navbarContainer .menu > li {
     font-size: 16px;
+    border-bottom: 1px solid var(--bg);
+    width: 65%;
+    padding: 10px;
   }
   .navbarContainer .menu > li:last-child {
     display: block;
@@ -235,13 +270,26 @@
   }
   .navbarContainer .loginCover {
     width: 100vw;
-    height: 100vh;
-    top: 50%;
+    height: 100vh !important;
     border-radius: 0;
+    top: 50% !important;
+  }
+
+  .loginCover > h1 {
+    margin-top: 7rem;
+  }
+  .loginContainer > input {
+    width: 95%;
   }
   .navbarContainer .loginCover .loginBtn {
     padding: 0.4rem;
     color: var(--white);
+  }
+
+  .navbarContainer.active .Login {
+    color: var(--blue);
+    border: 1px dashed var(--blue);
+    font-weight: 500;
   }
   .navbarContainer .Login {
     background-color: transparent;

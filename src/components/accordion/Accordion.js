@@ -40,13 +40,13 @@ const Accordion = () => {
                 <div>
                   {activeIndex === index ? (
                     <>
-                      <span className="verticle">
+                      <span className="minus">
                         <i class="fa-solid fa-minus"></i>
                       </span>
                     </>
                   ) : (
                     <>
-                      <span className="verticle">
+                      <span className="plus">
                         <i class="fa-solid fa-plus"></i>
                       </span>
                     </>
