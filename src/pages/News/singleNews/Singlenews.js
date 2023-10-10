@@ -17,11 +17,15 @@ const Singlenews = () => {
     <>
       <Header />
       <div className="sNewsContainer">
-        <h2>{newsItem.title}</h2>
-        <span>{newsItem.category}</span>
-        <p>{newsItem.desc}</p>
         <div className="image-conatiner">
           <img src={newsItem.cover} />
+        </div>
+        <h2>{newsItem.title}</h2>
+        <span>{newsItem.category}</span>
+        <div className="date">
+          <i class="fas fa-calendar-days"></i>
+          <label>{newsItem.date}</label>
+          <p>{newsItem.desc}</p>
         </div>
       </div>
       <Footer />

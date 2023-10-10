@@ -13,7 +13,6 @@ const Hero = () => {
 
                 <div className={css.text2} data-aos="fade-down">
                     <span>Տարբեր մասնաճյուղեր</span>
-                    {" "}
                     <span>յբո ֆդօիփհո ֆւոդց օո դցգիւ ոիհս ցիոեգս ցօիոգյ սցրւգոկյկկ ցիգ ւիկգ</span>
                 </div>
             </div>

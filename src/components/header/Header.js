@@ -157,7 +157,11 @@ const Header = () => {
           onClick={(toggleBars, openMenu)}
           style={{ display: showMenu ? "none" : "block" }}
         >
-          <img src={hamMenu} className="ham" />
+          <img
+            src={hamMenu}
+            className="ham"
+            alt="Hamburger"
+          />
         </div>
       </div>
     </div>

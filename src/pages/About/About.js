@@ -19,7 +19,7 @@ const About = () => {
         <Header />
 
         <section id="about-section">
-          <div class="about-left" data-aos="fade-up">
+          <div class="about-left" data-aos="fade-right">
             <img src={aboutgif} />
           </div>
 
