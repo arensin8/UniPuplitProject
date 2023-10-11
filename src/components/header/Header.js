@@ -2,7 +2,7 @@ import React, { useState, useEffect, useLocation } from "react";
 import Logo from "../../assets/icon.jpg";
 import "./Header.css";
 import close from "../../assets/close.png";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "../../App.css";
 import ReCAPTCHA from "react-google-recaptcha";
 import hamMenu from "../../assets/ham1.png";
@@ -112,16 +112,18 @@ const Header = () => {
             </div>
           </Link>
         </ul>
-        <a
-          href="#"
-          className="Login"
-          onClick={() => {
-            setShowLoginMenu((showLoginMenu) => !showLoginMenu);
-            openLogin();
-          }}
-        >
-          Login
-        </a>
+        <Link to="/login">
+          <button
+            type="button"
+            className="Login"
+            // onClick={() => {
+            //   setShowLoginMenu((showLoginMenu) => !showLoginMenu);
+            //   openLogin();
+            // }}
+          >
+            Login
+          </button>
+        </Link>
 
         {isLoginOpen && (
           <div
@@ -157,11 +159,7 @@ const Header = () => {
           onClick={(toggleBars, openMenu)}
           style={{ display: showMenu ? "none" : "block" }}
         >
-          <img
-            src={hamMenu}
-            className="ham"
-            alt="Hamburger"
-          />
+          <img src={hamMenu} className="ham" alt="Hamburger" />
         </div>
       </div>
     </div>

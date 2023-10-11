@@ -15,7 +15,7 @@ const Popular = () => {
     centerPadding: "0",
     slidesToShow: 2,
     speed: 500,
-    rows: 4,
+    rows: 3,
     slidesPerRow: 1,
     arrows: false,
     dots: true,

@@ -33,9 +33,9 @@
 
 .navbarContainer .right {
   display: flex;
-  gap: 2rem;
   align-items: center;
   justify-content: center;
+  gap: 1rem;
 }
 
 .navbarContainer .menu {
@@ -81,13 +81,17 @@
 
 .navbarContainer .Login {
   width: 5rem;
-  margin-right: 0;
+  height: 2.2rem;
+  left: 0px;
   background-color: var(--white);
   color: var(--blue);
+  outline: none;
+  border: none;
+  font-size: 18px;
   border-radius: 5px;
   text-align: center;
   padding: 0.5rem;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 .navbarContainer .Login:hover {
   background-color: var(--blue);
@@ -147,7 +151,7 @@
   outline-color: var(--blue);
 }
 
-.loginContainer .loginBtn {
+/* .loginContainer .loginBtn {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -165,7 +169,7 @@
   border: 1px solid var(--blue);
   color: var(--blue);
   font-weight: bold;
-}
+} */
 
 .close {
   width: 1rem;

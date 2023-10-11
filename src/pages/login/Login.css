@@ -1,0 +1,149 @@
+.loginContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin-top: 150px !important;
+  background-color: var(--white);
+  max-width: 60%;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+.loginContainer .image {
+  margin-right: 5rem;
+  width: 50%;
+}
+.loginContainer .image img {
+  width: 600px;
+}
+
+.loginContainer .textContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left !important;
+  width: 50%;
+}
+.loginContainer .title {
+  color: var(--blue);
+  font-weight: 800;
+  font-size: 50px;
+  position: absolute;
+  top: -40px;
+}
+
+.loginContainer .textContainer h3 {
+  color: var(--blue);
+  font-weight: 400;
+}
+.loginContainer .textContainer .form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.loginContainer .textContainer input {
+  width: 90%;
+  height: 3.5rem;
+  gap: 2rem;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.loginContainer .textContainer input:focus {
+  outline-color: var(--blue);
+}
+
+.loginContainer .textContainer input:first-child {
+  margin-top: 20px;
+}
+
+.loginContainer .textContainer button {
+  width: 90%;
+  text-align: left;
+  background-color: var(--bg);
+  font-size: 20px;
+  text-align: center;
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  height: 3.5rem;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginContainer .textContainer button i {
+  margin-left: 5px;
+}
+.loginContainer .textContainer button:hover {
+  background-color: var(--white);
+  color: var(--blue);
+  border: 1px solid var(--blue);
+}
+.loginContainer .textContainer .form:last-child {
+  width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .loginContainer .image img {
+    width: 400px;
+    height: 400px;
+    z-index: -1;
+    margin: 0 auto;
+  }
+  .loginContainer .title {
+    top: -60px;
+  }
+}
+
+@media screen and (max-width: 856px) {
+  .loginContainer {
+    flex-direction: column;
+    max-width: 80%;
+  }
+  .loginContainer .title {
+    top: -90px;
+  }
+
+  .loginContainer .image img {
+    width: 350px;
+    height: 350px;
+    z-index: -1;
+    margin: 0 auto;
+  }
+  .loginContainer .textContainer {
+    text-align: center !important;
+    margin-top: -30px;
+    width: 100%;
+  }
+  .loginContainer .textContainer input {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .loginContainer .textContainer button {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .loginContainer {
+    max-width: 90%;
+    height: 450px;
+  }
+  .loginContainer .image img {
+    display: none;
+  }
+  .loginContainer .textContainer {
+    text-align: center !important;
+    margin-top: 30px;
+    width: 100%;
+  }
+  .loginContainer .textContainer input {
+    width: 100%;
+  }
+  .loginContainer .textContainer button {
+    width: 100%;
+  }
+}

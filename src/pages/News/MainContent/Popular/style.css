@@ -42,7 +42,7 @@
 }
 
 .popular .title {
-  color: var(--black);
+  color: var(--blue);
 }
 
 .slick-dots li.slick-active button:before {
