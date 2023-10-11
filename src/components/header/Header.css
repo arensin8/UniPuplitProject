@@ -267,13 +267,10 @@
     width: 65%;
     padding: 10px;
   }
-  .navbarContainer .menu > li:last-child {
-    display: block;
-  }
   .bars {
     display: block;
   }
-  .navbarContainer .loginCover {
+  /* .navbarContainer .loginCover {
     width: 100vw;
     height: 100vh !important;
     border-radius: 0;
@@ -286,20 +283,20 @@
   .loginContainer > input {
     width: 95%;
   }
-  .navbarContainer .loginCover .loginBtn {
+  .navbarContainer .loginBtn {
     padding: 0.4rem;
     color: var(--white);
-  }
+  } */
 
   .navbarContainer.active .Login {
     color: var(--blue);
-    border: 1px dashed var(--blue);
     font-weight: 500;
   }
   .navbarContainer .Login {
+    border: 0.5px solid var(--white);
     background-color: transparent;
     color: var(--white);
-    border: 1px dashed var(--white);
-    margin-right: 60px;
+    margin-right: 55px;
+    height: 2.5rem;
   }
 }
