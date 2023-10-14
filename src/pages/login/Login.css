@@ -1,12 +1,12 @@
 .loginContainer {
-  position: relative;
   display: flex;
   flex-direction: row;
   margin-top: 150px !important;
   background-color: var(--white);
-  max-width: 60%;
+  max-width: 70%;
   margin: 0 auto;
   border-radius: 15px;
+  position: relative;
 }
 .loginContainer .image {
   margin-right: 5rem;
@@ -26,8 +26,8 @@
   color: var(--blue);
   font-weight: 800;
   font-size: 50px;
-  position: absolute;
   top: -40px;
+  position: absolute;
 }
 
 .loginContainer .textContainer h3 {
@@ -47,6 +47,25 @@
   border: none;
   border-radius: 5px;
   padding: 10px;
+  font-size: 18px;
+}
+
+.loginContainer .textContainer input::placeholder {
+  color: var(--bg);
+}
+
+.loginContainer .textContainer .form:nth-child(2) {
+  position: relative;
+}
+
+.loginContainer .textContainer .eye {
+  position: absolute;
+  right: 13%;
+  transform: translate(0, -55%);
+  top: 55%;
+  color: var(--blue);
+  font-size: 15px;
+  cursor: pointer;
 }
 
 .loginContainer .textContainer input:focus {
@@ -92,7 +111,7 @@
     margin: 0 auto;
   }
   .loginContainer .title {
-    top: -60px;
+    top: -70px;
   }
 }
 
@@ -125,6 +144,10 @@
     margin: 0 auto;
     margin-bottom: 50px;
   }
+  .loginContainer .textContainer .eye {
+    top: 45%;
+    transform: translate(0, -45%);
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -145,5 +168,8 @@
   }
   .loginContainer .textContainer button {
     width: 100%;
+  }
+  .loginContainer .textContainer .eye {
+    right: 5%;
   }
 }

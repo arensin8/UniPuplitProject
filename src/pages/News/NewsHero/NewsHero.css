@@ -12,14 +12,14 @@
 
 .hero {
   margin: 0 auto;
-  color: #fff;
+  color: var(--white);
   width: 90%;
   text-align: center;
   width: 90%;
   margin-top: 4rem;
 }
 .hero a {
-  color: #fff;
+  color: var(--white);
 }
 .hero .box {
   position: relative;
@@ -92,14 +92,10 @@
 .hero .box:nth-child(1) h1 {
   font-size: 28px;
 }
-.hero .box:nth-child(1) .category {
-  background-color: crimson;
-}
-.hero .box:nth-child(2) .category {
-  background-color: #0b9931;
-}
-.hero .box:nth-child(4) .category {
-  background-color: #c78823;
+.hero .box .category {
+  background-color: var(--blue);
+  padding: 3px;
+  border-radius: 3px;
 }
 @media screen and (max-width: 768px) {
   .hero .heroContainer {

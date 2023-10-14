@@ -1,12 +1,12 @@
 .container {
   text-align: center;
   width: 85%;
-  background: #fff;
+  background: var(--white);
   border-radius: 6px;
   margin: 0 auto;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  margin-top: 100px !important;
+  margin-top: 50px !important;
 }
 .container p {
   color: var(--blue);
@@ -83,6 +83,10 @@
   padding: 0 15px;
   resize: none;
 }
+.right-side .input-box input::placeholder,
+.right-side .input-box textarea::placeholder {
+  color: var(--blue);
+}
 .right-side .message-box {
   min-height: 110px;
 }
@@ -94,7 +98,7 @@
   margin-top: 12px;
 }
 .right-side .button input[type="button"] {
-  color: #fff;
+  color: var(--white);
   font-size: 18px;
   outline: none;
   border: none;

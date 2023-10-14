@@ -15,7 +15,7 @@ const Contact = () => {
       >
         <Header />
         <div className="title">
-          <h1>Կապ մեզ հետ</h1>
+          <h1>Contact with us</h1>
         </div>
         <div class="container">
           <div class="content">

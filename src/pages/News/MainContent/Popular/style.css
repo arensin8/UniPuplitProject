@@ -1,5 +1,5 @@
 .popular .box {
-  background-color: #fff;
+  background-color: var(--white);
   display: flex;
   position: relative;
   margin: 15px 15px 15px 0;

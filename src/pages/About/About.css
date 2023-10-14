@@ -5,7 +5,6 @@
   justify-content: space-around;
   align-items: center;
   margin-top: 100px !important;
-  /* padding: 80px 12%; */
 }
 .about-left {
   width: 40%;
@@ -37,7 +36,7 @@
 }
 
 .about-right p {
-  color: #fff;
+  color: var(--white);
   line-height: 26px;
   font-size: 15px;
   max-width: 80%;

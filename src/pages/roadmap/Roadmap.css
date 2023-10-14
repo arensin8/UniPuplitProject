@@ -145,7 +145,7 @@
   top: 10px;
 }
 .timeline-content {
-  background-color: #fff;
+  background-color: var(--white);
   padding: 30px;
   border-radius: 5px;
 }

@@ -23,7 +23,7 @@
   height: 37rem;
   position: relative;
   backdrop-filter: blur(2px);
-  background-color: aliceblue;
+  background-color: var(--white);
   border-radius: 15px;
   box-shadow: 0px 3px 14px -1px #000000;
   overflow-x: hidden !important;
@@ -42,7 +42,7 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  color: #526d82;
+  color: var(--bg);
   font-size: 40px;
 }
 .swiper-slide .contentSlide .slideText {
@@ -50,7 +50,7 @@
   word-wrap: break-word;
 }
 .swiper-slide .contentSlide .slideText h1 {
-  color: #526d82;
+  color: var(--bg);
   font-weight: 600;
 }
 
@@ -59,7 +59,7 @@
   font-weight: 200;
 }
 .swiper-slide .contentSlide .slideText p {
-  color: #526d82;
+  color: var(--bg);
   font-size: 20px;
   text-align: justify;
   letter-spacing: 1px;
@@ -184,7 +184,7 @@
 
 .slider-controler .slider-arrow i {
   font-size: 1rem;
-  color: #222224;
+  color: var(--blue);
 }
 
 .slider-controler .slider-arrow::after {
@@ -202,5 +202,5 @@
 }
 
 .swiper-pagination .swiper-pagination-bullet-active {
-  background: white;
+  background: var(--white);
 }

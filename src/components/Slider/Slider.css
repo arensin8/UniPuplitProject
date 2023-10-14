@@ -9,7 +9,7 @@
   position: unset;
 }
 .s-container .swiper-slide {
-  background-color: aliceblue;
+  background-color: var(--white);
   display: flex;
   border-radius: 10px;
   padding: 1rem;
@@ -27,7 +27,7 @@
 }
 .s-container .swiper-button-prev,
 .s-container .swiper-button-next {
-  color: #27374d;
+  color: var(--blue);
 }
 
 @media screen and (max-width: 856px) {
@@ -66,12 +66,12 @@
 }
 
 .s-container .swiper-slide .containerSlide .slideText h2 {
-  color: #27374d;
+  color: var(--blue);
   font-weight: 800;
 }
 
 .s-container .swiper-slide .containerSlide .slideText span {
-  color: #27374d;
+  color: var(--blue);
   font-weight: 400;
 }
 

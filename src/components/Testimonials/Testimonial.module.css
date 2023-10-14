@@ -43,57 +43,7 @@
 .wrapper > :nth-child(3) {
   text-align: right;
 }
-/* 
-.carousel {
-  width: 95%;
-}
 
-.tCarousel {
-  pad: 2rem;
-}
-
-.testimonial {
-  margin-top: 3rem;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  gap: 1rem;
-  background-color: var(--white);
-  border-radius: 10px;
-  color: var(--blue);
-  box-shadow: 0rem 1rem 3rem -50px #7d7d7d;
-}
-
-.testimonial > img {
-  position: absolute !important;
-  width: 3.5rem !important;
-  height: 3.5rem !important;
-  background-size: cover;
-  top: -1.5rem;
-  z-index: 1111;
-  border-radius: 50%;
-}
-
-.testimonial > span:nth-of-type(1) {
-  align-items: center;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  margin-top: 3rem;
-}
-
-.testimonial > span:nth-of-type(2) {
-  font-weight: bold;
-}
-
-.testimonial > hr {
-  height: 1px;
-  width: 80%;
-  background: var(--blue);
-  border: none;
-} */
 
 @media screen and (max-width: 856px) {
   .wrapper .img {

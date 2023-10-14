@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./NewsHero.css";
 
-const Card = ({ item: { id, cover, catgeory, title, date } }) => {
+const Card = ({ item: { id, cover, category, title, date } }) => {
   return (
     <>
       <div className="box">
@@ -11,7 +11,7 @@ const Card = ({ item: { id, cover, catgeory, title, date } }) => {
             <img src={cover} alt="" />
           </div>
           <div className="text">
-            <span className="category">{catgeory}</span>
+            <span className="category">{category}</span>
             <h1 className="titleBg">{title}</h1>
             <div className="date">
               <i class="fas fa-calendar-days"></i>

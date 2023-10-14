@@ -8,6 +8,8 @@
   cursor: pointer;
   border: none;
   font-size: 20px;
+  color: var(--blue);
+  background-color: var(--white);
 }
 
 @media screen and (max-width: 550px) {

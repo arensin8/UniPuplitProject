@@ -99,14 +99,7 @@ const Header = () => {
           </Link>
         </ul>
         <Link to="/login">
-          <button
-            type="button"
-            className="Login"
-            // onClick={() => {
-            //   setShowLoginMenu((showLoginMenu) => !showLoginMenu);
-            //   openLogin();
-            // }}
-          >
+          <button type="button" className="Login">
             Login
           </button>
         </Link>
