@@ -109,55 +109,7 @@
   color: var(--white) !important;
 }
 
-.loginCover {
-  text-align: center;
-  background-color: var(--white);
-  width: 25vw;
-  border-radius: 5px;
-  padding: 20px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1000;
-}
-.loginCover > h1 {
-  color: var(--blue);
-  margin-top: 6rem;
-}
 
-.loginContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 1.5rem;
-  justify-content: center;
-  align-items: center;
-  margin-top: 1rem;
-}
-
-.loginContainer > input {
-  border: none;
-  width: 90%;
-  height: 3%;
-  border-radius: 0.25em;
-  text-align: center;
-  padding: 1.3em;
-  font-size: 1em;
-}
-.loginContainer > input:focus {
-  outline-color: var(--blue);
-}
-
-
-
-.close {
-  width: 1rem;
-  position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
-  cursor: pointer;
-}
 
 @media screen and (max-width: 1200px) {
   .navbarContainer .loginCover {
@@ -196,7 +148,7 @@
   .navbarContainer.active {
     backdrop-filter: blur(5px);
     background-color: var(--white);
-    border-bottom: 2px solid var(--blue);
+    border-bottom: 1px solid var(--blue);
   }
   .navbarContainer .right .bars {
     position: absolute;
@@ -260,5 +212,8 @@
     color: var(--white);
     margin-right: 55px;
     height: 2.5rem;
+  }
+  .navbarContainer.active .Login {
+    border: 0.5px solid var(--blue);
   }
 }
