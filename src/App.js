@@ -8,6 +8,7 @@ import Roadmap from "./pages/roadmap/Roadmap";
 import { AnimatePresence } from "framer-motion";
 import Singlenews from "./pages/News/singleNews/Singlenews";
 import Login from "./pages/login/Login";
+import Error from "./pages/error/Error";
 
 function App() {
   const location = useLocation();
@@ -22,6 +23,7 @@ function App() {
           <Route path="/about-us" element={<About />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
           <Route path="/login" element={<Login />}></Route>
+          <Route path="*" element={<Error />}></Route>
         </Routes>
       </AnimatePresence>
     </div>

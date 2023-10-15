@@ -109,8 +109,6 @@
   color: var(--white) !important;
 }
 
-
-
 @media screen and (max-width: 1200px) {
   .navbarContainer .loginCover {
     width: 30vw;
@@ -164,7 +162,7 @@
     align-items: center;
     background-color: var(--white);
     color: var(--blue);
-    transition: all 0.3s ease-in;
+    transition: all 0.2s ease-in;
     text-align: center;
     padding: 2rem;
     padding-top: 4rem;
