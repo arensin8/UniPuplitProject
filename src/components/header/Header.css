@@ -208,8 +208,8 @@
     border: 0.5px solid var(--white);
     background-color: transparent;
     color: var(--white);
-    margin-right: 55px;
-    height: 2.5rem;
+    margin-right: 40px;
+    height: 2.3rem;
   }
   .navbarContainer.active .Login {
     border: 0.5px solid var(--blue);

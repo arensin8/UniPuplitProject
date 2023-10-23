@@ -23,7 +23,7 @@ const Accordion = () => {
 
   return (
     <>
-      <div className="accContainer">
+      <div className="accContainer" data-aos="fade-down">
         <div>
           <span className="accTitle">Frequently asked questions</span>
           <h1>Lets answer some of your questions</h1>
