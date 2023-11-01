@@ -1,14 +1,7 @@
 import React, { useState } from "react";
 import "./Students.css";
-import Header from "../../components/header/Header";
-import Footer from "../../components/Footer/Footer";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// import "swiper/css";
-// import "swiper/css/effect-coverflow";
-// import "swiper/css/pagination";
-// import "swiper/css/navigation";
 
 import { EffectCoverflow, Pagination, Navigation } from "swiper";
 
@@ -23,7 +16,6 @@ import slide_image_7 from "../../assets/Student1.jpg";
 const Students = () => {
   return (
     <>
-      <h1 className="title">Our Graduated Students</h1>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
