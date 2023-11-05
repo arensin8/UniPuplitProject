@@ -1,8 +1,9 @@
 import React from "react";
 import css from "./Hero.module.css";
-import HeroImg from "../../assets/hero.gif";
+// import HeroImg from "../../assets/hero.gif";
 import { BsArrowRight } from "react-icons/bs";
-import logo from "../../assets/icon.jpg";
+import HeroImg from "../../assets/Hero3.png";
+import Plx from "react-plx";
 
 const Hero = () => {
   return (
@@ -21,8 +22,23 @@ const Hero = () => {
 
       {/* middle side of hero */}
       <div className={css.wrapper}>
-        <div className={css.blueCircle}></div>
-        <img src={logo} alt="logo" className={css.midLogo}/>
+        <Plx
+          parallaxData={[
+            {
+              start: 0,
+              end: 800,
+              properties: [
+                {
+                  startValue: 1,
+                  endValue: 1.3,
+                  property: "scale",
+                },
+              ],
+            },
+          ]}
+        >
+          <img src={HeroImg} alt="logo" className={css.parLogo} />
+        </Plx>
       </div>
 
       {/* right side */}

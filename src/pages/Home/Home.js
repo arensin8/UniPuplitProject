@@ -10,10 +10,13 @@ import Virtual from "../../components/virtual/Virtual";
 import Accordion from "../../components/accordion/Accordion";
 import "./Home.css";
 import { motion } from "framer-motion";
-import Hero2 from "../../components/Hero/Hero2";
+
 import { useScroll, useTransform } from "framer-motion";
 
 import { StudentsTitle, Title } from "./style.js";
+
+import Plx from "react-plx";
+import image1 from "../../components/Hero/bg.png";
 
 const Home = () => {
   const { scrollYProgress } = useScroll();
@@ -27,15 +30,37 @@ const Home = () => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5, easing: "easeOutBack" }}
       >
+        {/* <Plx
+          parallaxData={[
+            {
+              start: 0,
+              end: 800,
+              easing: "ease-in",
+              properties: [
+                {
+                  startValue: 1,
+                  endValue: 4,
+                  property: "scale",
+                },
+              ],
+            },
+          ]}
+          style={{
+            position: "fixed",
+            left: 0,
+            top: 0,
+            width: "100%",
+            zIndex: -1,
+          }}
+        >
+          <img style={{ width: "100%" }} src={image1} alt="foreground" />
+        </Plx> */}
         <Header />
-        {/* <Hero2 /> */}
         <Hero />
         <Slider />
         <Title style={{ x }}>Lets start right now</Title>
         <Virtual />
-
         <Services />
-
         <Testimonial />
 
         <Accordion />

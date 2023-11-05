@@ -11,4 +11,10 @@ export const StudentTitle = styled(motion.h1)`
   margin-top: auto;
   margin-right: -350px;
   transition: all 0.5s ease-in-out;
+
+  @media (max-width: 768px) {
+    font-size: 6rem;
+    white-space: wrap;
+    margin-right: -450px;
+  }
 `;
