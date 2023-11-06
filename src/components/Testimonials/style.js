@@ -9,7 +9,7 @@ export const StudentTitle = styled(motion.h1)`
   margin: 0;
   white-space: nowrap;
   margin-top: auto;
-  margin-right: -350px;
+  margin-right: -750px;
   transition: all 0.5s ease-in-out;
 
   @media (max-width: 768px) {

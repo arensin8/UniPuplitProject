@@ -12,7 +12,7 @@ import Error from "./pages/error/Error";
 
 import Plx from "react-plx";
 
-import image2 from "./components/Hero/back5.jpg";
+import image2 from "./components/Hero/back4.jpg";
 
 function App() {
   const location = useLocation();
@@ -26,7 +26,7 @@ function App() {
             properties: [
               {
                 startValue: 1,
-                endValue: 1.3,
+                endValue: 1.2,
                 property: "scale",
               },
             ],

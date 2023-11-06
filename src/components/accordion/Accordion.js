@@ -1,6 +1,6 @@
 // React Component
 import React, { useState, useRef, useEffect } from "react";
-import data from "./accordionData";
+import data from "../../data/accrodion";
 import "./Accordion.css";
 
 const Accordion = () => {
@@ -67,6 +67,11 @@ const Accordion = () => {
           ))}
         </div>
       </div>
+
+      <model
+        src="./scene.gltf"
+        style={{ width: "50vw", height: "50vw" }}
+      ></model>
     </>
   );
 };

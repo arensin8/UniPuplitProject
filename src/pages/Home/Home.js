@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BackToTop from "../../components/backtotop/BackToTop";
 import Footer from "../../components/Footer/Footer";
 import Header from "../../components/header/Header";
@@ -8,15 +8,13 @@ import Slider from "../../components/Slider/Slider";
 import Testimonial from "../../components/Testimonials/Testimonial";
 import Virtual from "../../components/virtual/Virtual";
 import Accordion from "../../components/accordion/Accordion";
+import ChatIcon from "../../components/chatbot/ChatIcon";
 import "./Home.css";
 import { motion } from "framer-motion";
-
 import { useScroll, useTransform } from "framer-motion";
 
-import { StudentsTitle, Title } from "./style.js";
-
-import Plx from "react-plx";
-import image1 from "../../components/Hero/bg.png";
+import { Title } from "./style.js";
+import Chatbot from "../../components/chatbot/Chatbot";
 
 const Home = () => {
   const { scrollYProgress } = useScroll();
@@ -30,31 +28,6 @@ const Home = () => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5, easing: "easeOutBack" }}
       >
-        {/* <Plx
-          parallaxData={[
-            {
-              start: 0,
-              end: 800,
-              easing: "ease-in",
-              properties: [
-                {
-                  startValue: 1,
-                  endValue: 4,
-                  property: "scale",
-                },
-              ],
-            },
-          ]}
-          style={{
-            position: "fixed",
-            left: 0,
-            top: 0,
-            width: "100%",
-            zIndex: -1,
-          }}
-        >
-          <img style={{ width: "100%" }} src={image1} alt="foreground" />
-        </Plx> */}
         <Header />
         <Hero />
         <Slider />
@@ -66,6 +39,7 @@ const Home = () => {
         <Accordion />
 
         <Footer />
+        <ChatIcon />
         <BackToTop />
       </motion.div>
     </>

@@ -13,7 +13,7 @@ import { StudentTitle } from "./style";
 
 const Testimonial = () => {
   const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0, 1], [0, -500]);
+  const x = useTransform(scrollYProgress, [0, 1], [0, -800]);
 
   return (
     <div className={css.testimonials}>
