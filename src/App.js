@@ -1,4 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
+import { useLayoutEffect } from "react";
 import "./App.css";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
@@ -15,7 +16,18 @@ import Plx from "react-plx";
 import image2 from "./components/Hero/back4.jpg";
 
 function App() {
+  useLayoutEffect(() => {
+    const loader = document.getElementById("loader");
+    setTimeout(() => {
+      loader.classList.add("loaded");
+      setTimeout(() => {
+        document.body.removeChild(loader);
+      }, 300);
+    }, 2000);
+  }, []);
+
   const location = useLocation();
+
   return (
     <div className="App">
       <Plx
@@ -50,6 +62,7 @@ function App() {
       <AnimatePresence exitBeforeEnter initial={false}>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Home />}></Route>
+          {/* <Route path="/" element={<Parallax />}></Route> */}
           <Route path="/news" element={<NewsPages />}></Route>
           <Route path="/news/:id" element={<Singlenews />} />
           <Route path="/roadmap" element={<Roadmap />}></Route>

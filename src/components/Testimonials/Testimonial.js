@@ -10,6 +10,7 @@ import Students from "../Students/Students";
 
 import { useScroll, useTransform } from "framer-motion";
 import { StudentTitle } from "./style";
+import Plx from "react-plx";
 
 const Testimonial = () => {
   const { scrollYProgress } = useScroll();
@@ -18,6 +19,7 @@ const Testimonial = () => {
   return (
     <div className={css.testimonials}>
       <StudentTitle style={{ x }}>Graduated students</StudentTitle>
+
       <div className={css.wrapper}>
         <div className={css.container} data-aos="fade-down">
           <span>Mer usanoxneri karciknery</span>
@@ -25,13 +27,28 @@ const Testimonial = () => {
             Karox eq desnel bolory aysdex mer shat sireli usanoxneri koxmic
           </span>
         </div>
-
+        {/* <Plx
+          parallaxData={[
+            {
+              start: 0,
+              end: 800,
+              properties: [
+                {
+                  startValue: 1,
+                  endValue: 1.3,
+                  property: "scale",
+                },
+              ],
+            },
+          ]}
+        > */}
         <img
           src={Review}
           className={css.img}
           alt="review"
           data-aos="fade-down"
         />
+        {/* </Plx> */}
 
         <div className={css.container} data-aos="fade-down">
           <span>100k +</span>

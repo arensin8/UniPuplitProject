@@ -15,6 +15,7 @@ const Services = () => {
     <div className={css.container}>
       <h1>what you will learn</h1>
 
+
       <div className={css.services} data-aos="fade-down">
         <ul className={css.menu}>
           <li onClick={() => setMenuData(servicesData)}>All</li>
@@ -32,6 +33,8 @@ const Services = () => {
           ))}
         </div>
       </div>
+
+
     </div>
   );
 };

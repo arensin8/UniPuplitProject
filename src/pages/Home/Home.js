@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 import { useScroll, useTransform } from "framer-motion";
 
 import { Title } from "./style.js";
-import Chatbot from "../../components/chatbot/Chatbot";
+import ParticleRing from "../../components/Hero/ParticleRing";
 
 const Home = () => {
   const { scrollYProgress } = useScroll();
@@ -29,10 +29,14 @@ const Home = () => {
         transition={{ duration: 0.5, easing: "easeOutBack" }}
       >
         <Header />
-        <Hero />
+        <ParticleRing />
+        {/* <Hero /> */}
         <Slider />
+
         <Title style={{ x }}>Lets start right now</Title>
+
         <Virtual />
+
         <Services />
         <Testimonial />
 
