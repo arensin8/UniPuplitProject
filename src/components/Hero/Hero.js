@@ -1,7 +1,6 @@
 import React from "react";
 import css from "./Hero.module.css";
-// import HeroImg from "../../assets/hero.gif";
-import { BsArrowRight } from "react-icons/bs";
+
 import HeroImg from "../../assets/Hero3.png";
 import Plx from "react-plx";
 import Slider from "../Slider/Slider";

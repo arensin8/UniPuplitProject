@@ -12,66 +12,77 @@ import Login from "./pages/login/Login";
 import Error from "./pages/error/Error";
 
 import Plx from "react-plx";
-
-import image2 from "./components/Hero/back4.jpg";
+import { useState, useEffect } from "react";
+import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
+import image2 from "./components/Hero/back2.png";
 
 function App() {
+  const [loading, setLoading] = useState(false);
+  const [color, setColor] = useState("#ffffff");
+
   useLayoutEffect(() => {
-    const loader = document.getElementById("loader");
+    setLoading(true);
     setTimeout(() => {
-      loader.classList.add("loaded");
-      setTimeout(() => {
-        document.body.removeChild(loader);
-      }, 300);
-    }, 2000);
+      setLoading(false);
+    }, 4000);
   }, []);
 
   const location = useLocation();
 
   return (
     <div className="App">
-      <Plx
-        parallaxData={[
-          {
-            start: 0,
-            end: 4000,
-            properties: [
-              {
-                startValue: 1,
-                endValue: 1.2,
-                property: "scale",
-              },
-            ],
-          },
-        ]}
-        style={{
-          position: "fixed",
-          left: 0,
-          top: 0,
-          width: "100%",
-          height: "100vh",
-          zIndex: -100,
-        }}
-      >
-        <img
-          style={{ width: "100%", height: "100%", backgroundSize: "cover" }}
-          src={image2}
-          alt="background"
+      {loading ? (
+        <ClimbingBoxLoader
+          color="#fff"
+          style={{ margin: "0 auto" }}
+          size={30}
         />
-      </Plx>
-      <AnimatePresence exitBeforeEnter initial={false}>
-        <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Home />}></Route>
-          {/* <Route path="/" element={<Parallax />}></Route> */}
-          <Route path="/news" element={<NewsPages />}></Route>
-          <Route path="/news/:id" element={<Singlenews />} />
-          <Route path="/roadmap" element={<Roadmap />}></Route>
-          <Route path="/about-us" element={<About />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
-          <Route path="/login" element={<Login />}></Route>
-          <Route path="*" element={<Error />}></Route>
-        </Routes>
-      </AnimatePresence>
+      ) : (
+        <>
+          <Plx
+            parallaxData={[
+              {
+                start: 0,
+                end: 4000,
+                properties: [
+                  {
+                    startValue: 1,
+                    endValue: 1.2,
+                    property: "scale",
+                  },
+                ],
+              },
+            ]}
+            style={{
+              position: "fixed",
+              left: 0,
+              top: 0,
+              width: "100%",
+              height: "100vh",
+              zIndex: -100,
+            }}
+          >
+            <img
+              style={{ width: "100%", height: "100%", backgroundSize: "cover" }}
+              src={image2}
+              alt="background"
+            />
+          </Plx>
+          <AnimatePresence exitBeforeEnter initial={false}>
+            <Routes location={location} key={location.pathname}>
+              <Route path="/" element={<Home />}></Route>
+
+              <Route path="/news" element={<NewsPages />}></Route>
+              <Route path="/news/:id" element={<Singlenews />} />
+              <Route path="/roadmap" element={<Roadmap />}></Route>
+              <Route path="/about-us" element={<About />}></Route>
+              <Route path="/contact" element={<Contact />}></Route>
+              <Route path="/login" element={<Login />}></Route>
+              <Route path="*" element={<Error />}></Route>
+            </Routes>
+          </AnimatePresence>
+        </>
+      )}
     </div>
   );
 }

@@ -9,6 +9,7 @@ import Testimonial from "../../components/Testimonials/Testimonial";
 import Virtual from "../../components/virtual/Virtual";
 import Accordion from "../../components/accordion/Accordion";
 import ChatIcon from "../../components/chatbot/ChatIcon";
+
 import "./Home.css";
 import { motion } from "framer-motion";
 import { useScroll, useTransform } from "framer-motion";
@@ -32,16 +33,11 @@ const Home = () => {
         <ParticleRing />
         {/* <Hero /> */}
         <Slider />
-
         <Title style={{ x }}>Lets start right now</Title>
-
         <Virtual />
-
         <Services />
         <Testimonial />
-
         <Accordion />
-
         <Footer />
         <ChatIcon />
         <BackToTop />
