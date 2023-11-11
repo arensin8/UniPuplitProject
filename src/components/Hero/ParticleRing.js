@@ -5,14 +5,14 @@ import { pointsInner, pointsOuter } from "./utils";
 import Hero from "./Hero";
 
 const ParticleRing = () => {
-  const [numPointsToShow, setNumPointsToShow] = useState(200); // Initial number of points to show
+  const [numPointsToShow, setNumPointsToShow] = useState(300); // Initial number of points to show
   const maxPoints = 2000; // Maximum number of points
 
   useEffect(() => {
     // Gradually increase the number of points over time
     const interval = setInterval(() => {
       if (numPointsToShow < maxPoints) {
-        setNumPointsToShow(numPointsToShow + 50);
+        setNumPointsToShow(numPointsToShow + 20);
       }
     }, 200); // Adjust the interval and increment as needed
 

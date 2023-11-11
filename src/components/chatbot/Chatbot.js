@@ -59,7 +59,7 @@ const Chatbot = ({ isVisible, toggleVisibility }) => {
           Hello , lets answer some of your questions..
         </p>
         <button onClick={toggleVisibility}>
-          <i class="fa-solid fa-xmark"></i>
+        <i class="fa-solid fa-minus"></i>
         </button>
         {messages.map((message, index) => (
           <div

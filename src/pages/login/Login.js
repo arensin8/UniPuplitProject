@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 import Header from "../../components/header/Header";
 import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";

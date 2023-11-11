@@ -4,7 +4,7 @@ import "./Header.css";
 import close from "../../assets/close.png";
 import { Link } from "react-router-dom";
 import "../../App.css";
-import ReCAPTCHA from "react-google-recaptcha";
+// import ReCAPTCHA from "react-google-recaptcha";
 import hamMenu from "../../assets/ham1.png";
 
 const Header = () => {
