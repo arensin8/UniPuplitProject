@@ -1,13 +1,24 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { pointsInner, pointsOuter } from "./utils";
 import Hero from "./Hero";
 
 const ParticleRing = () => {
-  // useEffect(() => {
-  //   setTimeout(() => {}, 2000);
-  // }, []);
+  const [numPointsToShow, setNumPointsToShow] = useState(200); // Initial number of points to show
+  const maxPoints = 2000; // Maximum number of points
+
+  useEffect(() => {
+    // Gradually increase the number of points over time
+    const interval = setInterval(() => {
+      if (numPointsToShow < maxPoints) {
+        setNumPointsToShow(numPointsToShow + 50);
+      }
+    }, 200); // Adjust the interval and increment as needed
+
+    return () => clearInterval(interval);
+  }, [numPointsToShow]);
+
   return (
     <div className="relative">
       <Canvas
@@ -20,7 +31,7 @@ const ParticleRing = () => {
         <OrbitControls maxDistance={20} minDistance={10} />
         <directionalLight />
         <pointLight position={[-30, 0, -30]} power={10.0} />
-        <PointCircle />
+        <PointCircle numPointsToShow={numPointsToShow} />
       </Canvas>
 
       <Hero />
@@ -28,7 +39,7 @@ const ParticleRing = () => {
   );
 };
 
-const PointCircle = () => {
+const PointCircle = ({ numPointsToShow }) => {
   const ref = useRef(null);
 
   useFrame(({ clock }) => {
@@ -39,10 +50,10 @@ const PointCircle = () => {
 
   return (
     <group ref={ref}>
-      {pointsInner.map((point) => (
+      {pointsInner.slice(0, numPointsToShow).map((point) => (
         <Point key={point.idx} position={point.position} color={point.color} />
       ))}
-      {pointsOuter.map((point) => (
+      {pointsOuter.slice(0, numPointsToShow / 4).map((point) => (
         <Point key={point.idx} position={point.position} color={point.color} />
       ))}
     </group>

@@ -16,12 +16,6 @@ import { useState, useEffect } from "react";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import image2 from "./components/Hero/back5.png";
 
-// Define a function that returns a promise which resolves after a certain time
-const delay = (time) => new Promise(resolve => setTimeout(resolve, time));
-
-// Define a function to lazy load the homepage component
-const loadHomePage = () => delay(0).then(() => import("./pages/Home/Home"));
-
 function App() {
   const [loading, setLoading] = useState(false);
 
@@ -29,11 +23,10 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 2000);
   }, []);
 
   const location = useLocation();
-   const HomePage = React.lazy(loadHomePage);
 
   return (
     <div className="App">
