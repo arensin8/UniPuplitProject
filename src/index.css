@@ -8,7 +8,7 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: var(--bg);
+  background: url("./components/Hero/back5.png");
   transition: 0.3s ease;
   color: var(--white);
   scroll-behavior: smooth;

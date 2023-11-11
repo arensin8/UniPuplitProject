@@ -3,7 +3,6 @@ import css from "./Hero.module.css";
 
 import HeroImg from "../../assets/Hero3.png";
 import Plx from "react-plx";
-import Slider from "../Slider/Slider";
 
 const Hero = () => {
   return (
@@ -23,23 +22,7 @@ const Hero = () => {
 
         {/* middle side of hero */}
         <div className={css.wrapper}>
-          <Plx
-            parallaxData={[
-              {
-                start: 0,
-                end: 800,
-                properties: [
-                  {
-                    startValue: 1,
-                    endValue: 1.3,
-                    property: "scale",
-                  },
-                ],
-              },
-            ]}
-          >
-            <img src={HeroImg} alt="logo" className={css.parLogo} />
-          </Plx>
+          <img src={HeroImg} alt="logo" className={css.parLogo} />
         </div>
 
         {/* right side */}

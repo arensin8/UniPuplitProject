@@ -53,6 +53,7 @@ const Chatbot = ({ isVisible, toggleVisibility }) => {
 
   return (
     <div className={`chatbot-container ${isVisible ? "" : "hidden"}`}>
+      
       <div className="chatbot-messages">
         <p className="ChatTitle">
           Hello , lets answer some of your questions..

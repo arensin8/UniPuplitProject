@@ -1,17 +1,20 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { pointsInner, pointsOuter } from "./utils";
 import Hero from "./Hero";
 
 const ParticleRing = () => {
+  // useEffect(() => {
+  //   setTimeout(() => {}, 2000);
+  // }, []);
   return (
     <div className="relative">
       <Canvas
         camera={{
           position: [10, -7.5, -5],
         }}
-        style={{ height: "100vh", position: "relative" }}
+        style={{ height: "100vh" }}
         className="bg-slate-900"
       >
         <OrbitControls maxDistance={20} minDistance={10} />
