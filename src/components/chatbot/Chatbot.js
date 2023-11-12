@@ -53,13 +53,12 @@ const Chatbot = ({ isVisible, toggleVisibility }) => {
 
   return (
     <div className={`chatbot-container ${isVisible ? "" : "hidden"}`}>
-      
       <div className="chatbot-messages">
         <p className="ChatTitle">
           Hello , lets answer some of your questions..
         </p>
         <button onClick={toggleVisibility}>
-        <i class="fa-solid fa-minus"></i>
+          <i class="fa-solid fa-xmark"></i>
         </button>
         {messages.map((message, index) => (
           <div

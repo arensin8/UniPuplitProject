@@ -18,7 +18,7 @@ const Testimonial = () => {
 
   return (
     <div className={css.testimonials}>
-      {/* <StudentTitle style={{ x }}>Graduated students</StudentTitle> */}
+      <StudentTitle style={{ x }}>Graduated students</StudentTitle>
 
       <div className={css.wrapper}>
         <div className={css.container} data-aos="fade-down">
