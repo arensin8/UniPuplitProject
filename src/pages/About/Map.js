@@ -14,7 +14,7 @@ const Map = () => {
       style={{
         width: "80%",
         margin: "0 auto",
-        marginTop: "5rem",
+        marginTop: "2rem",
         borderRadius: "10px",
       }}
     >

@@ -4,7 +4,7 @@ import Footer from "../../components/Footer/Footer";
 import "./About.css";
 import Map from "./Map";
 
-import aboutgif from "../../assets/about.gif";
+import about from "../../assets/about.png";
 import { motion } from "framer-motion";
 
 const About = () => {
@@ -19,17 +19,18 @@ const About = () => {
         <Header />
 
         <section id="about-section">
-          <div class="about-left" data-aos="fade-right">
-            <img src={aboutgif} />
+          <div class="about-left" data-aos="fade-down">
+            <img src={about} />
           </div>
 
-          <div class="about-right">
+          <div class="about-right" data-aos="fade-down">
             <h1>Մեր մասին</h1>
             <p className="details">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-              fugiat a dolorem at similique maxime dolorum dolore enim dicta
-              voluptatibus, illum recusandae, vel optio tempore ipsum incidunt
-              eum. Aspernatur, repellendus.
+              Բարի գալուստ Հայաստանի ազգային պոլիտեխնիկական համալսարան։ Միակ
+              ինժեներական համալսարանը ստեղծվել է 1933-ին՝ Շինարարական և
+              Քիմիատեխնոլոգիական ինստիտուտների միավորմամբ: ՀԱՊՀ-ն իրավահաջորդն է
+              Կ. Մարքսի անվան պոլիտեխնիկական ինստիտուտի (ԵրՊԻ) և Հայաստանի
+              պետական ճարտարագիտական համալսարանի
             </p>
             <div class="address">
               <ul>

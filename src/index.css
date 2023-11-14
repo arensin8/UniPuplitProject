@@ -8,12 +8,13 @@
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: url("./components/Hero/back5.png");
+  background: url("./components/Hero/back6.png");
+  background-size: cover;
   transition: 0.3s ease;
   color: var(--white);
   scroll-behavior: smooth;
   max-width: 100%;
-  cursor: url("./assets//pencil1.png"), auto !important;
+  cursor: url("./assets/pencil1.png"), auto !important;
 }
 
 html,

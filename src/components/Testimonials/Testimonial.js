@@ -1,11 +1,8 @@
 import React from "react";
 import css from "./Testimonial.module.css";
-import Review from "../../assets/review.gif";
+import Review from "../../assets/review.png";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { TestimonialsData } from "../../data/testimonials";
-
-import profile1 from "../../assets/profile1.png";
-import profile2 from "../../assets/profile2.png";
 import Students from "../Students/Students";
 
 import { useScroll, useTransform } from "framer-motion";

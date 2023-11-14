@@ -4,7 +4,7 @@ import "./Login.css";
 import Header from "../../components/header/Header";
 import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";
-import loginImage from "../../assets/Reset.gif";
+import loginImage from "../../assets/login.png";
 
 const Login = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
