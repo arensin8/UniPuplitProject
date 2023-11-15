@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 
 const Slider = () => {
   return (
-    <div className="s-container">
+    <div className="s-container" id="sectionToScroll">
       <Swiper
         data-aos="fade-up"
         loop={true}

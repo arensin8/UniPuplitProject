@@ -62,7 +62,7 @@ function App() {
             }}
           >
             <img
-              style={{ width: "100%", height: "100%", backgroundSize: "cover" }}
+              style={{ width: "100%", height: "100%", backgroundSize: "auto" }}
               src={image2}
               alt="background"
             />

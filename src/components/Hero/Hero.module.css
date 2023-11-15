@@ -20,7 +20,7 @@
   margin-bottom: 30px;
 }
 
-.parLogo {
+.wrapper .parLogo {
   width: 25rem;
   border-radius: 50%;
   overflow: hidden;
@@ -105,6 +105,34 @@
   font-size: 2.5rem;
 }
 
+.scrolling {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 92%;
+  left: 55%;
+  transform: translate(-92%, -55%);
+}
+.scrolling p {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.scrolling img {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+
+  font-weight: 600;
+}
+
+.scrolling p {
+  font-size: 30px;
+}
+
 @media screen and (max-width: 856px) {
   .text1,
   .text2 > span:nth-of-type(2) {
@@ -116,8 +144,8 @@
     text-align: left;
     font-size: 1.5rem;
   }
-  .parLogo {
-    width: 18rem;
+  .wrapper .parLogo {
+    width: 25rem !important;
   }
   .container {
     grid-template-areas:
@@ -144,9 +172,9 @@
   .container {
     width: 100% !important;
   }
-  .parLogo {
+  .wrapper .parLogo {
     top: 0;
-    width: 17rem;
+    width: 200px !important;
     margin-bottom: 1rem;
     margin-top: 1rem;
     z-index: -1;

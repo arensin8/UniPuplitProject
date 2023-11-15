@@ -7,6 +7,7 @@ const ChatIcon = () => {
 
   const toggleVisibility = () => {
     setIsVisible(!isVisible);
+    document.body.classList.toggle("body-no-scroll");
   };
 
   window.addEventListener("scroll", () => {

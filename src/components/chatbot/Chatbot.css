@@ -88,7 +88,6 @@
   position: absolute;
   bottom: 35px;
   right: 5px;
-
   width: 400px;
   margin: 0 auto;
   border: 1px solid #ccc;
@@ -102,8 +101,9 @@
 
 @media screen and (max-width: 550px) {
   .chatbot-container {
-    width: 380px;
+    width: 350px;
     bottom: 40px;
+    right: 0;
   }
 }
 .chatbot-container .ChatTitle {

@@ -34,7 +34,7 @@ const Login = () => {
         transition={{ duration: 0.5, easing: "easeOutBack" }}
       >
         <Header />
-        <div className="loginContainer">
+        <div className="loginContainer" data-aos="fade-up">
           <h1 className="title">Login</h1>
           <div className="image">
             <img src={loginImage} alt="login" />

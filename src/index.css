@@ -10,6 +10,8 @@ body {
   font-family: "Poppins", sans-serif;
   background: url("./components/Hero/back6.png");
   background-size: cover;
+  height: 100%;
+  width: 100%;
   transition: 0.3s ease;
   color: var(--white);
   scroll-behavior: smooth;
@@ -20,4 +22,10 @@ body {
 html,
 body {
   max-width: 100%;
+}
+
+@media screen and (max-width: 876px) {
+  body {
+    background-size: auto !important;
+  }
 }

@@ -146,7 +146,7 @@
   .navbarContainer.active {
     backdrop-filter: blur(5px);
     background-color: var(--white);
-    border-bottom: 1px solid var(--blue);
+    /* border-bottom: 1px solid var(--blue); */
   }
   .navbarContainer .right .bars {
     position: absolute;
