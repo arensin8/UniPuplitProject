@@ -19,8 +19,8 @@ const About = () => {
         <Header />
 
         <section id="about-section">
-          <div class="about-left" data-aos="fade-down">
-            <img src={about} />
+          <div class="about-left">
+            <img src={about} data-aos="fade-down" />
           </div>
 
           <div class="about-right" data-aos="fade-down">

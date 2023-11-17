@@ -56,11 +56,6 @@ const Login = () => {
                   <i class="fa-solid fa-eye"></i>
                 )}
               </span>
-              {/* <ReCAPTCHA
-                sitekey="Your client site key"
-                onChange={onChange}
-                className="captcha"
-              /> */}
 
               <button type="submit">
                 Login

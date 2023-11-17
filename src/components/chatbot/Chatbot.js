@@ -57,9 +57,9 @@ const Chatbot = ({ isVisible, toggleVisibility }) => {
         <p className="ChatTitle">
           Hello , lets answer some of your questions..
         </p>
-        <button onClick={toggleVisibility}>
-          <i class="fa-solid fa-xmark"></i>
-        </button>
+
+        <i class="fa-solid fa-xmark" onClick={toggleVisibility}></i>
+
         {messages.map((message, index) => (
           <div
             key={index}
