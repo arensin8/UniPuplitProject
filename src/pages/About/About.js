@@ -6,6 +6,8 @@ import Map from "./Map";
 
 import about from "../../assets/about.png";
 import { motion } from "framer-motion";
+import ChatIcon from "../../components/chatbot/ChatIcon";
+import BackToTop from "../../components/backtotop/BackToTop";
 
 const About = () => {
   return (
@@ -72,7 +74,8 @@ const About = () => {
         </section>
 
         <Map />
-
+        <ChatIcon />
+        <BackToTop />
         <Footer />
       </motion.div>
     </>

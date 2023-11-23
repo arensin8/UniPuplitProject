@@ -6,7 +6,7 @@ import Hero from "./Hero";
 
 const ParticleRing = () => {
   const [numPointsToShow, setNumPointsToShow] = useState(300); // Initial number of points to show
-  const maxPoints = 2000; // Maximum number of points
+  const maxPoints = 1800; // Maximum number of points
 
   useEffect(() => {
     // Gradually increase the number of points over time

@@ -4,6 +4,8 @@ import Homes from "./MainContent/Homes/Homes";
 import Header from "../../components/header/Header";
 import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";
+import BackToTop from "../../components/backtotop/BackToTop";
+import ChatIcon from "../../components/chatbot/ChatIcon";
 
 const NewsPages = () => {
   return (
@@ -17,6 +19,8 @@ const NewsPages = () => {
         <Header />
         <NewsHero />
         <Homes />
+        <ChatIcon />
+        <BackToTop />
         <Footer />
       </motion.div>
     </div>

@@ -3,6 +3,8 @@ import css from "./Hero.module.css";
 
 import HeroImg from "../../assets/Hero3.png";
 import scrollImg from "../../assets/scroll.png";
+import divider from "../../assets/divider.png";
+
 import Plx from "react-plx";
 
 import { Link, animateScroll as scroll } from "react-scroll";
@@ -49,11 +51,16 @@ const Hero = () => {
       </div>
 
       <Link to="sectionToScroll" smooth={true} duration={600}>
-        <div className={css.scrolling}>
-          <p>Scroll down </p>
-          <img onClick={scrollToSection} src={scrollImg} />
+        <div className={css.scrolling} onClick={scrollToSection}>
+          <p>Let's check the website</p>
+          <img src={scrollImg} />
         </div>
       </Link>
+
+      <img
+        src={divider}
+        style={{ width: "100vw", height: "180px", marginTop: "-60px" }}
+      />
     </>
   );
 };

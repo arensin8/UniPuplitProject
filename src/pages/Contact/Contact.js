@@ -3,6 +3,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/Footer/Footer";
 import "./Contact.css";
 import { motion } from "framer-motion";
+import ChatIcon from "../../components/chatbot/ChatIcon";
 
 const Contact = () => {
   return (
@@ -64,8 +65,7 @@ const Contact = () => {
           </div>
         </div>
 
-    
-
+        <ChatIcon />
         <Footer />
       </motion.div>
     </>

@@ -7,6 +7,7 @@ import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";
 import { frontRoadmapData, backRoadmapData } from "../../data/roadmap";
 import BackToTop from "../../components/backtotop/BackToTop";
+import ChatIcon from "../../components/chatbot/ChatIcon";
 
 const Roadmap = () => {
   const [MenuData, setMenuData] = useState(servicesData);
@@ -92,6 +93,7 @@ const Roadmap = () => {
 
         <Footer />
         <BackToTop />
+        <ChatIcon />
       </motion.div>
     </>
   );
