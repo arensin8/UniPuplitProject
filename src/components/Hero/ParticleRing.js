@@ -14,7 +14,7 @@ const ParticleRing = () => {
       if (numPointsToShow < maxPoints) {
         setNumPointsToShow(numPointsToShow + 20);
       }
-    }, 200); // Adjust the interval and increment as needed
+    }, 200); 
 
     return () => clearInterval(interval);
   }, [numPointsToShow]);

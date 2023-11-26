@@ -14,10 +14,6 @@
   margin-bottom: 1rem;
 }
 
-.timeline h3 {
-  font-weight: 300;
-  text-align: center;
-}
 .timeline-items {
   max-width: 1200px;
   margin: auto;
@@ -28,16 +24,18 @@
 
 .mainTitle {
   margin: 0 auto;
-  color: var(--blue);
+  color: var(--white);
   font-weight: bold;
   margin-top: 5rem;
   font-size: 30px;
   margin-bottom: 3rem;
   text-align: center;
 }
+
 .mainTitle.back {
   margin-top: 13rem;
 }
+
 .timeline-items::before {
   content: "";
   position: absolute;
@@ -45,6 +43,13 @@
   height: 100%;
   background-color: var(--blue);
   left: calc(50% - 1px);
+}
+
+.timeline-items:nth-child(7)::before {
+  height: 85%;
+}
+.timeline-items:last-child::before {
+  height: 85%;
 }
 
 .timeline-item {
@@ -77,6 +82,7 @@
   background-color: var(--white);
   padding: 30px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .timeline-content .timeline-cont-title {
