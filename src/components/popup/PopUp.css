@@ -23,10 +23,12 @@
   padding: 24px 28px;
   border-radius: 5px;
   max-width: 1000px;
+  max-height: 60vh;
   min-width: 300px;
   color: var(--blue);
   line-height: 25px;
   transition: all 0.9s ease-in-out;
+  overflow: hidden;
 }
 
 .model-title {
@@ -59,6 +61,12 @@
 
 @media screen and (max-width: 876px) {
   .modal-content {
+    top: 55%;
     width: 80%;
+    height: 65%;
+  }
+  .model-title {
+    font-size: 18px;
+    max-width: 90%;
   }
 }

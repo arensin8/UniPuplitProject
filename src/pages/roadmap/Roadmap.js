@@ -92,8 +92,12 @@ const Roadmap = () => {
         </section>
 
         <Footer />
-        <BackToTop />
-        <ChatIcon />
+        {!popupVisible && (
+          <>
+            <BackToTop />
+            <ChatIcon />
+          </>
+        )}
       </motion.div>
     </>
   );

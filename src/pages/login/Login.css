@@ -50,9 +50,12 @@
   position: absolute;
 }
 
-.loginContainer .textContainer h3 {
+.loginContainer .textContainer h2 {
   color: var(--blue);
-  font-weight: 400;
+  font-weight: 500;
+  width: 95%;
+  margin-bottom: 3rem;
+  text-align: left;
 }
 .loginContainer .textContainer .form {
   display: flex;
@@ -191,5 +194,10 @@
   }
   .loginContainer .textContainer .eye {
     right: 5%;
+  }
+  .loginContainer .textContainer h2 {
+    margin-bottom: 1rem;
+    width: 100%;
+    font-size: 22px;
   }
 }

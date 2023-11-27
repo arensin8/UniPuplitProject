@@ -35,12 +35,14 @@ const Login = () => {
       >
         <Header />
         <div className="loginContainer" data-aos="fade-up">
-          <h1 className="title">Login</h1>
+          {/* <h1 className="title">Login</h1> */}
           <div className="image">
             <img src={loginImage} alt="login" />
           </div>
           <div className="textContainer">
-            <h3>Please enter your credentials to login</h3>
+            <h2>
+              Please enter your username and password to enter into admin panel.
+            </h2>
             <div className="form">
               <input type="username" placeholder="Enter your username" />
               <input

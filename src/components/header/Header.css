@@ -79,7 +79,7 @@
 
 .navbarContainer .Login {
   width: 5rem;
-  height: 2.2rem;
+  height: 2rem;
   left: 0px;
   background-color: var(--white);
   color: var(--blue);
@@ -119,11 +119,6 @@
   .navbarContainer .right {
     gap: 0.5rem;
   }
-  .navbarContainer .loginCover {
-    width: 50vw;
-    height: 55vh !important;
-    top: 50%;
-  }
   .loginCover > h1 {
     margin-top: 4rem;
   }
@@ -146,7 +141,6 @@
   .navbarContainer.active {
     backdrop-filter: blur(5px);
     background-color: var(--white);
-    /* border-bottom: 1px solid var(--blue); */
   }
   .navbarContainer .right .bars {
     position: absolute;
@@ -209,7 +203,6 @@
     background-color: transparent;
     color: var(--white);
     margin-right: 40px;
-    height: 2.3rem;
   }
   .navbarContainer.active .Login {
     border: 0.5px solid var(--blue);
