@@ -16,6 +16,7 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
+    "animejs": "^3.2.2",
     "axios": "^1.6.0",
     "framer-motion": "^7.10.3",
     "gsap": "^3.12.2",

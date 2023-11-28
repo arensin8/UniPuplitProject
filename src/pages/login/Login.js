@@ -5,6 +5,7 @@ import Header from "../../components/header/Header";
 import Footer from "../../components/Footer/Footer";
 import { motion } from "framer-motion";
 import loginImage from "../../assets/login.png";
+import Example from "./Btn";
 
 const Login = () => {
   const [passwordVisible, setPasswordVisible] = useState(false);
@@ -59,10 +60,7 @@ const Login = () => {
                 )}
               </span>
 
-              <button type="submit">
-                Login
-                <i class="fa-solid fa-arrow-right"></i>
-              </button>
+              <Example />
             </div>
           </div>
         </div>

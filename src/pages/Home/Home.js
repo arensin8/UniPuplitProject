@@ -35,6 +35,7 @@ const Home = () => {
         <Slider />
         <Title style={{ x }}>Lets start right now</Title>
         <Virtual />
+
         <Services />
         <Testimonial />
         <Accordion />
