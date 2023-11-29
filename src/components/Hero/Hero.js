@@ -53,7 +53,8 @@ const Hero = () => {
       <Link to="sectionToScroll" smooth={true} duration={600}>
         <div className={css.scrolling} onClick={scrollToSection}>
           <p>Let's check the website</p>
-          <img src={scrollImg} />
+          {/* <img src={scrollImg} /> */}
+          <span className={css.loader}></span>
         </div>
       </Link>
 

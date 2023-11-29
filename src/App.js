@@ -31,11 +31,12 @@ function App() {
   return (
     <div className="App">
       {loading ? (
-        <ClimbingBoxLoader
-          color="#fff"
-          style={{ margin: "0 auto" }}
-          size={30}
-        />
+        // <ClimbingBoxLoader
+        //   color="#fff"
+        //   style={{ margin: "0 auto" }}
+        //   size={30}
+        // />
+        <span className="loader"></span>
       ) : (
         <>
           <Plx
