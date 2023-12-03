@@ -16,5 +16,3 @@ export const Title = styled(motion.h1)`
     white-space: wrap;
   }
 `;
-
-

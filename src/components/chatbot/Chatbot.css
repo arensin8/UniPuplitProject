@@ -96,14 +96,14 @@
   padding: 16px;
   background-color: var(--white);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 @media screen and (max-width: 550px) {
   .chatbot-container {
-    width: 350px;
+    width: 100vw;
     bottom: 40px;
-    right: 0;
+    right: -20px;
   }
 }
 .chatbot-container .ChatTitle {

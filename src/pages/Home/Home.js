@@ -19,7 +19,7 @@ import ParticleRing from "../../components/Hero/ParticleRing";
 
 const Home = () => {
   const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0, 1], [0, 800]);
+  const x = useTransform(scrollYProgress, [0, 1], [0, 600]);
 
   return (
     <>
@@ -33,7 +33,9 @@ const Home = () => {
         <ParticleRing />
         {/* <Hero /> */}
         <Slider />
-        <Title style={{ x }}>Lets start right now</Title>
+        <Title style={{ x, willChange: "transform" }}>
+          Lets start right now
+        </Title>
         <Virtual />
 
         <Services />
