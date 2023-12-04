@@ -256,3 +256,22 @@
     height: 50px;
   }
 }
+.custom_shape_divider_top_170167876 {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom_shape_divider_top_170167876 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 169px;
+}
+
+.custom_shape_divider_top_170167876 .shape_fill {
+  fill: var(--white);
+}
