@@ -14,7 +14,7 @@ const ParticleRing = () => {
       if (numPointsToShow < maxPoints) {
         setNumPointsToShow(numPointsToShow + 20);
       }
-    }, 200); 
+    }, 200);
 
     return () => clearInterval(interval);
   }, [numPointsToShow]);
@@ -28,7 +28,7 @@ const ParticleRing = () => {
         style={{ height: "100vh" }}
         className="bg-slate-900"
       >
-        <OrbitControls maxDistance={20} minDistance={10} />
+        <OrbitControls enableZoom={false} maxDistance={20} minDistance={10} />
         <directionalLight />
         <pointLight position={[-30, 0, -30]} power={10.0} />
         <PointCircle numPointsToShow={numPointsToShow} />

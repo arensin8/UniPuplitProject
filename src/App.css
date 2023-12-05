@@ -37,18 +37,18 @@ a {
   color: inherit;
 }
 
-.loader {
+.mainLoader {
   margin: 0 auto;
-  margin-top: 15% !important;
+  margin-top: calc(100vh - 70vh);
   position: relative;
   height: 200px;
   width: 200px;
-  border-bottom: 3px solid #27374d; /* Replace #ff3d00 with #27374d */
+  border-bottom: 3px solid #27374d;
   box-sizing: border-box;
   animation: drawLine 4s linear infinite;
 }
 
-.loader:before {
+.mainLoader:before {
   content: "";
   position: absolute;
   left: calc(100% + 14px);

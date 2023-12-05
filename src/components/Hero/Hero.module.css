@@ -119,12 +119,9 @@
   cursor: pointer;
 }
 .scrolling p {
-  background-color: var(--white);
-  border-radius: 8px;
-  padding: 10px;
-  color: var(--blue);
+  color: var(--white);
   font-weight: 600;
-  font-size: 22px;
+  font-size: 25px;
 }
 
 .scrolling img {
@@ -141,7 +138,7 @@
   position: relative;
   margin-top: 10px !important;
   box-sizing: border-box;
-  border: 2px solid #fff;
+  border: 2px solid var(--white);
   margin: auto;
   border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
 }
@@ -154,7 +151,7 @@
   transform: translateX(-50%);
   width: 5px;
   height: 1px;
-  background: #fff;
+  background: var(--white);
   border-radius: 10px;
   animation: scrollDown 1.5s linear infinite;
 }
@@ -256,22 +253,20 @@
     height: 50px;
   }
 }
-.custom_shape_divider_top_170167876 {
-  /* position: absolute;
-  top: 0;
-  left: 0; */
+
+.custom_shape_divider_bottom_1701798693 {
   width: 100%;
   overflow: hidden;
   line-height: 0;
 }
 
-.custom_shape_divider_top_170167876 svg {
+.custom_shape_divider_bottom_1701798693 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 169px;
+  height: 135px;
 }
 
-.custom_shape_divider_top_170167876 .shape_fill {
-  fill: var(--white);
+.custom_shape_divider_bottom_1701798693 .shape_fill {
+  fill: var(--blue);
 }

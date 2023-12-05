@@ -14,7 +14,7 @@ import Error from "./pages/error/Error";
 import Plx from "react-plx";
 import { useState, useEffect } from "react";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
-import image2 from "./components/Hero/back5.png";
+import image2 from "./components/Hero/back6.png";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -36,7 +36,7 @@ function App() {
         //   style={{ margin: "0 auto" }}
         //   size={30}
         // />
-        <span className="loader"></span>
+        <span className="mainLoader"></span>
       ) : (
         <>
           <Plx
