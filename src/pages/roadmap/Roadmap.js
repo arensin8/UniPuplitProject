@@ -34,7 +34,6 @@ const Roadmap = () => {
         <Header />
         <section class="timeline">
           <h1>Our Roadmap</h1>
-          {/* <h3>In this section you will know about our roadmap</h3> */}
 
           {/* front end section */}
           <h2 class="mainTitle">Front-End Development</h2>
@@ -57,9 +56,9 @@ const Roadmap = () => {
                 </div>
               </div>
 
-              {popupVisible && (
+              {/* {popupVisible && (
                 <PopUp content={popupContent} onClose={closePopup} />
-              )}
+              )} */}
             </>
           ))}
 
@@ -83,7 +82,6 @@ const Roadmap = () => {
                   </div>
                 </div>
               </div>
-
               {popupVisible && (
                 <PopUp content={popupContent} onClose={closePopup} />
               )}
