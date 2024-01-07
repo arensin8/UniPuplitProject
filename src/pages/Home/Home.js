@@ -16,10 +16,11 @@ import { useScroll, useTransform } from "framer-motion";
 
 import { Title } from "./style.js";
 import ParticleRing from "../../components/Hero/ParticleRing";
+import GsapText from "../../components/gsapText/GsapText";
 
 const Home = () => {
-  const { scrollYProgress } = useScroll();
-  const x = useTransform(scrollYProgress, [0, 1], [0, 600]);
+  // const { scrollYProgress } = useScroll();
+  // const x = useTransform(scrollYProgress, [0, 1], [0, 600]);
 
   return (
     <>
@@ -33,9 +34,13 @@ const Home = () => {
         <ParticleRing />
         {/* <Hero /> */}
         <Slider />
-        <Title style={{ x, willChange: "transform" }}>
+
+        {/* <Title style={{ x, willChange: "transform" }}>
           Lets start right now
-        </Title>
+        </Title> */}
+
+        <GsapText />
+
         <Virtual />
 
         <Services />

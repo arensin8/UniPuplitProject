@@ -44,7 +44,6 @@
   text-align: right;
 }
 
-
 @media screen and (max-width: 856px) {
   .wrapper .img {
     width: 20rem !important;
@@ -56,14 +55,19 @@
 }
 
 @media screen and (max-width: 550px) {
+  .testimonials {
+    width: 88%;
+  }
   .wrapper {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    text-align: center !important;
   }
   .wrapper .img {
-    width: 18rem !important;
+    text-align: center !important;
+    width: 15rem !important;
   }
-  .wrapper > :nth-child(1),
   .wrapper > :nth-child(3) {
-    text-align: center;
+    display: none;
   }
 }
