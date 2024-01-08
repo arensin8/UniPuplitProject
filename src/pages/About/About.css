@@ -30,10 +30,10 @@
 }
 
 .about-right h1 {
-  color: var(--blue);
+  color: var(--white);
   font-size: 35px;
   margin-bottom: 5px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .about-right p {

@@ -39,7 +39,6 @@ const Home = () => {
           Lets start right now
         </Title> */}
 
-
         <Virtual />
 
         <Services />

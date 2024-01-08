@@ -1,6 +1,6 @@
 .sNewsContainer {
   margin-top: 150px !important;
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
   text-align: center;
   background-color: var(--white);
@@ -47,8 +47,8 @@ label {
 .sNewsContainer span {
   background-color: var(--bg);
   position: absolute;
-  top: 10px;
-  left: 10px;
+  top: 15px;
+  left: 15px;
   padding: 5px;
   border-radius: 5px;
 }

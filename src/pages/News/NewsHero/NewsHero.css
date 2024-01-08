@@ -13,9 +13,8 @@
 .hero {
   margin: 0 auto;
   color: var(--white);
-  width: 90%;
+  width: 85%;
   text-align: center;
-  width: 90%;
   margin-top: 4rem;
 }
 .hero a {

@@ -1,29 +1,60 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
-
 
 function GsapText() {
+  const textRef = useRef(null);
+  const [shouldAnimate, setShouldAnimate] = useState(false);
 
   useEffect(() => {
-    const t1 = gsap.timeline();
-    t1.from(".singleLine div ", {
-      y: 300,
-      ease: "power4.out",
-      delay: 1,
-      duration: 3,
-      stagger: {
-        amount: 0.9,
-      },
-    });
+    const textElement = textRef.current;
 
-    return () => {};
-  });
+    if (!textElement) {
+      return;
+    }
+
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const elementTop = textElement.offsetTop;
+      const elementBottom = elementTop + textElement.offsetHeight;
+      const windowHeight = window.innerHeight;
+
+      const startAnimationPosition = elementTop - windowHeight;
+      const endAnimationPosition = elementBottom - windowHeight;
+
+      if (
+        scrollPosition >= startAnimationPosition &&
+        scrollPosition <= endAnimationPosition
+      ) {
+        setShouldAnimate(true);
+        window.removeEventListener("scroll", handleScroll);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [textRef]);
+
+  useEffect(() => {
+    if (shouldAnimate) {
+      const t1 = gsap.timeline();
+      t1.from(".singleLine div", {
+        y: 200,
+        ease: "power4.out",
+        delay: 1,
+        duration: 3,
+        stagger: {
+          amount: 0.9,
+        },
+      });
+    }
+  }, [shouldAnimate]);
 
   return (
-    <AppContainer>
+    <AppContainer ref={textRef}>
       <Wrapper>
         <Line className="singleLine">
           <Text>
@@ -62,8 +93,8 @@ const AppContainer = styled.div`
   height: 100vh;
   color: #000000;
   position: relative;
-  margin-top: -10%;
-  
+  margin-top: -5%;
+
   display: flex;
   align-items: center;
   text-align: center !important;
@@ -73,6 +104,7 @@ const AppContainer = styled.div`
   @media screen and (max-width: 550px) {
     height: 50vh;
     width: 95vw;
+    margin-top: -15%;
   }
 `;
 

@@ -8,7 +8,7 @@ main .homesContainer {
   justify-content: space-between;
   height: 100vh;
   flex-direction: row !important;
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 }
 .mainContent {
