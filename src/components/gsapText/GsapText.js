@@ -1,17 +1,19 @@
 import React, { useEffect } from "react";
 import styled from "styled-components";
 import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 
 function GsapText() {
-  console.log(gsap);
 
   useEffect(() => {
     const t1 = gsap.timeline();
     t1.from(".singleLine div ", {
-      y: 200,
+      y: 300,
       ease: "power4.out",
       delay: 1,
-      duration: 3.8,
+      duration: 3,
       stagger: {
         amount: 0.9,
       },
@@ -60,6 +62,8 @@ const AppContainer = styled.div`
   height: 100vh;
   color: #000000;
   position: relative;
+  margin-top: -10%;
+  
   display: flex;
   align-items: center;
   text-align: center !important;

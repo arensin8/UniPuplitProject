@@ -13,7 +13,6 @@ import Error from "./pages/error/Error";
 
 import Plx from "react-plx";
 import { useState, useEffect } from "react";
-import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 import image2 from "./components/Hero/back6.png";
 
 function App() {
@@ -23,7 +22,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2500);
+    }, 3000);
   }, []);
 
   const location = useLocation();
@@ -71,7 +70,6 @@ function App() {
           <AnimatePresence exitBeforeEnter initial={false}>
             <Routes location={location} key={location.pathname}>
               <Route path="/" element={<Home />}></Route>
-
               <Route path="/news" element={<NewsPages />}></Route>
               <Route path="/news/:id" element={<Singlenews />} />
               <Route path="/roadmap" element={<Roadmap />}></Route>

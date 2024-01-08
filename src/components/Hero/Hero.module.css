@@ -264,6 +264,7 @@
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
+  margin-bottom: 0;
   height: 135px;
 }
 

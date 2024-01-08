@@ -2,10 +2,6 @@ import React from "react";
 import css from "./Hero.module.css";
 
 import HeroImg from "../../assets/Hero3.png";
-import scrollImg from "../../assets/scroll.png";
-import dividerBg from "./back6.png";
-
-import Plx from "react-plx";
 
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -16,8 +12,6 @@ const Hero = () => {
       duration: 600,
     });
   };
-
-  const backgroundImageUrl = "url('dividerBg')";
 
   return (
     <>

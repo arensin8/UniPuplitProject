@@ -32,14 +32,13 @@ const Home = () => {
       >
         <Header />
         <ParticleRing />
-        {/* <Hero /> */}
+        <GsapText />
         <Slider />
 
         {/* <Title style={{ x, willChange: "transform" }}>
           Lets start right now
         </Title> */}
 
-        <GsapText />
 
         <Virtual />
 
