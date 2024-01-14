@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import styled from "styled-components";
 import gsap from "gsap";
 
-function GsapText() {
+function GsapText2() {
   const textRef = useRef(null);
   const [shouldAnimate, setShouldAnimate] = useState(false);
 
@@ -27,12 +27,12 @@ function GsapText() {
         scrollPosition <= endAnimationPosition
       ) {
         setShouldAnimate(true);
-        window.removeEventListener("scroll", handleScroll);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
 
+    // Cleanup: Remove the scroll event listener when the component is unmounted
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
@@ -40,6 +40,7 @@ function GsapText() {
 
   useEffect(() => {
     if (shouldAnimate) {
+      // Your animation logic using gsap
       const t1 = gsap.timeline();
       t1.from(".singleLine div", {
         y: 200,
@@ -53,39 +54,31 @@ function GsapText() {
   }, [shouldAnimate]);
 
   return (
-    <AppContainer ref={textRef} id="sectionToScroll">
-      <Wrapper>
-        <Line className="singleLine">
-          <Text>
-            <span>L</span>E<span>T</span>'S<span></span>,
-          </Text>
-        </Line>
-        <Line className="singleLine">
-          <Text>
-            STA<span>R</span>T
-            <span>
-              <span> </span>T
-            </span>
-            HE
-          </Text>
-        </Line>
-        <Line className="singleLine">
-          <Text>
-            <span>JOU</span>RN<span>EY</span>
-          </Text>
-        </Line>
-        <Line className="singleLine">
-          <Text>
-            {" "}
-            R<span>IG</span>HT<span> </span>N<span>OW</span>.
-          </Text>
-        </Line>
-      </Wrapper>
+    <AppContainer ref={textRef}>
+      {shouldAnimate && (
+        <Wrapper>
+          <Line className="singleLine">
+            <Text>
+              O<span>U</span>R
+            </Text>
+          </Line>
+          <Line className="singleLine">
+            <Text>
+              G<span>RA</span>D<span>U</span>AT<span>ED</span>,
+            </Text>
+          </Line>
+          <Line className="singleLine">
+            <Text>
+              S<span>T</span>UD<span>E</span>N<span>T'S</span>
+            </Text>
+          </Line>
+        </Wrapper>
+      )}
     </AppContainer>
   );
 }
 
-export default GsapText;
+export default GsapText2;
 
 const AppContainer = styled.div`
   width: 90vw;
@@ -109,7 +102,7 @@ const AppContainer = styled.div`
 
 const Wrapper = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,7 +111,7 @@ const Wrapper = styled.div`
 
 const Line = styled.div`
   width: 100%;
-  height: 10vw;
+  height: 11vw;
   position: relative;
   overflow: hidden;
 
@@ -128,16 +121,16 @@ const Line = styled.div`
 
   &:nth-of-type(1) {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
   }
   &:nth-of-type(2) {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin-right: 30px;
   }
   &:nth-of-type(3) {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
   &:nth-of-type(4) {
     display: flex;

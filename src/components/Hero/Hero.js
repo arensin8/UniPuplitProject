@@ -49,7 +49,6 @@ const Hero = () => {
       <Link to="sectionToScroll" smooth={true} duration={600}>
         <div className={css.scrolling} onClick={scrollToSection}>
           <p>Scroll down to reveal the story</p>
-
           <span className={css.loader}></span>
         </div>
       </Link>

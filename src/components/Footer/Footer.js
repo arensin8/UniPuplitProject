@@ -17,7 +17,7 @@ const Footer = () => {
           <div className={css.details}>
             <span>Contact Us</span>
             <span className={css.iconLine}>
-              <i class="fa-solid fa-phone"></i>
+              {/* <i class="fa-solid fa-phone"></i> */}
               <span>+374-94136745</span>
             </span>
             <span className={css.iconLine}>

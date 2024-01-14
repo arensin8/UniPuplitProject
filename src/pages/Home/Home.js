@@ -17,6 +17,7 @@ import { useScroll, useTransform } from "framer-motion";
 import { Title } from "./style.js";
 import ParticleRing from "../../components/Hero/ParticleRing";
 import GsapText from "../../components/gsapText/GsapText";
+import GsapText2 from "../../components/gsapText/GsapText2";
 
 const Home = () => {
   // const { scrollYProgress } = useScroll();
@@ -42,6 +43,7 @@ const Home = () => {
         <Virtual />
 
         <Services />
+        <GsapText2 />
         <Testimonial />
         <Accordion />
         <Footer />
