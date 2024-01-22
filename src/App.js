@@ -14,28 +14,39 @@ import Error from "./pages/error/Error";
 import Plx from "react-plx";
 import { useState, useEffect } from "react";
 import image2 from "./components/Hero/back6.png";
+import Loader from "./components/newLoader";
+import { gsap } from "gsap";
 
 function App() {
-  const [loading, setLoading] = useState(false);
+  // const [loading, setLoading] = useState(false);
+  const [loaderFinished, setLoaderFinished] = useState(false);
+  const [timeline, setTimeline] = useState(null);
 
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-  }, []);
+  // useEffect(() => {
+  //   setLoading(true);
+  //   setTimeout(() => {
+  //     setLoading(false);
+  //   }, 3000);
+  // }, []);
 
   const location = useLocation();
 
+  useLayoutEffect(() => {
+    const context = gsap.context(() => {
+      const tl = gsap.timeline({
+        onComplete: () => setLoaderFinished(true),
+      });
+      setTimeline(tl);
+    });
+
+    return () => context.revert();
+  }, []);
+
   return (
     <div className="App">
-      {loading ? (
-        // <ClimbingBoxLoader
-        //   color="#fff"
-        //   style={{ margin: "0 auto" }}
-        //   size={30}
-        // />
-        <span className="mainLoader"></span>
+      {!loaderFinished ? (
+        // <span className="mainLoader"></span>
+        <Loader timeline={timeline} />
       ) : (
         <>
           <Plx
