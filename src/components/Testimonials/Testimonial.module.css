@@ -47,6 +47,7 @@
 @media screen and (max-width: 856px) {
   .wrapper .img {
     width: 20rem !important;
+    margin: auto;
   }
   .container > :nth-child(1),
   .container > :nth-child(3) {

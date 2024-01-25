@@ -101,7 +101,7 @@ const AppContainer = styled.div`
   padding-left: 10vw;
 
   @media screen and (max-width: 550px) {
-    height: 50vh;
+    height: 40vh;
     width: 95vw;
     margin-top: -15%;
   }

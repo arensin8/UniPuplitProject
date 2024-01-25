@@ -16,7 +16,7 @@ const Testimonial = () => {
     <div className={css.testimonials}>
       {/* <StudentTitle style={{ x }}>Graduated students</StudentTitle> */}
 
-      <div className={css.wrapper}>
+      {/* <div className={css.wrapper}>
         <div className={css.container} data-aos="fade-down">
           <span>Mer usanoxneri karciknery</span>
           <span>
@@ -35,7 +35,7 @@ const Testimonial = () => {
           <span>100k +</span>
           <span>happy students</span>
         </div>
-      </div>
+      </div> */}
 
       <div className={css.carousel} data-aos="fade-up">
         <Students />

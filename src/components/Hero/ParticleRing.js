@@ -23,12 +23,18 @@ const ParticleRing = () => {
     <div className="relative">
       <Canvas
         camera={{
-          position: [10, -7.5, -5],
+          position: [-50, 7.5, -65],
         }}
         style={{ height: "100vh" }}
         className="bg-slate-900"
       >
-        <OrbitControls enableZoom={false} maxDistance={20} minDistance={10} />
+        <OrbitControls
+          enableZoom={false}
+          maxDistance={20}
+          minDistance={10}
+          autoRotate={false}
+        />
+
         <directionalLight />
         <pointLight position={[-30, 0, -30]} power={10.0} />
         <PointCircle numPointsToShow={numPointsToShow} />
@@ -44,7 +50,7 @@ const PointCircle = ({ numPointsToShow }) => {
 
   useFrame(({ clock }) => {
     if (ref.current?.rotation) {
-      ref.current.rotation.z = clock.getElapsedTime() * 0.05;
+      ref.current.rotation.z = -clock.getElapsedTime() * 0.05; // Change the sign here
     }
   });
 
