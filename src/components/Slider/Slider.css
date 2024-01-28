@@ -19,6 +19,7 @@
   height: 12rem !important;
   box-shadow: none;
 }
+
 .s-container .swiper-button-prev {
   left: 6rem;
 }
@@ -44,6 +45,7 @@
     display: none;
   }
 }
+
 .s-container .swiper-slide .containerSlide {
   display: flex;
   flex-direction: column;
@@ -55,9 +57,10 @@
 .s-container .swiper-slide .containerSlide img {
   height: 100%;
   width: 100%;
-  object-fit: cover !important;
+  background-size: cover;
   text-align: center;
-  opacity: 0.2;
+  opacity: 0.3;
+  border-radius: 5px;
 }
 
 .s-container .swiper-slide .containerSlide .slideText {

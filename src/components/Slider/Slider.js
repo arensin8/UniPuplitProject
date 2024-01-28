@@ -3,6 +3,7 @@ import "./Slider.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper";
 import img1 from "../../assets/Hero.jpg";
+import popular from "../../data/news";
 
 // import swipper styles
 import "swiper/css";
@@ -34,6 +35,18 @@ const Slider = () => {
           0: { slidesPerView: 1 },
         }}
       >
+        {popular.map((item, index) => (
+          <SwiperSlide key={index}>
+            <div className="containerSlide">
+              <img src={item.cover} alt="" />
+              <div className="slideText">
+                <h2>{item.title.slice(0, 30)}</h2>
+                <span>{item.desc.slice(0, 40)} </span>
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
+        {/* 
         <SwiperSlide>
           <div className="containerSlide">
             <img src={img1} alt="" />
@@ -43,7 +56,6 @@ const Slider = () => {
             </div>
           </div>
         </SwiperSlide>
-
         <SwiperSlide>
           <div className="containerSlide">
             <img src={img1} alt="" />
@@ -61,16 +73,7 @@ const Slider = () => {
               <span>desc nhswhc hswgnxs hnjsvghc skjhcks kshc </span>
             </div>
           </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="containerSlide">
-            <img src={img1} alt="" />
-            <div className="slideText">
-              <h2>Title</h2>
-              <span>desc nhswhc hswgnxs hnjsvghc skjhcks kshc </span>
-            </div>
-          </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
     </div>
   );
