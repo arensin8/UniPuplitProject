@@ -20,8 +20,8 @@ const Students = () => {
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        loop={true}
-        slidesPerView={"auto"}
+        loop={false}
+        slidesPerView={4}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,

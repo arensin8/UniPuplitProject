@@ -1,13 +1,4 @@
-/* .title {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 500;
-} */
-
 .container {
-  max-width: 124rem;
   padding: 4rem 1rem;
   margin: 0 auto;
 }
@@ -17,10 +8,9 @@
   height: 52rem;
   padding: 2rem 0;
   position: relative;
-}
-/* .swiper-wrapper {
   width: 90vw;
-} */
+  overflow: hidden;
+}
 
 .swiper-slide {
   width: 25rem;
@@ -137,11 +127,11 @@
 }
 
 .slider-controler .swiper-button-next {
-  left: 52.2% !important;
-  transform: translateX(-52%) !important;
+  left: 56% !important;
+  transform: translateX(-60%) !important;
 }
 .slider-controler .swiper-button-prev {
-  left: 47% !important;
+  left: 41% !important;
   transform: translateX(92%) !important;
 }
 
