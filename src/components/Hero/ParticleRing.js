@@ -3,6 +3,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { pointsInner, pointsOuter } from "./utils";
 import Hero from "./Hero";
+import styles from './Hero.module.css';
 
 const ParticleRing = () => {
   const [numPointsToShow, setNumPointsToShow] = useState(300); // Initial number of points to show
@@ -20,7 +21,7 @@ const ParticleRing = () => {
   }, [numPointsToShow]);
 
   return (
-    <div className="relative">
+    <div className={styles.canvas}>
       <Canvas
         camera={{
           position: [-50, 7.5, -65],

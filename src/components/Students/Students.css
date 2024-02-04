@@ -3,12 +3,12 @@
   margin: 0 auto;
 }
 
-.swiper_container {
+.swiper-container {
   margin-top: 50px !important;
   height: 52rem;
   padding: 2rem 0;
   position: relative;
-  width: 90vw;
+  width: 85vw;
   overflow: hidden;
 }
 
@@ -129,10 +129,12 @@
 .slider-controler .swiper-button-next {
   left: 56% !important;
   transform: translateX(-60%) !important;
+  cursor: pointer;
 }
 .slider-controler .swiper-button-prev {
   left: 41% !important;
   transform: translateX(92%) !important;
+  cursor: pointer;
 }
 
 @media (max-width: 990px) {
