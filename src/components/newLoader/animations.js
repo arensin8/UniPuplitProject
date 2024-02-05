@@ -4,7 +4,7 @@ export const introAnimation = (wordGroupsRef) => {
   const tl = gsap.timeline();
   tl.to(wordGroupsRef.current, {
     yPercent: -80,
-    duration: 5,
+    duration: 4,
     ease: "power3.inOut",
   });
 
@@ -27,26 +27,26 @@ export const progressAnimation = (progressRef, progressNumberRef) => {
 
   tl.to(progressRef.current, {
     scaleX: 1,
-    duration: 5,
+    duration: 4,
     ease: "power3.inOut",
   })
     .to(
       progressNumberRef.current,
       {
         x: "100vw",
-        duration: 5,
+        duration: 4,
         ease: "power3.inOut",
       },
-      "<"
+      "<",
     )
     .to(
       progressNumberRef.current,
       {
         textContent: "100",
-        duration: 5,
+        duration: 4,
         roundProps: "textContent",
       },
-      "<"
+      "<",
     )
     .to(progressNumberRef.current, {
       y: 24,

@@ -82,20 +82,19 @@ const Roadmap = () => {
                   </div>
                 </div>
               </div>
-              {popupVisible && (
+              {popupVisible ? (
                 <PopUp content={popupContent} onClose={closePopup} />
+              ) : (
+                <>
+                  <BackToTop />
+                  <ChatIcon />
+                </>
               )}
             </>
           ))}
         </section>
 
         <Footer />
-        {!popupVisible && (
-          <>
-            <BackToTop />
-            <ChatIcon />
-          </>
-        )}
       </motion.div>
     </>
   );

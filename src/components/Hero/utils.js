@@ -38,7 +38,6 @@ const calculateColor = (x) => {
 const randomFromInterval = (min, max) => {
   return Math.random() * (max - min) + min;
 };
-
 export const pointsInner = Array.from(
   { length: NUM_POINTS },
   (v, k) => k + 1,
@@ -46,7 +45,7 @@ export const pointsInner = Array.from(
   const randomRadius = randomFromInterval(MIN_RADIUS, MAX_RADIUS);
   const randomAngle = Math.random() * Math.PI * 2;
 
-  const x = Math.cos(randomAngle) * randomRadius;
+  const x = Math.cos(randomAngle) * randomRadius; // Adjust the value (e.g., +20) to move it to the right
   const y = Math.sin(randomAngle) * randomRadius;
   const z = randomFromInterval(-DEPTH, DEPTH);
 
@@ -66,7 +65,7 @@ export const pointsOuter = Array.from(
   const randomRadius = randomFromInterval(MIN_RADIUS / 2, MAX_RADIUS * 2);
   const angle = Math.random() * Math.PI * 2;
 
-  const x = Math.cos(angle) * randomRadius;
+  const x = Math.cos(angle) * randomRadius; // Adjust the value (e.g., +20) to move it to the right
   const y = Math.sin(angle) * randomRadius;
   const z = randomFromInterval(-DEPTH * 10, DEPTH * 10);
 

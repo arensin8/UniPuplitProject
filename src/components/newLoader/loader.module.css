@@ -65,6 +65,7 @@
   background-color: var(--blue);
   transform: scaleX(0);
   transform-origin: left center;
+  border-radius: 5px;
 }
 
 .loader__progressNumber {

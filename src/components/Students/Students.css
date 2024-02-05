@@ -1,10 +1,9 @@
 .container {
   padding: 4rem 1rem;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .swiper-container {
-  margin-top: 50px !important;
   height: 52rem;
   padding: 2rem 0;
   position: relative;
@@ -129,12 +128,10 @@
 .slider-controler .swiper-button-next {
   left: 56% !important;
   transform: translateX(-60%) !important;
-  cursor: pointer;
 }
 .slider-controler .swiper-button-prev {
   left: 41% !important;
   transform: translateX(92%) !important;
-  cursor: pointer;
 }
 
 @media (max-width: 990px) {
@@ -176,6 +173,7 @@
   left: 42%;
   transform: translateX(-42%);
   filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+  cursor: pointer !important;
 }
 
 .slider-controler .slider-arrow i {

@@ -3,7 +3,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Sphere } from "@react-three/drei";
 import { pointsInner, pointsOuter } from "./utils";
 import Hero from "./Hero";
-import styles from './Hero.module.css';
+import styles from "./Hero.module.css";
 
 const ParticleRing = () => {
   const [numPointsToShow, setNumPointsToShow] = useState(300); // Initial number of points to show

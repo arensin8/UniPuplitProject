@@ -34,7 +34,7 @@ const Hero = () => {
         </div>
 
         {/* right side */}
-        <div className={css.h_sides}>
+        {/* <div className={css.h_sides}>
           <div className={css.traffic}>
             <span data-aos="fade-down">100k+</span>
             <span>Yearly students</span>
@@ -43,12 +43,11 @@ const Hero = () => {
             <span>700k+</span>
             <span>Graduated students</span>
           </div>
-        </div>
+        </div> */}
       </div>
 
       <Link to="sectionToScroll" smooth={true} duration={600}>
         <div className={css.scrolling} onClick={scrollToSection}>
-          <p>Scroll down to reveal the story</p>
           <span className={css.loader}></span>
         </div>
       </Link>
