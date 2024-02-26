@@ -29,69 +29,62 @@ const Roadmap = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.5, easing: "easeOutBack" }}
+        transition={{ duration: 0.4, easing: "easeOutBack" }}
       >
         <Header />
-        <section class="timeline">
+        <section className="timeline">
           <h1>Our Roadmap</h1>
 
-          {/* front end section */}
-          <h2 class="mainTitle">Front-End Development</h2>
+          {/* Front-end section */}
+          <h2 className="mainTitle">Front-End Development</h2>
           {frontRoadmapData.map((data) => (
-            <>
-              <div class="timeline-items">
-                <div class="line"></div>
-                <div class={data.className} data-aos="fade-up">
-                  <div class="timeline-dot"></div>
-                  <div
-                    class="timeline-content"
-                    onClick={() => handleSectionClick(data)}
-                  >
-                    <div className="timeline-cont-title">
-                      <span>{data.i}</span>
-                      <h3>{data.title}</h3>
-                    </div>
-                    <p>{data.desc}</p>
+            <div className="timeline-items" key={data.id}>
+              <div className="line"></div>
+              <div className={data.className} data-aos="fade-up">
+                <div className="timeline-dot"></div>
+                <div
+                  className="timeline-content"
+                  onClick={() => handleSectionClick(data)}
+                >
+                  <div className="timeline-cont-title">
+                    <span>{data.i}</span>
+                    <h3>{data.title}</h3>
                   </div>
+                  <p>{data.desc}</p>
                 </div>
               </div>
-
-              {/* {popupVisible && (
-                <PopUp content={popupContent} onClose={closePopup} />
-              )} */}
-            </>
+            </div>
           ))}
 
-          {/* back end section */}
-          <h2 class="mainTitle back">Back-End Development</h2>
+          {/* Back-end section */}
+          <h2 className="mainTitle back">Back-End Development</h2>
           {backRoadmapData.map((data) => (
-            <>
-              <div class="timeline-items">
-                <div class="line"></div>
-                <div class={data.className} data-aos="fade-up">
-                  <div class="timeline-dot"></div>
-                  <div
-                    class="timeline-content"
-                    onClick={() => handleSectionClick(data)}
-                  >
-                    <div className="timeline-cont-title">
-                      <span>{data.i}</span>
-                      <h3>{data.title}</h3>
-                    </div>
-                    <p>{data.desc}</p>
+            <div className="timeline-items" key={data.id}>
+              <div className="line"></div>
+              <div className={data.className} data-aos="fade-up">
+                <div className="timeline-dot"></div>
+                <div
+                  className="timeline-content"
+                  onClick={() => handleSectionClick(data)}
+                >
+                  <div className="timeline-cont-title">
+                    <span>{data.i}</span>
+                    <h3>{data.title}</h3>
                   </div>
+                  <p>{data.desc}</p>
                 </div>
               </div>
-              {popupVisible ? (
-                <PopUp content={popupContent} onClose={closePopup} />
-              ) : (
-                <>
-                  <BackToTop />
-                  <ChatIcon />
-                </>
-              )}
-            </>
+            </div>
           ))}
+
+          {/* Popup */}
+          {popupVisible && (
+            <PopUp content={popupContent} onClose={closePopup} />
+          )}
+
+          {/* BackToTop and ChatIcon */}
+          <BackToTop />
+          <ChatIcon />
         </section>
 
         <Footer />

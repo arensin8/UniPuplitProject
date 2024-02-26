@@ -1,5 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, Suspense } from "react";
 import "./App.css";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
@@ -16,6 +16,10 @@ import { useState, useEffect } from "react";
 import image2 from "./components/Hero/back6.png";
 import Loader from "./components/newLoader";
 import { gsap } from "gsap";
+
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
+import Building from "./Building";
 
 function App() {
   // const [loading, setLoading] = useState(false);
@@ -44,6 +48,16 @@ function App() {
 
   return (
     <div className="App">
+      <Canvas>
+        <ambientLight />
+        <OrbitControls />
+        <Suspense fallback={null}>
+          {
+            <Building />
+            // <Scene />
+          }
+        </Suspense>
+      </Canvas>
       {!loaderFinished ? (
         // <span className="mainLoader"></span>
         <Loader timeline={timeline} />
