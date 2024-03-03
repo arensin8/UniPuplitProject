@@ -5,6 +5,7 @@ import HeroImg from "../../assets/Hero3.png";
 import HeroLogo from "../../assets/HeroLogo.png";
 
 import { Link, animateScroll as scroll } from "react-scroll";
+import AnimatedText from "../AnimatedText/AnimatedText";
 
 const Hero = () => {
   const scrollToSection = () => {
@@ -19,14 +20,15 @@ const Hero = () => {
       <div className={css.container}>
         {/* left side */}
         <div className={css.h_sides} data-aos="fade-down">
-          <span className={css.text1}>ՏՏ Ամբիոն</span>
+          {/* <span className={css.text1}>ՏՏ Ամբիոն</span>
 
           <div className={css.text2}>
             <span>Տարբեր մասնաճյուղեր</span>
             <span>
               յբո ֆդօիփհո ֆւոդց օո դցգիւ ոիհս ցիոեգս ցօիոգյ սցրւգոկյկկ ցիգ ւիկգ
             </span>
-          </div>
+          </div> */}
+          <AnimatedText />
         </div>
 
         {/* middle side of hero */}

@@ -17,6 +17,7 @@
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
     "axios": "^1.6.5",
+    "clsx": "^2.1.0",
     "framer-motion": "^7.10.3",
     "gltfjsx": "^6.2.16",
     "gsap": "^3.12.4",
@@ -32,6 +33,7 @@
     "react-syntax-highlighter": "^15.5.0",
     "sass": "^1.70.0",
     "slick-carousel": "^1.8.1",
+    "split-text-js": "^1.0.3",
     "styled-components": "^6.1.0",
     "swiper": "^8.3.2"
   },
