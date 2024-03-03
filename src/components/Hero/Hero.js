@@ -2,6 +2,7 @@ import React from "react";
 import css from "./Hero.module.css";
 
 import HeroImg from "../../assets/Hero3.png";
+import HeroLogo from "../../assets/HeroLogo.png";
 
 import { Link, animateScroll as scroll } from "react-scroll";
 
@@ -30,7 +31,7 @@ const Hero = () => {
 
         {/* middle side of hero */}
         <div className={css.wrapper}>
-          <img src={HeroImg} alt="logo" className={css.parLogo} />
+          <img src={HeroLogo} alt="logo" className={css.parLogo} />
         </div>
 
         {/* right side */}

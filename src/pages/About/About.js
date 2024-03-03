@@ -11,9 +11,6 @@ import BackToTop from "../../components/backtotop/BackToTop";
 
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, PresentationControls, Stage } from "@react-three/drei";
-// import Building from "./Building";
-import Scene from "./scene.gltf";
-import Model from "./Scene";
 
 const About = () => {
   return (
@@ -25,7 +22,7 @@ const About = () => {
         style={{ position: "absolute" }}
       >
         <color attach="background" args={["#101010"]} />
-        <PresentationControls
+        {/* <PresentationControls
           speed={1.5}
           global
           zoom={0.5}
@@ -34,7 +31,7 @@ const About = () => {
           <Stage environment={"sunset"}>
             <Model scale={0.01} />
           </Stage>
-        </PresentationControls>
+        </PresentationControls> */}
       </Canvas>
     </>
   );

@@ -11,18 +11,19 @@
   z-index: -1;
 }
 
+.canvas {
+  width: 2200px;
+}
 .wrapper {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   position: relative;
   justify-content: center;
   margin-bottom: 30px;
 }
 
 .wrapper .parLogo {
-  width: 25rem;
-  border-radius: 50%;
-  overflow: hidden;
+  /* width: 20rem; */
 }
 
 .signupbtn {
@@ -178,6 +179,9 @@
 }
 
 @media screen and (max-width: 856px) {
+  .canvas {
+    width: 100%;
+  }
   .text1,
   .text2 > span:nth-of-type(2) {
     font-size: 0.9rem;
@@ -224,6 +228,9 @@
 }
 
 @media screen and (max-width: 640px) {
+  .canvas {
+    width: 100%;
+  }
   .container {
     width: 100% !important;
   }

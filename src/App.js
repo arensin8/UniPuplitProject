@@ -1,5 +1,5 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, Suspense } from "react";
 import "./App.css";
 import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
@@ -13,7 +13,7 @@ import Error from "./pages/error/Error";
 
 import Plx from "react-plx";
 import { useState, useEffect } from "react";
-import image2 from "./components/Hero/back6.png";
+import image2 from "./components/Hero/back5.png";
 import Loader from "./components/newLoader";
 import { gsap } from "gsap";
 
