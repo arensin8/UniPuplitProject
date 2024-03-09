@@ -1,7 +1,7 @@
 .container {
   padding: 0rem 2rem;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 2.5fr 1fr 2.5fr;
   margin: 0 auto;
   width: 85% !important;
   position: absolute;
@@ -65,44 +65,6 @@
 .h_sides {
   display: grid;
   grid-template-rows: 1fr 1fr;
-}
-
-.text1 {
-  text-transform: uppercase;
-  font-size: 1.5rem;
-  width: min-content;
-  font-weight: 600;
-  display: block;
-}
-
-.text2 {
-  display: flex;
-  flex-direction: column;
-  width: min-content;
-}
-
-.text2 > :first-child {
-  font-weight: 800;
-  font-size: 2.5rem;
-}
-.text2 > :last-child {
-  display: block;
-}
-
-.traffic {
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-}
-
-.traffic > :first-child {
-  font-weight: 800;
-  font-size: 2.5rem;
-}
-
-.traffic2 > :first-child {
-  font-weight: 800;
-  font-size: 2.5rem;
 }
 
 .scrolling {
@@ -200,20 +162,11 @@
       "left center center"
       "right right right ";
   }
-  .container > :first-child {
-    grid-area: left;
-    grid-template-rows: none;
-    gap: 8rem;
-  }
+
   .container > :nth-child(2) {
     grid-area: center;
   }
-  .container > :nth-child(3) {
-    grid-area: right;
-    display: flex;
-    justify-content: space-around;
-    margin: 2rem 0;
-  }
+
   .loader {
     width: 30px;
     height: 55px;

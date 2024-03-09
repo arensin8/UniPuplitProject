@@ -5,7 +5,7 @@ import HeroImg from "../../assets/Hero3.png";
 import HeroLogo from "../../assets/HeroLogo.png";
 
 import { Link, animateScroll as scroll } from "react-scroll";
-import AnimatedText from "../AnimatedText/AnimatedText";
+import TypewriterHero from "../typewriter/Typewriter";
 
 const Hero = () => {
   const scrollToSection = () => {
@@ -28,7 +28,7 @@ const Hero = () => {
               յբո ֆդօիփհո ֆւոդց օո դցգիւ ոիհս ցիոեգս ցօիոգյ սցրւգոկյկկ ցիգ ւիկգ
             </span>
           </div> */}
-          <AnimatedText />
+          <TypewriterHero />
         </div>
 
         {/* middle side of hero */}
