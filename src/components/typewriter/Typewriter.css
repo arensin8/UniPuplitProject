@@ -18,17 +18,14 @@
 .home-intro .titleOne {
   font-size: 30px;
   text-transform: uppercase;
+  color: var(--blue);
+  font-weight: bold;
 }
 
 .home-intro .titleTwo {
   color: var(--blue);
   text-transform: uppercase;
   font-size: 45px;
-}
-
-.home-intro .titleThree {
-  font-size: 28px;
-  text-transform: uppercase;
 }
 
 .home .text {
