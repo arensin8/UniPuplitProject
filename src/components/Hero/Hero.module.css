@@ -144,23 +144,19 @@
   .canvas {
     width: 100%;
   }
-  .text1,
-  .text2 > span:nth-of-type(2) {
-    font-size: 0.9rem;
-    text-align: justify;
+
+  .wrapper {
+    margin: 0 auto;
   }
-  .text2 > span:nth-of-type(1),
-  .traffic > span:nth-of-type(1) {
-    text-align: left;
-    font-size: 1.5rem;
-  }
+
   .wrapper .parLogo {
     width: 25rem !important;
   }
   .container {
-    grid-template-areas:
-      "left center center"
-      "right right right ";
+    display: flex;
+  }
+  .h_sides {
+    display: none;
   }
 
   .container > :nth-child(2) {

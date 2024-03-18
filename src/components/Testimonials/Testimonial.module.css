@@ -45,6 +45,9 @@
 }
 
 @media screen and (max-width: 856px) {
+  .testimonials {
+    width: 100%;
+  }
   .wrapper .img {
     width: 20rem !important;
     margin: auto;
@@ -57,7 +60,7 @@
 
 @media screen and (max-width: 550px) {
   .testimonials {
-    width: 88%;
+    width: 100%;
   }
   .wrapper {
     display: flex;
