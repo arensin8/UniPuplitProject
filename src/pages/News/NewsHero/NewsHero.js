@@ -13,7 +13,7 @@ const NewsHero = () => {
       <div className="title">
         <h1>Our latest News</h1>
       </div>
-      <section className="hero">
+      <section className="hero" data-aos="fade-up">
         <div className="heroContainer">
           {filteredItems.map((item) => {
             return (

@@ -18,7 +18,7 @@ const Contact = () => {
         <div className="title">
           <h1>Contact with us</h1>
         </div>
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <div class="content">
             <div class="left-side">
               <div class="address details">
