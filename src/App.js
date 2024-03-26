@@ -18,7 +18,6 @@ import Loader from "./components/newLoader";
 import { gsap } from "gsap";
 
 function App() {
-  // const [loading, setLoading] = useState(false);
   const [loaderFinished, setLoaderFinished] = useState(false);
   const [timeline, setTimeline] = useState(null);
 
@@ -45,7 +44,6 @@ function App() {
   return (
     <div className="App">
       {!loaderFinished ? (
-        // <span className="mainLoader"></span>
         <Loader timeline={timeline} />
       ) : (
         <>

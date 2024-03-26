@@ -7,7 +7,7 @@
   height: 52rem;
   padding: 2rem 0;
   position: relative;
-  width: 85vw;
+  width: 100vw;
   overflow: hidden;
 }
 
@@ -62,12 +62,6 @@
   width: 21rem;
   height: 22rem;
   border-radius: 10px;
-}
-
-@media (max-width: 856px) {
-  .swiper_container {
-    width: 100% !important;
-  }
 }
 
 @media (max-width: 500px) {
