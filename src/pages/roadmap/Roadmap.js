@@ -18,8 +18,8 @@ const Roadmap = () => {
     document.body.classList.add("body-no-scroll");
   };
 
-  const closeModal = () => {
-    setModalVisible(false);
+  const closePopup = () => {
+    setPopupVisible(false);
     document.body.classList.remove("body-no-scroll");
   };
 
