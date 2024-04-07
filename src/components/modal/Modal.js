@@ -1,8 +1,8 @@
 import React from "react";
-import "./PopUp.css";
+import "./Modal.css";
 import { motion } from "framer-motion";
 
-const PopUp = ({ content, onClose }) => {
+const Modal = ({ content, onClose }) => {
   return (
     <>
       <div className="modal">
@@ -29,4 +29,4 @@ const PopUp = ({ content, onClose }) => {
   );
 };
 
-export default PopUp;
+export default Modal;
