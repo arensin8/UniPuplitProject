@@ -29,7 +29,7 @@ const Roadmap = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.4, easing: "easeOutBack" }}
+        transition={{ duration: 0.3, easing: "easeOutBack" }}
       >
         <Header />
         <section className="timeline">
