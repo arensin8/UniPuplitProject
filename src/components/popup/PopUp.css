@@ -27,7 +27,7 @@
   min-width: 300px;
   color: var(--blue);
   line-height: 25px;
-  transition: all 0.9s ease-in-out;
+  transition: all 0.6s ease-in-out;
   overflow: hidden;
 }
 
