@@ -46,34 +46,7 @@ const Slider = () => {
             </div>
           </SwiperSlide>
         ))}
-        {/* 
-        <SwiperSlide>
-          <div className="containerSlide">
-            <img src={img1} alt="" />
-            <div className="slideText">
-              <h2>Title</h2>
-              <span>desc nhswhc hswgnxs hnjsvghc skjhcks kshc </span>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="containerSlide">
-            <img src={img1} alt="" />
-            <div className="slideText">
-              <h2>Title</h2>
-              <span>desc nhswhc hswgnxs hnjsvghc skjhcks kshc </span>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="containerSlide">
-            <img src={img1} alt="" />
-            <div className="slideText">
-              <h2>Title</h2>
-              <span>desc nhswhc hswgnxs hnjsvghc skjhcks kshc </span>
-            </div>
-          </div>
-        </SwiperSlide> */}
+        
       </Swiper>
     </div>
   );

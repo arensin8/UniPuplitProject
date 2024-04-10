@@ -34,7 +34,7 @@ const Home = () => {
         <Header />
         <ParticleRing />
         <GsapText />
-        <Slider />
+        {/* <Slider /> */}
 
         {/* <Title style={{ x, willChange: "transform" }}>
           Lets start right now
