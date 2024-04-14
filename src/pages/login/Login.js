@@ -46,6 +46,7 @@ const Login = () => {
             </h2>
             <div className="form">
               <input type="username" placeholder="Enter your username" />
+              <p>This is a error for username</p>
               <input
                 type={passwordVisible ? "text" : "password"}
                 placeholder="Enter your password"
@@ -59,7 +60,7 @@ const Login = () => {
                   <i class="fa-solid fa-eye"></i>
                 )}
               </span>
-
+              <p>This is a error for password</p>
               <Example />
             </div>
           </div>
