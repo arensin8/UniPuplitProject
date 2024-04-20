@@ -5,6 +5,7 @@ import Map from "./Map";
 import aboutgif from "../../assets/about.png";
 import { motion } from "framer-motion";
 import Layout from "../../layouts/Layout";
+import data from "../../data/aboutPage";
 
 const About = () => {
   return (
@@ -29,45 +30,21 @@ const About = () => {
                 voluptatibus, illum recusandae, vel optio tempore ipsum incidunt
                 eum. Aspernatur, repellendus.
               </p>
+
               <div class="address">
                 <ul>
-                  <li>
-                    <span class="address-logo">
-                      <i class="fa-solid fa-location-dot"></i>
-                    </span>
-                    <p>Address</p>
-                    <span class="saprater">:</span>
-                    <p>Jaipur, Rajasthan, India</p>
-                  </li>
-                  <li>
-                    <span class="address-logo">
-                      <i class="fas fa-phone-alt"></i>
-                    </span>
-                    <p>Phone No</p>
-                    <span class="saprater">:</span>
-                    <p>+91 987-654-4321</p>
-                  </li>
-                  <li>
-                    <span class="address-logo">
-                      <i class="far fa-envelope"></i>
-                    </span>
-                    <p>Email ID</p>
-                    <span class="saprater">:</span>
-                    <p>crowncoder@gmail.com</p>
-                  </li>
-                  <li>
-                    <span class="address-logo">
-                      <i class="fa-brands fa-facebook"></i>
-                    </span>
-                    <p>Facebook</p>
-                    <span class="saprater">:</span>
-                    <p>@polytechnicArmenia</p>
-                  </li>
+                  {data.map((item) => (
+                    <li key={item.id}>
+                      <span class="address-logo">{item.icon}</span>
+                      <p>{item.title}</p>
+                      <span class="saprater">:</span>
+                      <p>{item.text}</p>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
           </section>
-
           <Map />
         </Layout>
       </motion.div>
