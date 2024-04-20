@@ -10,7 +10,7 @@ const PopUp = ({ content, onClose }) => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.9, easing: "easeOutBack" }}
+          transition={{ duration: 0.1, easing: "easeOutBack" }}
         >
           <div onClick={onClose} className="overlay"></div>
           <div className="modal-content">

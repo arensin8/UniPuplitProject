@@ -1,23 +1,18 @@
 import React, { useState } from "react";
-import BackToTop from "../../components/backtotop/BackToTop";
-import Footer from "../../components/Footer/Footer";
-import Header from "../../components/header/Header";
-import Hero from "../../components/Hero/Hero";
 import Services from "../../components/services/Services";
 import Slider from "../../components/Slider/Slider";
 import Testimonial from "../../components/Testimonials/Testimonial";
 import Virtual from "../../components/virtual/Virtual";
 import Accordion from "../../components/accordion/Accordion";
-import ChatIcon from "../../components/chatbot/ChatIcon";
 
 import "./Home.css";
 import { motion } from "framer-motion";
-import { useScroll, useTransform } from "framer-motion";
 
 import { Title } from "./style.js";
 import ParticleRing from "../../components/Hero/ParticleRing";
 import GsapText from "../../components/gsapText/GsapText";
 import GsapText2 from "../../components/gsapText/GsapText2";
+import Layout from "../../layouts/Layout";
 
 const Home = () => {
   // const { scrollYProgress } = useScroll();
@@ -31,24 +26,21 @@ const Home = () => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5, easing: "easeOutBack" }}
       >
-        <Header />
-        <ParticleRing />
-        <GsapText />
-        {/* <Slider /> */}
+        <Layout>
+          <ParticleRing />
+          <GsapText />
+          {/* <Slider /> */}
 
-        {/* <Title style={{ x, willChange: "transform" }}>
+          {/* <Title style={{ x, willChange: "transform" }}>
           Lets start right now
         </Title> */}
 
-        <Virtual />
-
-        <Services />
-        <GsapText2 />
-        <Testimonial />
-        <Accordion />
-        <Footer />
-        <ChatIcon />
-        <BackToTop />
+          <Virtual />
+          <Services />
+          <GsapText2 />
+          <Testimonial />
+          <Accordion />
+        </Layout>
       </motion.div>
     </>
   );
