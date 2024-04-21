@@ -12,7 +12,6 @@ const TypewriterHero = () => {
     <div className="home">
       <div className="home-intro">
         <h2>
-         
           <div className="titleOne">{state.titleOne}</div>
           <div className="titleTwo">{state.titleTwo}</div>
           <div className="titleThree">{state.titleThree}</div>

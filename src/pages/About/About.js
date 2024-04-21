@@ -17,8 +17,8 @@ const About = () => {
         transition={{ duration: 0.5, easing: "easeOutBack" }}
       >
         <Layout>
-          <section id="about-section">
-            <div class="about-left" data-aos="fade-right">
+          <section id="about-section" data-aos="fade-up">
+            <div class="about-left">
               <img src={aboutgif} alt="about" />
             </div>
 

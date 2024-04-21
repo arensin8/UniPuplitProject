@@ -22,10 +22,6 @@
   margin-bottom: 30px;
 }
 
-.wrapper .parLogo {
-  /* width: 20rem; */
-}
-
 .signupbtn {
   position: absolute;
   bottom: 25%;
@@ -62,10 +58,10 @@
   justify-content: center;
 }
 
-.h_sides {
+/* .h_sides {
   display: grid;
   grid-template-rows: 1fr 1fr;
-}
+} */
 
 .scrolling {
   margin: 0 auto;
