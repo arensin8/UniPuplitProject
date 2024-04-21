@@ -39,6 +39,15 @@
   padding: 15px;
 }
 
+.navbarContainer .right a.active {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.navbarContainer.active .right a.active {
+  color: var(--bg);
+}
+
 .navbarContainer .menu {
   display: flex;
   flex-direction: row;

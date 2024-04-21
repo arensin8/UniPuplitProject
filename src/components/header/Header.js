@@ -2,7 +2,7 @@ import React, { useState, useEffect, useLocation } from "react";
 import Logo from "../../assets/icon.jpg";
 import "./Header.css";
 import close from "../../assets/close.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "../../App.css";
 // import ReCAPTCHA from "react-google-recaptcha";
 import hamMenu from "../../assets/ham1.png";
@@ -41,13 +41,9 @@ const Header = () => {
 
   window.addEventListener("scroll", stickyNavbar);
 
-  function onChange(value) {
-    console.log("Captcha value:", value);
-  }
-
   return (
     <div className={isSticky ? "navbarContainer active" : "navbarContainer"}>
-      <Link to="/">
+      <NavLink to="/">
         <div className="logo">
           <img
             src={Logo}
@@ -56,7 +52,7 @@ const Header = () => {
           />
           <span>Polytechnic</span>
         </div>
-      </Link>
+      </NavLink>
 
       <div className="right">
         <ul
@@ -71,19 +67,19 @@ const Header = () => {
             alt="close"
           />
           <li>
-            <Link to="/news">News</Link>
+            <NavLink to="/news">News</NavLink>
           </li>
           <li>
-            <Link to="/roadmap">Roadmap</Link>
+            <NavLink to="/roadmap">Roadmap</NavLink>
           </li>
           <li>
-            <Link to="/about-us">About Us</Link>
+            <NavLink to="/about-us">About Us</NavLink>
           </li>
           <li>
-            <Link to="/contact">Contact Us</Link>
+            <NavLink to="/contact">Contact Us</NavLink>
           </li>
 
-          <Link to="/">
+          <NavLink to="/">
             <div className="logo2">
               <img
                 src={Logo}
@@ -96,13 +92,13 @@ const Header = () => {
               />
               <span>Polytechnic</span>
             </div>
-          </Link>
+          </NavLink>
         </ul>
-        <Link to="/login">
+        <NavLink to="/login">
           <a type="button" className="Login">
             Login
           </a>
-        </Link>
+        </NavLink>
 
         <div
           className="bars"
