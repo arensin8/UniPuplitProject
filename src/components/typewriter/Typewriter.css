@@ -6,7 +6,8 @@
 }
 
 .home-intro {
-  width: 100%;
+  width: fit-content; /* Adjust width to content */
+  max-width: 100%; /* Ensure it doesn't exceed the parent width */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,6 +16,7 @@
   max-height: 30vh;
   overflow: hidden;
 }
+
 
 .home-intro .titleOne {
   font-size: 40px;
@@ -34,6 +36,15 @@
   text-transform: uppercase;
   font-size: 40px;
 }
+
+.home-intro .titleOne,
+.home-intro .titleTwo,
+.home-intro .titleThree {
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Show ellipsis (...) for overflow */
+}
+
 
 .home .text {
   font-size: 35px;

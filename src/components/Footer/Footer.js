@@ -21,7 +21,7 @@ const Footer = () => {
       </div>
 
       <div className={css.copyright}>
-        <span>copyright &copy; 2023 by polytechnic</span>
+        <span>copyright &copy; 2024 | by Aren with ♥️</span>
         <span>All rights resserved</span>
       </div>
     </div>
